@@ -10,8 +10,6 @@ from telethon import events, functions, version
 #@command(pattern="^.help ?(.*)")
 
 
-@borg.on(sudo_cmd(pattern=r"help ?(.*)", outgoing=True, allow_sudo=True))
-
 async def cmd_list(event):
 
     if not event.text[0].isalpha() and event.text[0] not in ("/" , "#", "-", "_", "@"):
