@@ -1,1 +1,1 @@
-worker : python3 start.py
+DYNAMIC: python -m DYNAMIC
