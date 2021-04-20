@@ -1,6 +1,6 @@
 from DYNAMIC import CMD_LIST
 
-from DYNAMIC import ALIVE_NAME
+
 
 from DYNAMIC.utils import admin_cmd, sudo_cmd
 
