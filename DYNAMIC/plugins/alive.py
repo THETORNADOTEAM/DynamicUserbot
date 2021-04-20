@@ -5,7 +5,7 @@ from DYNAMIC.utils import admin_cmd
 from DYNAMIC import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = stALIVE_NAME) if ALIVE_NAME else "DARKLON USER"
+DEFAULTUSER = stALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
