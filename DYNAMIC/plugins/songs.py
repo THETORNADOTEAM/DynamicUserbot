@@ -76,6 +76,7 @@ from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url
 from html import unescape
 from urllib.error import HTTPError
+from DYNAMIC.utils import  edit_or_reply, progress, humanbytes, time_formatter
 from DYNAMIC import CMD_HELP
 import bs4
 from bs4 import BeautifulSoup
