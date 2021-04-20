@@ -2,7 +2,6 @@ import asyncio
 import random
 from telethon import events
 from DYNAMIC.utils import admin_cmd
-from DYNAMIC import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 
