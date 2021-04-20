@@ -92,7 +92,7 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f"""DYNAMIC Helper.. Provided by 馃檪馃檪{DEFAULTUSER}馃檪馃檪 \n
+            help_string = f"""DYNAMIC Helper.. Provided by DYNAMICUSERBOT \n
 
 DYNAMIC Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
