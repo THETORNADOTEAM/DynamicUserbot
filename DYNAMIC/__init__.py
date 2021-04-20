@@ -6,7 +6,7 @@ from telethon import TelegramClient
 from DYNAMIC.helpers import functions as simpdef
 from DYNAMIC.uniborgConfig import Config
 from var import Var
-legendversion = "3.0"
+DYNAMICversion = "3.0"
 StartTime = time.time()
 
 os.system("pip install --upgrade pip")
