@@ -96,7 +96,7 @@ async def cmd_list(event):
 
 DYNAMIC Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
-            results = await bot.inline_query(  # pylint:disable=E0602
+ 
 
                 tgbotusername,
 
