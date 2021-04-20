@@ -1,4 +1,5 @@
 from DYNAMIC import CMD_LIST
+from DYNAMIC import admin_cmd
 
 from platform import uname
 
