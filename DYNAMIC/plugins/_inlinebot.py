@@ -1,8 +1,5 @@
 from DYNAMIC import CMD_LIST
 
-
-from DYNAMIC.utils import admin_cmd, sudo_cmd
-
 from platform import uname
 
 import sys
