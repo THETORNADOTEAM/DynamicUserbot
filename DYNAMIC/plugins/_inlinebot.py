@@ -108,7 +108,7 @@ DYNAMIC Helper to reveal all the commands\nDo .help plugin_name for commands, in
 
             
 
-@borg.on(admin_cmd(pattern="dc"))  # pylint:disable=E0602
+
 
 async def _(event):
 
