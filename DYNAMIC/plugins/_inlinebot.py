@@ -7,11 +7,6 @@ import sys
 from telethon import events, functions, version
 
 
-
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@DYNAMIC_USERBOT_SUPPORT"
-
-
-
 #@command(pattern="^.help ?(.*)")
 
 @borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
