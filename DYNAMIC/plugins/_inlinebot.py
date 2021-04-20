@@ -9,7 +9,6 @@ from telethon import events, functions, version
 
 #@command(pattern="^.help ?(.*)")
 
-@borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
 
 @borg.on(sudo_cmd(pattern=r"help ?(.*)", outgoing=True, allow_sudo=True))
 
