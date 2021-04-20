@@ -1,0 +1,1 @@
+DYNAMIC: python -m DYNAMIC
