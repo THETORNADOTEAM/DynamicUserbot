@@ -68,7 +68,7 @@ async def gspider(DYNAMIC):
     a = b = 0
     if DYNAMIC.is_private:
         user = DYNAMIC.chat
-        reason = GBAN
+        reason = DYNAMIC.pattern_match.group
     else:
         DYNAMIC.chat.title
     try:
