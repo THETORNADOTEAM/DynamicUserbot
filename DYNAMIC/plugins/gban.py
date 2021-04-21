@@ -66,11 +66,6 @@ async def gspider(DYNAMIC):
     f"@{me.username}" if me.username else my_mention
     await DYNAMIC.get_chat()
     a = b = 0
-    if DYNAMIC.is_private:
-        user = DYNAMIC.chat
-        reason = DYNAMIC.pattern_match.group
-    else:
-        DYNAMIC.chat.title
     try:
         user, reason = await get_full_user(DYNAMIC)
     except:
