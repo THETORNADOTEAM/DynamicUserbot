@@ -1,6 +1,6 @@
 from DYNAMIC import CMD_LIST
 
-
+from DYNAMIC import ALIVE_NAME
 
 from DYNAMIC.utils import admin_cmd, sudo_cmd
 
@@ -12,7 +12,7 @@ from telethon import events, functions, version
 
 
 
-
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC"
 
 
 
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption="COMMANDS In LEGEND BOT",
+                        caption="COMMANDS In DYNAMIC 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
 
                         reply_to=reply_to_id
 
@@ -94,9 +94,8 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f"""DYNAMIC Helper.. Provided by 🙂🙂 DYNAMIC USERBOT🙂🙂 \n
-
-DYNAMIC Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
+            help_string = f"""Userbot Helper.. 𝗣𝗥𝗢𝗩𝗜𝗗𝗘𝗗 𝗕𝗬 DYNAMIC 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 \n
+Userbot Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
             results = await bot.inline_query(  # pylint:disable=E0602
 
@@ -150,7 +149,7 @@ async def _(event):
 
     logger.info(result)  # pylint:disable=E0602
 
-    await event.edit("Telethon Dynamic DYNAMIC powerd by @GODBOYX")
+    await event.edit("Telethon UserBot powered 𝙳ARKLON_𝚋𝚘𝚝")
 
 
 
@@ -172,7 +171,7 @@ async def _(event):
 
         help_string = CMD_LIST[plugin_name].doc
 
-        unload_string = f"Use .unload {plugin_name} to remove this plugin.\n           Â© LEGEND BOT"
+        unload_string = f"Use .unload {plugin_name} to remove this plugin.\n           Â© DYNAMICE 𝙱𝙾𝚃"
 
         
 
