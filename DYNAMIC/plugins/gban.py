@@ -1,16 +1,15 @@
-"""
+
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd, sudo_cmd
 import html
-from DYNAMICX import POST
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from telethon.events import ChatAction
-from DYNAMICX import DYNAMIC_ID
+
 async def get_full_user(event):  
     args = event.pattern_match.group(1).split(':', 1)
     extra = None
@@ -37,7 +36,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("**SOMETHING W3NT WRONG 🤔**", str(err))           
+            return await event.edit("Something Went Wrong", str(err))           
     return user_obj, extra
 
 
@@ -58,7 +57,7 @@ async def gspider(DYNAMIC):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("GBanning This Retard DumbAss😁😁")
+        friday = await lol.reply("Gbanning This Retard DumbAss😁😁")
     else:
         friday = await lol.edit("Wait Processing.....")
     me = await DYNAMIC.client.get_me()
@@ -82,9 +81,9 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id in devs:
+        if user.id == 1037581197:
             return await friday.edit(
-                f"**Didn't, Your Father Teach You ? That You Can't Gban My Creator😑😑🖕**"
+                f"**Didn't , Your Father Teach You ? That You Cant Gban your creator😑😑🖕**"
             )
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import gmute
@@ -103,7 +102,7 @@ async def gspider(DYNAMIC):
             try:
                 await DYNAMIC.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await friday.edit(f"**GBANNING [{user.first_name}](tg://user?id={user.id})**\n\n__Please be Patient..This process takes time.__")
+                await friday.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
             except:
                 b += 1
     else:
@@ -113,11 +112,9 @@ async def gspider(DYNAMIC):
             return await friday.edit(f"**Error! User probably already gbanned.**")
     except:
         pass
-    POST(user=user.id, msg=DYNAMIC.text[5:])
-    await friday.edit(
-        f"**Successfully GBanned [{user.first_name}](tg://user?id={user.id}) // Total Affected Chats :** `{a}` "
+    return await friday.edit(
+        f"**Gbanned [{user.first_name}](tg://user?id={user.id}) Affected Chats : {a} **"
     )
-    return
 
 
 @borg.on(admin_cmd(pattern="ungban ?(.*)"))
@@ -148,9 +145,9 @@ async def gspider(DYNAMIC):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit("**SOMETHING W3NT WRONG 🤔**")
+        return await friday.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id in devs:
+        if user.id == 1100231654:
             return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
@@ -169,7 +166,7 @@ async def gspider(DYNAMIC):
             try:
                 await DYNAMIC.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await friday.edit(f"**UNGBANNING [{user.first_name}](tg://user?id={user.id})**\n\n__Please be Patient..This process takes time.__")
+                await friday.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
             except:
                 b += 1
     else:
@@ -180,7 +177,7 @@ async def gspider(DYNAMIC):
     except:
         pass
     return await friday.edit(
-        f"**Successfully UnGBanned // USER - [{user.first_name}](tg://user?id={user.id}) IN CHATS :** `{a}`"
+        f"**UNGBANNED // USER - [{user.first_name}](tg://user?id={user.id}) CHATS : {a} **"
     )
 
 
@@ -188,7 +185,6 @@ async def gspider(DYNAMIC):
 
 @borg.on(ChatAction)
 async def handler(rkG): 
-   client = borg
    if rkG.user_joined or rkG.user_added:      
        try:       	
          from DYNAMIC.modules.sql_helper.gmute_sql import is_gmuted
@@ -207,8 +203,8 @@ async def handler(rkG):
                     await client.edit_permissions(rkG.chat_id, guser.id, view_messages=False)                              
                     await rkG.reply(
                      f"**Gbanned User Joined!!** \n"                      
-                     f"**➥ Victim Id**: [{guser.id}](tg://user?id={guser.id})\n"                   
-                     f"**➥ Action **  : `Banned`")                                                
+                     f"**Victim Id**: [{guser.id}](tg://user?id={guser.id})\n"                   
+                     f"**Action **  : `Banned`")                                                
                  except:       
                     rkG.reply("`No Permission To Ban`")                   
                     return 
