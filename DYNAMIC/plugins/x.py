@@ -12,7 +12,7 @@ import io
 #ABEE O KANGER, BACK OPEN CLOSE BTN KANG KIYA TO YE CODE CHIPKA DENA AUR GLOBALS K BINA NAHI CHALAGA aur global 5 jgah diff name and manipulation se imported hai 
 #Making The Back Command Was The Toughest Work #by @Shivam_Patel,@The_Siddharth_Nigam,@danish_00,@ProgrammingError also v changed Pop up or inline help to text
 from DYNAMIC.utils import remove_plugin,load_module
-from . import DYNAMIC_ID
+from . import id
 
 
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
