@@ -65,7 +65,8 @@ async def _(event):
     )
 
 
-(
+
+    """ For .ping command, check if the bot properly running.  """
     {
         "ping": "__**PLUGIN NAME :** Ping__\
     \n\n📌** CMD ★** `.hping`\
@@ -73,4 +74,4 @@ async def _(event):
     \n\n📌** CMD ★** `.ping`\
     \n**USAGE   ★  **Shows you the ping speed of server"
     }
-)
+
