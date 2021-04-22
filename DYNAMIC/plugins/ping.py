@@ -2,7 +2,6 @@ import asyncio
 from datetime import datetime
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USERBOT USER"
 
 
 @borg.on(admin_cmd(pattern=f"hbping$", outgoing=True))
