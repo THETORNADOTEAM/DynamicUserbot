@@ -65,7 +65,7 @@ async def _(event):
     )
 
 
-CMD_HELP.update(
+(
     {
         "ping": "__**PLUGIN NAME :** Ping__\
     \n\n📌** CMD ★** `.hping`\
