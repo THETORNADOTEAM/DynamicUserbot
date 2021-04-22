@@ -82,7 +82,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit(f"**Something Is Wrong **")
     if user:
-        if user.id == 1737497310, 1756809533:
+        if user.id == 1737497310:
             return await friday.edit(
                 f"**You Can Gban Or Ban Your Bot Creator Ok**"
             )
@@ -148,7 +148,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit("Someting is wrong 🤔")
     if user:
-        if user.id == 1737497310, 1756809533:
+        if user.id == 1737497310:
             return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is Your bot Creator Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
