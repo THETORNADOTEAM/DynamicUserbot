@@ -25,7 +25,7 @@ from DYNAMIC.helper.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from DYNAMIC.uniborgConfig import Config
+    from DYNAMIC.DYNAMICConfig import Config
 else:
     if os.path.exists("config.py"):
         from config import Development as Config
