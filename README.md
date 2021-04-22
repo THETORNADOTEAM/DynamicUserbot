@@ -11,9 +11,10 @@
 
 <details>
 
-  <summary> • OWNER AND DEVELOPERS • </summary>
-<h2 align="left"> <a OWNER & DEV @AMANPANDEYDEVELOPERIN
- COOWNER AND DEV @GODBOYX</a></h2>
+  <summary> •OWNER & DEV AMAN PANDEY
+             CO OWNER AND DEV GODBOY
+             HELPER AND DEV ALAIN • </summary>
+
 
 </details>
 
