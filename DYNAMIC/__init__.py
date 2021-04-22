@@ -4,7 +4,7 @@ import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
 from DYNAMIC.helpers import functions as simpdef
-from DYNAMIC.uniborgConfig import Config
+from DYNAMIC.DYNAMICConfig import Config
 from var import Var
 DYNAMICversion = "0.0.1"
 StartTime = time.time()
