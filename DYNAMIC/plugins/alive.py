@@ -20,8 +20,8 @@ pm_caption += "◆◆S𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂◆◆◆\n\n
 pm_caption += "●●𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ●● : 1.19.5\n"
 pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.1\n"
 pm_caption += "●●DYNAMIC OP ●● : OP\n"
-pm_caption += "●●【S】【U】【P】【P】【O】【R】【T】∆【G】【R】【O】【U】【P】●● : [GROUP](https://t.me/DYNAMIC_USERBOT\n")
-pm_caption += "●●【F】【O】【R】 【U】【P】【D】【A】【T】【E】【S】●● : [CHANNEL](https://t.me/DYNAMICXOP\n")
+pm_caption += "●●【S】【U】【P】【P】【O】【R】【T】∆【G】【R】【O】【U】【P】●● : [GROUP](https://t.me/DYNAMIC_USERBOT\n)"
+pm_caption += "●●【F】【O】【R】 【U】【P】【D】【A】【T】【E】【S】●● : [CHANNEL](https://t.me/DYNAMICXOP\n)"
 @borg.on(admin_cmd(pattern=r"alive"))
 
 async def amireallyalive(yes):
