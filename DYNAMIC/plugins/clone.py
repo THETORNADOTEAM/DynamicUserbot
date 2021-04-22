@@ -75,8 +75,8 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    name = f"{DEFAULTUSER}"
-    bio = f"{DEFAULTUSERBIO}"
+    name = f"Dynamic Userbot User"
+    bio = f"Dynamic Userbot User Uses Dynamic bot"
     n = 1
     await borg(functions.photos.DeletePhotosRequest(await event.client.get_profile_photos("me", limit= n)))    
     await borg(functions.account.UpdateProfileRequest(about=f"{bio}"))
