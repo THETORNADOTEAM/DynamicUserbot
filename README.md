@@ -9,6 +9,14 @@
 
 </details>
 
+<details>
+
+  <summary> • OWNER AND DEVELOPERS • </summary>
+<h2 align="left"> <a OWNER & DEV @AMANPANDEYDEVELOPERIN
+ COOWNER AND DEV @GODBOYX</a></h2>
+
+</details>
+
 
 ## CREDITS 
 ## OWNER & DEV @AMANPANDEYDEVELOPERIN
