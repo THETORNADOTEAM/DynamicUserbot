@@ -17,12 +17,7 @@ from telethon.tl.functions.photos import (DeletePhotosRequest,
                                           GetUserPhotosRequest,
                                           UploadProfilePhotoRequest)
 from telethon.tl.types import InputPhoto, MessageMediaPhoto, User, Chat, Channel
-from DYNAMIC import bot, CMD_HELP , AUTONAME , BIO_MSG , ALIVE_NAME
 
-
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "DYNAMIC USER USES DYNAMIC-BOT"
-BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
-BOTLOG = True
 
 @borg.on(admin_cmd(pattern="clone ?(.*)"))
 async def _(event):
