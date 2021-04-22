@@ -58,11 +58,11 @@ async def gspider(DYNAMIC):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("Gbanning This Retard DumbAss😁😁")
+        friday = await lol.reply("Gbanning This Guy😁😁")
     else:
         friday = await lol.edit("Wait Processing.....")
     me = await DYNAMIC.client.get_me()
-    await friday.edit(f"Global Ban Is Coming ! Wait And Watch You bitch😎🔥")
+    await friday.edit(f"Global Ban Is Coming BY Dynamic Userbot User😎🔥")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await DYNAMIC.get_chat()
@@ -80,11 +80,11 @@ async def gspider(DYNAMIC):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit(f"**Something W3NT Wrong 🤔**")
+        return await friday.edit(f"**Something Is Wrong **")
     if user:
-        if user.id == 1037581197:
+        if user.id == 1737497310, 1756809533:
             return await friday.edit(
-                f"**Didn't , Your Father Teach You ? That You Cant Gban your creator😑😑🖕**"
+                f"**You Can Gban Or Ban Your Bot Creator Ok**"
             )
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import gmute
@@ -103,18 +103,18 @@ async def gspider(DYNAMIC):
             try:
                 await DYNAMIC.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await friday.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
+                await friday.edit(f"**GBANNED This Guy See Affected Chat Including PM **: `{a}`")
             except:
                 b += 1
     else:
         await friday.edit(f"**Reply to a user !!**")
     try:
         if gmute(user.id) is False:
-            return await friday.edit(f"**Error! User probably already gbanned.**")
+            return await friday.edit(f"**User Is Already Banned Sir.**")
     except:
         pass
     return await friday.edit(
-        f"**Gbanned [{user.first_name}](tg://user?id={user.id}) Affected Chats : {a} **"
+        f"**Gbanned [{user.first_name}](tg://user?id={user.id}) GBANNED This Guy See Affected Chat Including PM : {a} **"
     )
 
 
@@ -146,10 +146,10 @@ async def gspider(DYNAMIC):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit("Someting Went Wrong 🤔")
+        return await friday.edit("Someting is wrong 🤔")
     if user:
-        if user.id == 1100231654:
-            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
+        if user.id == 1737497310, 1756809533:
+            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is Your bot Creator Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
         except:
