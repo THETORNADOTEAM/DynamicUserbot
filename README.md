@@ -9,14 +9,7 @@
 
 </details>
 
-<details>
 
-  <summary> •OWNER & DEV AMAN PANDEY
-             CO OWNER AND DEV GODBOY
-             HELPER AND DEV ALAIN • </summary>
-
-
-</details>
 
 
 ## CREDITS 
