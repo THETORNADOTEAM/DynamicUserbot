@@ -481,7 +481,7 @@ async def _(event):
               await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
     
     
-CMD_HELP.update({
+{
         "songs":
         "`.song song name`\
             \nUsage:For searching songs from youtube\
@@ -495,4 +495,4 @@ CMD_HELP.update({
             \nUsage:Download song from @DeezLoadBot\
             \n\n`.dwlsong` <Spotify/Deezer Link>\
             \nUsage:Download music from Spotify or Deezer."
-})
+}
