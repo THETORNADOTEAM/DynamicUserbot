@@ -99,6 +99,14 @@ if ENV:
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 7))
         # number of colums of buttons to be displayed in .help command
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 3))
+                EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "⚜️")
+        # specify command handler that should be used for the plugins
+        # this should be a valid "regex" pattern
+        COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
+        # specify list of users allowed to use bot
+        # WARNING: be careful who you grant access to your bot.
+        # malicious users could do ".exec rm -rf /*"
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
         # Google Drive ()
         G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
         G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
