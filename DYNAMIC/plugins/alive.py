@@ -60,5 +60,6 @@ async def amireallyalive(yes):
     ok10 = await borg.edit_message(yes.chat_id, ok9, file=file7)
 
     
-    """ For .alive command, check if the bot is running.  ""
+    """ For .alive command, check if the bot is running.  """
+    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
