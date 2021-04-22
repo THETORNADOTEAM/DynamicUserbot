@@ -15,13 +15,13 @@ file5 = "https://telegra.ph/file/d57626f8b84037d156d88.jpg"
 file6 = "https://telegra.ph/file/5c0bd9eacf8789ab4f4c3.jpg"
 file7 = "https://telegra.ph/file/33727f0de96eb4affc714.jpg"
 pm_caption = "🔥🔥 **DYNAMIC IS WORKING FINE LIKE MY OWNER..!! **🔥🔥\n\n"
-pm_caption += "⚔️⚔️ **EVERYTHIN IS OP AND PERFECT LIKE BOT CREATOR**⚔️⚔️\n\n"
+pm_caption += "⚔️⚔️ ** REAL OWNER AND BOT CODER TEAM DYNAMIC**⚔️⚔️\n\n"
 pm_caption += "◆◆S𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂◆◆◆\n\n"
 pm_caption += "●●𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ●● : 1.19.5\n"
 pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.1\n"
 pm_caption += "●●DYNAMIC OP ●● : OP\n"
-pm_caption += "●●【S】【U】【P】【P】【O】【R】【T】∆【G】【R】【O】【U】【P】●● : [GROUP](https://t.me/DARKLON_USERBOT_SUPPORT\n"
-pm_caption += "●●【F】【O】【R】 【U】【P】【D】【A】【T】【E】【S】●● : [CHANNEL](https://t.me/DARKLONXOP\n"
+pm_caption += "●●【S】【U】【P】【P】【O】【R】【T】∆【G】【R】【O】【U】【P】●● : [GROUP](https://t.me/DYNAMIC_USERBOT\n"
+pm_caption += "●●【F】【O】【R】 【U】【P】【D】【A】【T】【E】【S】●● : [CHANNEL](https://t.me/DYNAMICXOP\n"
 @borg.on(admin_cmd(pattern=r"alive"))
 
 async def amireallyalive(yes):
@@ -60,6 +60,5 @@ async def amireallyalive(yes):
     ok10 = await borg.edit_message(yes.chat_id, ok9, file=file7)
 
     
-    """ For .alive command, check if the bot is running.  """
-    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
+    """ For .alive command, check if the bot is running.  ""
     await alive.delete()
