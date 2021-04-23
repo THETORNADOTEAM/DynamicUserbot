@@ -13,7 +13,6 @@ import time
 import traceback
 from pathlib import Path
 from time import gmtime, strftime
-from .. import CMD_HELP
 
 from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
