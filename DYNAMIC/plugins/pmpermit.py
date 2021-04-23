@@ -40,7 +40,7 @@ import DYNAMIC.plugins.sql_helper.pmpermit_sql as lightning_sql
 
 from DYNAMIC import ALIVE_NAME, bot
 
-from DYNAMIC.uniborgConfig import Config
+from DYNAMIC.DYNAMICConfig import Config
 
 from var import Var
 
