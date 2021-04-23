@@ -810,7 +810,7 @@ async def get_user_sender_id(user, event):
     return user_obj
 
 
-CMD_HELP.update({
+{
     "admin":
     ".promote <username/reply> <custom rank (optional)>\
 \nUsage: Provides admin rights to the person in the chat.\
@@ -836,4 +836,4 @@ CMD_HELP.update({
 \nUsage: Retrieves all (or queried) users in the chat.\
 \n\n.setgppic <reply to image>\
 \nUsage: Changes the group's display picture."
-})
+}
