@@ -110,7 +110,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         help_string = "Commands found in {}:\n".format(plugin_name)
         k = "©️"
         u = 0
-        for i in CMD_LIST[plugin_name]:
+        for i in CMD_LIST:
             u += 1
             help_string += str(k[u % 3]) + " " + i + "\n\n"
         if plugin_name in CMD_HELP:
