@@ -36,10 +36,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 dc = paginate_help(current_page_number, CMD_LIST, "helpme")
                 await event.edit("`>>>\n\nReopened The Main Menu of \n©DYNAMICBOT` ", buttons=dc)
             else:
-                reply_pop_up_alert = "Please get your own Userbot,for more info visit @teamishere!"
+                reply_pop_up_alert = "You Not The User of dynamic userbot so deploy and get if you belive you are then type .help and use!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
        
-  #       🇮 🇹 🇳 🇦    🇰 🇾 🇺   🇸 🇵 🇾     🇰 🇷    🇷 🇭 🇪     🇭 🇴      🇸 🇭 🇦 🇦 🇩 🇮    🇰 🇷 🇳 🇮    🇭    🇰 🇾 🇦   🇧 🇸 🇩 🇰 
+  #     
 
     @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
     async def inline_handler(event):
@@ -52,7 +52,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             result = builder.article("© DYNAMIC BOT Userbot Help",text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),buttons=dc,link_preview=False)
             await event.answer([result] if result else None)
         else:
-              reply_pop_up_alert = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
+              reply_pop_up_alert = "You Not The User of dynamic userbot so deploy and get if you belive you are then type .help and use also join @DYNAMICUSERBOTSUPPORT"
               await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
         data=re.compile(b"helpme_next\((.+?)\)")
@@ -86,7 +86,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             
             await event.edit(buttons=dc)
         else:
-              TheDYNAMIC = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
+              TheDYNAMIC = "You Not The User of dynamic userbot so deploy and get if you belive you are then type .help and use also join @DYNAMICUSERBOTSUPPORT"
               await event.answer(TheDYNAMIC, cache_time=0, alert=True)
  #hehehehehhehhehhehe   
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
@@ -95,7 +95,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             danish = custom.Button.inline("◤✞ 𝕺𝖕𝖊𝖓 𝕸𝖆𝖎𝖓 𝕸𝖊𝖓𝖚 𝕬𝖌𝖆𝖎𝖓 ✞◥", data="open")
             await event.edit("`Main Menu Has Been Closed`", buttons=danish)
         else:
-            reply_pop_up_alert = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
+            reply_pop_up_alert = "You Not The User of dynamic userbot so deploy and get if you belive you are then type .help and use also join @DYNAMICUSERBOTSUPPORT"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -107,14 +107,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     )
     async def on_plug_in_callback_query_handler(event):
         if not event.query.user_id == bot.uid or event.query.user_id == id:
-            atul= "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
+            atul= "You Not The User of dynamic userbot so deploy and get if you belive you are then type .help and use also join @DYNAMICUSERBOTSUPPORT"
             await event.answer(atul, cache_time=0, alert=True)
             return
         plugin_name = event.data_match.group(1).decode("UTF-8")
         global shivam_sh1vam
         shivam_sh1vam="{}".format(plugin_name)
         help_string = "Commands found in {}:\n".format(plugin_name)
-        k = "💠⚡💎"
+        k = "©️"
         u = 0
         for i in CMD_LIST[plugin_name]:
             u += 1
@@ -124,7 +124,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 f"**📤 PLUGIN NAME 📤 :** `{plugin_name}` \n\n{CMD_HELP[plugin_name]}"
             )
         else:
-            help_string += "❌"
+            help_string += "©️"
 
         reply_pop_up_alert = help_string
         reply_pop_up_alert += (
@@ -150,7 +150,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
               if event.query.user_id == bot.uid or event.query.user_id == id:
                     
-#  🇦 🇷 🇪      🇧 🇸 🇩 🇰      🇮 🇸 🇸 🇪    🇰 🇦 🇳 🇬  🇲 🇦 🇹   🇰 🇷    🇷 🇪   🇲 🇨 
+#   
                     
                     try:
                         fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
