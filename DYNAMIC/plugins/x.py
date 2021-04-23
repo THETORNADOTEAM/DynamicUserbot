@@ -1,4 +1,4 @@
-#Copyright DYNAMIC
+#Copyright DYNAMIC USERBOT 2021 -2022
 from math import ceil
 import asyncio
 import json
