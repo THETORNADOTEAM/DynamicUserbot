@@ -2,10 +2,8 @@
 #CREDITS TELEBOT
 # KEEP CREDITS PLEASE 🥺
 import asyncio
-from LEGENDX import NAME
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd
-# By (@proboy22), and (@LEGENDX22)
 from DYNAMIC import bot
 PRO = NAME
 @bot.on(admin_cmd("superfban ?(.*)"))
