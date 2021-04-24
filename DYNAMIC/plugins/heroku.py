@@ -13,7 +13,7 @@ import requests
 import math
 from DYNAMIC.utils import admin_cmd
 from DYNAMIC import CMD_HELP
-from DYNAMIC.uniborgConfig import Config
+from DYNAMIC.DYNAMICConfig import Config
 
 # ================= 
 
