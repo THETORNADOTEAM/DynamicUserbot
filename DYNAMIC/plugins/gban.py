@@ -1,8 +1,9 @@
-# MADE AND FIX BY AMAN PANDEY
-# For DYNAMIC BOT
+
+
+
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd, sudo_cmd
+from DYNAMIC.utils import admin_cmd
 import html
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
@@ -52,17 +53,16 @@ async def get_user_sender_id(user, event):
     return user_obj
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
-@borg.on(sudo_cmd("gban ?(.*)", allow_sudo=True))
 async def gspider(DYNAMIC):
     lol = DYNAMIC
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("Gbanning This Guy😁😁")
+        friday = await lol.reply("Gbanning This Retard DumbAss😁😁")
     else:
         friday = await lol.edit("Wait Processing.....")
     me = await DYNAMIC.client.get_me()
-    await friday.edit(f"Global Ban Is Coming BY Dynamic Userbot User😎🔥")
+    await friday.edit(f"Global Ban Is Coming ! Wait And Watch You bitch😎🔥")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await DYNAMIC.get_chat()
@@ -80,11 +80,11 @@ async def gspider(DYNAMIC):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit(f"**Something Is Wrong **")
+        return await friday.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1737497310:
+        if user.id == 882370987:
             return await friday.edit(
-                f"**You Can Gban Or Ban Your Bot Creator Ok**"
+                f"**Didn't , Your Father Teach You ? That You Cant Gban your creator😑😑🖕**"
             )
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import gmute
@@ -94,27 +94,27 @@ async def gspider(DYNAMIC):
             await DYNAMIC.client(BlockRequest(user))
         except:
             pass
-        testDYNAMIC = [
+        testuserbot = [
             d.entity.id
             for d in await DYNAMIC.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testDYNAMIC:
+        for i in testuserbot:
             try:
                 await DYNAMIC.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await friday.edit(f"**GBANNED This Guy See Affected Chat Including PM **: `{a}`")
+                await friday.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
             except:
                 b += 1
     else:
         await friday.edit(f"**Reply to a user !!**")
     try:
         if gmute(user.id) is False:
-            return await friday.edit(f"**User Is Already Banned Sir.**")
+            return await friday.edit(f"**Error! User probably already gbanned.**")
     except:
         pass
     return await friday.edit(
-        f"**Gbanned [{user.first_name}](tg://user?id={user.id}) GBANNED This Guy See Affected Chat Including PM : {a} **"
+        f"**Gbanned [{user.first_name}](tg://user?id={user.id}) Affected Chats : {a} **"
     )
 
 
@@ -146,10 +146,10 @@ async def gspider(DYNAMIC):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit("Someting is wrong 🤔")
+        return await friday.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 1737497310:
-            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is Your bot Creator Creator!**")
+        if user.id == 882370987:
+            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
         except:
@@ -158,12 +158,12 @@ async def gspider(DYNAMIC):
             await DYNAMIC.client(UnblockRequest(user))
         except:
             pass
-        testDYNAMIC = [
+        testuserbot = [
             d.entity.id
             for d in await DYNAMIC.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testDYNAMIC:
+        for i in testuserbot:
             try:
                 await DYNAMIC.client.edit_permissions(i, user, send_messages=True)
                 a += 1
