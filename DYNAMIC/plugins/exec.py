@@ -9,7 +9,7 @@ from telethon.errors import MessageEmptyError, MessageTooLongError, MessageNotMo
 import io
 import asyncio
 import time
-from DYNAMIC.util import admin_cmd
+from DYNAMIC.utill import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="exec ?(.*)"))
