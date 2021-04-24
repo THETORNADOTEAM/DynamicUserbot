@@ -3,7 +3,7 @@ import asyncio
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd
 from DYNAMIC import bot
-PRO = NAME
+
 @bot.on(admin_cmd("superfban ?(.*)"))
 async def _(event):
     if event.fwd_from:
