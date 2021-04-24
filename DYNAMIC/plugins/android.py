@@ -241,7 +241,7 @@ CMD_HELP.update(
 \n\n  •  **Syntax : **`.twrp <codename>`\
 \n  •  **Function : **__Get latest twrp download for android device.__"
     }
-{ info.__\
+{ 
 \n\n  •  **Syntax : **`.twrp <codename>`\
 \n  •  **Function : **__Get latest twrp download for android device.__"
     }
