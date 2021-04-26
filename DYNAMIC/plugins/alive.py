@@ -21,7 +21,6 @@ pm_caption += "⚔️⚔️ ** REAL OWNER AND BOT CODER TEAM DYNAMIC**⚔️⚔�
 pm_caption += "◆◆S𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂◆◆◆\n\n"
 pm_caption += "●●𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ●● : 1.19.5\n"
 pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.1\n"
-pm_caption += "●●DYNAMIC OP ●● : OP\n"
 pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕|Support Chat●● : [GROUP](https://t.me/DYNAMICUSERBOTSUPPORT\n)"
 pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕 | UPDATES CHANNEL●● : [CHANNEL](https://t.me/dynamicuserbotop\n)"
 @borg.on(admin_cmd(pattern=r"alive"))
