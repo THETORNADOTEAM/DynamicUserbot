@@ -638,8 +638,7 @@ def start_assistant(shortname):
 
 # TRYING NEW ONE
 
- credits to @mrconfused 
-
+ 
 import asyncio
 import datetime
 import importlib
