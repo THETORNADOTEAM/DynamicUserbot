@@ -1,5 +1,3 @@
-# credits to @mrconfused 
-
 import asyncio
 import datetime
 import importlib
@@ -21,15 +19,55 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from var import Var
 
 from DYNAMIC import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from DYNAMIC.helper.exceptions import CancelProcess
+from GODBOYX import xbot
+from DYNAMIC.helpers.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from DYNAMIC.DYNAMICConfig import Config
+    from DYNAMIC.uniborgConfig import Config
 else:
     if os.path.exists("config.py"):
         from config import Development as Config
 
+
+
+
+def load_extra(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import DYNAMIC.utils
+
+        path = Path(f"DYNAMIC_PLUGS/{shortname}.py")
+        name = "DYNAMIC_PLUGS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        LOGS.info("Successfully imported " + shortname)
+    else:
+        import DYNAMIC.utils
+
+        path = Path(f"DYNAMIC_PLUGS/{shortname}.py")
+        name = "DYNAMIC_PLUGS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.bot = bot
+        mod.tgbot = bot.tgbot
+        mod.Var = Var
+        mod.xbot = xbot
+        mod.command = command
+        mod.logger = logging.getLogger(shortname)
+        # support for uniborg
+        sys.modules["uniborg.util"] = DYNAMIC.utils
+        mod.Config = Config
+        mod.borg = bot
+        mod.edit_or_reply = edit_or_reply
+        # support for paperplaneextended
+        sys.modules["DYNAMIC.events"] = DYNAMIC.utils
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["DYNAMIC.plugins." + shortname] = mod
+        LOGS.info("Successfully imported " + shortname)
 
 
 def load_module(shortname):
@@ -54,6 +92,7 @@ def load_module(shortname):
         mod.bot = bot
         mod.tgbot = bot.tgbot
         mod.Var = Var
+        mod.xbot = xbot
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
@@ -66,6 +105,43 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["DYNAMIC.plugins." + shortname] = mod
+        LOGS.info("Successfully imported " + shortname)
+
+def load_pro(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import DYNAMIC.utils
+
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        LOGS.info("Successfully imported " + shortname)
+    else:
+        import DYNAMIC.utils
+
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.bot = bot
+        mod.tgbot = bot.tgbot
+        mod.Var = Var
+        mod.xbot = xbot
+        mod.command = command
+        mod.logger = logging.getLogger(shortname)
+        # support for uniborg
+        sys.modules["uniborg.util"] = DYNAMIC.utils
+        mod.Config = Config
+        mod.borg = bot
+        mod.edit_or_reply = edit_or_reply
+        # support for paperplaneextended
+        sys.modules["DYNAMIC.events"] = DYNAMIC.utils
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["DYNAMIC.plugins.assistant." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -258,7 +334,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/devilDYNAMIC)"
+            link = "[here](https://t.me/sn12384)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
