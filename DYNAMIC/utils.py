@@ -19,7 +19,7 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from var import Var
 
 from DYNAMIC import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from DYNAMIC.GODBOYX import xbot
+from DYNAMIC.GODBOYX.py import xbot
 from DYNAMIC.helpers.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
