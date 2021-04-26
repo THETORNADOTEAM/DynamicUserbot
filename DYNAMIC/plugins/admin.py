@@ -126,7 +126,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "𝙳𝙴𝚅𝙸𝙻'𝚂 𝚂𝙾𝙽"  # Just in case.
+        rank = "admin"  # Just in case.
     if user:
         pass
     else:
@@ -136,7 +136,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit(f"𝚈𝚞𝚙𝚙 𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝚒𝚜 𝙿𝚛𝚘𝚖𝚘𝚝𝚎𝚍 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚋𝚢 DYNAMIC USERBOT")
+        await promt.edit(f"𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝚒𝚜 𝙿𝚛𝚘𝚖𝚘𝚝𝚎𝚍 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚋𝚢 DYNAMIC USERBOT")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
