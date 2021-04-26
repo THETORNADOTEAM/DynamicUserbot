@@ -15,16 +15,8 @@ from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
-    "Udhar Dekh Bc.... Mujhe tera sticker churane de😁😁",
-    "Dekh tera pant ka chain khula hai...",
-    "Be gand naa phulao sticker chori kar lenge tumhari...",
-    "Kyaa sticker hai yaar 😋😋...",
-    "Andi Mandi Sandi... Sticker dede mujhe nhi to teri _-_-_-_-_-_-_-_😁..",
-    "hehe me stel ur stikér\nhehe.",
-    "Ay look over there (☉｡☉)!→\nWhile I kang this...",
-    "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
-    "Dill Chori sada ho gaya.... Sticker chori tera hoo gya🤣😁",
-    "Aree bc upar dekh!!! UFO ",
+
+    "This Sticker Is Awsome Like Me Let Me Examine How It Can Be Mine ",
 ]
 
 
