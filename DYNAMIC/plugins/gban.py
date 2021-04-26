@@ -55,11 +55,11 @@ async def gspider(DYNAMIC):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("Gbanning This Retard DumbAss😁😁")
+        friday = await lol.reply("Gbanning This GUY")
     else:
         friday = await lol.edit("Wait Processing.....")
     me = await DYNAMIC.client.get_me()
-    await friday.edit(f"Global Ban Is Coming ! Wait And Watch You bitch😎🔥")
+    await friday.edit(f"Global Ban Is Coming See What DYNAMIC BOT Can Do")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await DYNAMIC.get_chat()
