@@ -1,5 +1,6 @@
 # COPYRIGHT (C) 2021 TEAM-DYNAMIC 
-#MODIFIED BY @GODBOYX
+#MADE BY @GODBOYX
+# FIX BY AMAN PANDEY
 import asyncio
 import os
 try:
