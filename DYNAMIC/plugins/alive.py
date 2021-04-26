@@ -53,7 +53,7 @@ async def amireallyalive(yes):
     
     await asyncio.sleep(edit_time)
     ok8 = await borg.edit_message(yes.chat_id, ok7, file=file5)
-    
+      
     await asyncio.sleep(edit_time)
     ok9 = await borg.edit_message(yes.chat_id, ok8, file=file6)
     
