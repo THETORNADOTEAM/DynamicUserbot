@@ -1,5 +1,5 @@
 # Copyright (C) 2021 - 2022 DYNAMIC USERBOT  
-""" Userbot module for kanging stickers or making new ones. Thanks """
+""" Userbot module for kanging stickers or making new ones. Thanks @rupansh"""
 
 import io
 import math
@@ -10,13 +10,21 @@ import random
 from telethon.tl.types import DocumentAttributeFilename, MessageMediaPhoto
 from DYNAMIC import bot, CMD_HELP
 from DYNAMIC.utils import register
-from .. import CMD_HELP
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
-    "This sticker is awsome let me examine this sticker"
+    "Udhar Dekh Bc.... Mujhe tera sticker churane de😁😁",
+    "Dekh tera pant ka chain khula hai...",
+    "Be gand naa phulao sticker chori kar lenge tumhari...",
+    "Kyaa sticker hai yaar 😋😋...",
+    "Andi Mandi Sandi... Sticker dede mujhe nhi to teri _-_-_-_-_-_-_-_😁..",
+    "hehe me stel ur stikér\nhehe.",
+    "Ay look over there (☉｡☉)!→\nWhile I kang this...",
+    "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
+    "Dill Chori sada ho gaya.... Sticker chori tera hoo gya🤣😁",
+    "Aree bc upar dekh!!! UFO ",
 ]
 
 
@@ -300,7 +308,7 @@ async def get_pack_info(event):
 CMD_HELP.update({
     "stickers":
     ".kang\
-\nUsage: Reply .kang to a sticker or an image to kang it to your DYNAMIC pack.\
+\nUsage: Reply .kang to a sticker or an image to kang it to your userbot pack.\
 \n\n.kang [emoji('s)]\
 \nUsage: Works just like .kang but uses the emoji('s) you picked.\
 \n\n.kang [number]\
