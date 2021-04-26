@@ -1,7 +1,5 @@
-# COPYRIGHT (C) 2021 TEAM-DYNAMIC
-#MADE BY @LEGENDXOP 
+# COPYRIGHT (C) 2021 TEAM-DYNAMIC 
 #MODIFIED BY @GODBOYX
-#KANG KARNA HAI TO CREDITS KE SAATH KARO OTHERWISE MAA CHOD DUNGA TUMHARI THEEKAI NA BHOSD WAALO
 import asyncio
 import os
 try:
@@ -11,8 +9,8 @@ except:
   from pyrogram import Client, idle
 
 import asyncio
-from userbot.utils import admin_cmd as godboy
-from userbot import bot as GODBOY
+from DYNAMIC.utils import admin_cmd as godboy
+from DYNAMIC import bot as GODBOY
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
