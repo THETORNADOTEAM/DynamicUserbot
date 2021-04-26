@@ -25,21 +25,7 @@ pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕|S
 pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕 | UPDATES CHANNEL●● : [CHANNEL](https://t.me/dynamicuserbotop\n)"
 @borg.on(admin_cmd(pattern=r"alive"))
 
-    
-    async def inline_handler(event):
-        builder = event.builder
-        result = None
-        query = event.text
-        me = await borg.get_me()
-        if query.startswith("alive") and event.query.user_id == me.id:
-            buttons = [
-                [
-                    Button.url("Repo", "https://github.com/TeamDynamic/Dynamic-Userbot"),
-                    Button.url("Deploy", "https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")],
-                    [Button.url("String", "https://replit.com/@amanpandey7647/Dynamic-USERBOT-String-Session#main.py"),
-                    Button.url("Channel", "https://t.me/dynamicuserbotop"),
-                ]
-              ]
+
 
 async def amireallyalive(yes):
     chat = await yes.get_chat()
