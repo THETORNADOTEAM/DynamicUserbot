@@ -25,7 +25,7 @@ pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕|S
 pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕 | UPDATES CHANNEL●● : [CHANNEL](https://t.me/dynamicuserbotop\n)"
 @borg.on(admin_cmd(pattern=r"alive"))
 
-    @tgbot.on(events.InlineQuery)
+    @borg.on(events.InlineQuery)
     async def inline_handler(event):
         builder = event.builder
         result = None
