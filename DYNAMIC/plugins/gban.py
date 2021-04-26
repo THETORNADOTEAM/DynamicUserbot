@@ -1,6 +1,3 @@
-
-
-
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd
@@ -82,7 +79,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 882370987:
+        if user.id == 1737497310:
             return await friday.edit(
                 f"**Didn't , Your Father Teach You ? That You Cant Gban your creator😑😑🖕**"
             )
@@ -94,12 +91,12 @@ async def gspider(DYNAMIC):
             await DYNAMIC.client(BlockRequest(user))
         except:
             pass
-        testuserbot = [
+        testDYNAMIC = [
             d.entity.id
             for d in await DYNAMIC.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testuserbot:
+        for i in testDYNAMIC:
             try:
                 await DYNAMIC.client.edit_permissions(i, user, view_messages=False)
                 a += 1
@@ -148,7 +145,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 882370987:
+        if user.id == 1737497310:
             return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
@@ -158,12 +155,12 @@ async def gspider(DYNAMIC):
             await DYNAMIC.client(UnblockRequest(user))
         except:
             pass
-        testuserbot = [
+        testDYNAMIC = [
             d.entity.id
             for d in await DYNAMIC.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testuserbot:
+        for i in testDYNAMIC:
             try:
                 await DYNAMIC.client.edit_permissions(i, user, send_messages=True)
                 a += 1
