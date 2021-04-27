@@ -5,7 +5,7 @@ import asyncio
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd, sudo_cmd
 from DYNAMIC import bot
-PRO = NAME
+
 @bot.on(admin_cmd("superfban ?(.*)"))
 @bot.on(sudo_cmd("superfban ?(.*)", allow_sudo=True))
 async def _(event):
