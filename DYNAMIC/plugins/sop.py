@@ -249,7 +249,7 @@ async def _(event):
 
 
 CMD_HELP.update(
-    {
+    
         "songs": "**Plugin : **`songs`\
         \n\n•  **Syntax : **`.song <query/reply>`\
         \n•  **Function : **__searches the song you entered in query from youtube and sends it, quality of it is 128k__\
@@ -262,4 +262,4 @@ CMD_HELP.update(
         \n\n**•  Syntax : **`.szm` reply to an audio file\
         \n**•  Function :**Reverse searchs of song/music\
         "
-    }
+    
