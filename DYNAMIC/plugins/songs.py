@@ -9,7 +9,7 @@ async def FindMusicPleaseBot(gaana):
 
     song = gaana.pattern_match.group(1)
 
-    chat = "@FindMusicPleaseBot"
+    chat = "@songdl_bot"
 
     if not song:
 
@@ -41,7 +41,7 @@ async def FindMusicPleaseBot(gaana):
 
         except YouBlockedUserError:
 
-            await gaana.edit("```Please unblock``` @FindmusicpleaseBot``` and try again```")
+            await gaana.edit("```Please unblock``` @songdl_bot``` and try again```")
 
             return
 
@@ -367,7 +367,7 @@ async def getmusic(so):
         return
     await so.client(JoinChannelRequest("t.me/anitimeofficial"))
     song = so.pattern_match.group(1)
-    chat = "@SongsForYouBot"
+    chat = "@songdl_bot"
     link = f"/song {song}"
     await so.edit("🔹Ok wait... 📡Searching your song🔸")
     async with bot.conversation(chat) as conv:
@@ -380,7 +380,7 @@ async def getmusic(so):
               """ - don't spam notif - """
               await bot.send_read_acknowledge(conv.chat_id)
           except YouBlockedUserError:
-              await so.edit("Please unblock @SongsForYouBot and try searching again🤐")
+              await so.edit("Please unblock @songdl_bot and try searching again🤐")
               return
           await so.edit("Ohh.. I got something!! Wait sending😋🤙")
           await asyncio.sleep(3)
@@ -460,9 +460,9 @@ async def _(event):
         await event.edit("` I need a link to download something pro.`**(._.)**")
     else:
         await event.edit("🎶**Initiating Download!**🎶")
-    bot = "@DeezLoadBot"
+    bot = "@songdl_bot"
     
-    async with borg.conversation("@DeezLoadBot") as conv:
+    async with borg.conversation("@songdl_bot") as conv:
           try:
               await conv.send_message("/start")
               response = await conv.get_response()
@@ -478,7 +478,7 @@ async def _(event):
               await borg.send_file(event.chat_id, songh, caption="🔆**Here's the requested song!**🔆\n`Check out` [LEGENDBOT](https://t.me/LEGENDBOT_Official)")
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
+              await event.edit("**Error:** `unblock` @songdl_bot `and retry!`")
     
     
 {
