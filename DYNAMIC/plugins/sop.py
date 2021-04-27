@@ -248,18 +248,3 @@ async def _(event):
     await DYNAMICevent.edit(namem)
 
 
-CMD_HELP.update(
-    
-        "songs": "**Plugin : **`songs`\
-        \n\n•  **Syntax : **`.song <query/reply>`\
-        \n•  **Function : **__searches the song you entered in query from youtube and sends it, quality of it is 128k__\
-        \n\n•  **Syntax : **`.song320 <query/reply>`\
-        \n•  **Function : **__searches the song you entered in query from youtube and sends it quality of it is 320k__\
-        \n\n•  **Syntax : **`.vsong <query/reply>`\
-        \n•  **Function : **__Searches the video song you entered in query and sends it__\
-        \n\n•  **Syntax : **`.song2 query`\
-        \n•  **Function : **__searches the song you entered in query and sends it quality of it is 320k__\
-        \n\n**•  Syntax : **`.szm` reply to an audio file\
-        \n**•  Function :**Reverse searchs of song/music\
-        "
-    
