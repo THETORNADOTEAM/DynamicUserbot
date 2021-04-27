@@ -47,15 +47,7 @@ async def _(event):
         else:
             FBAN = arg[1]
             REASON = " #DYNAMICXFBANNED 🔥 "
-    try:
-        int(FBAN)
-        if int(FBAN) == 1737497310 or  ==  or  == 1721200587 :     
-            await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
-            return
-    except BaseException:
-        if FBAN == "@AmanPandeyDeveloperIN" or FBAN == "" :
-            await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
-            return
+            
     if Config.FBAN_GROUP_ID:
         chat = Config.FBAN_GROUP_ID
     else:
