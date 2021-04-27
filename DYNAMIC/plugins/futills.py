@@ -49,7 +49,7 @@ async def _(event):
             REASON = " #DYNAMICXFBANNED 🔥 "
     try:
         int(FBAN)
-        if int(FBAN) == 1737497310 or int(FBAN) ==  or int(FBAN) == 1721200587 :     
+        if int(FBAN) == 1737497310 or  ==  or  == 1721200587 :     
             await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
             return
     except BaseException:
