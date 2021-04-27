@@ -71,7 +71,7 @@ if ENV:
         # send .get_id in any channel to forward all your NEW PMs to this group
         PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", None)
         if PM_LOGGR_BOT_API_ID:
-            PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
+        PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
         # For Databases
         # can be None in which case plugins requiring
         # DataBase would not work
@@ -96,6 +96,9 @@ if ENV:
         #Google Chrome Stuff
         CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/app/.chromedriver/bin/chromedriver")
         GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
+        #heroku 
+        HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
+        HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
         # number of rows of buttons to be displayed in .helpme command
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 7))
         # number of colums of buttons to be displayed in .help command
