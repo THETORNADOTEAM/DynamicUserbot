@@ -1,4 +1,4 @@
-
+# TEAM DYNAMIC
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from DYNAMIC import CMD_HELP
