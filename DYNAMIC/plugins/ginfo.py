@@ -1,8 +1,11 @@
-# TEAM DYNAMIC
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from DYNAMIC import CMD_HELP
+from . import CMD_HELP
 from DYNAMIC.utils import admin_cmd
+from DYNAMIC import MASTER
+LEGEND = MASTER
+PROBOY = "@tgscanrobot"
+# MADE BY LEGENDX22 🔥🔥
 
 @borg.on(admin_cmd("ginfo ?(.*)"))
 async def _(event):
@@ -26,8 +29,8 @@ async def _(event):
         OP = await event.get_reply_message()
         PRO = OP.sender.id 
         async with borg.conversation(PROBOY) as conv:
-            try: 
-              
+            try: #made by LEGENDX22 🔥
+              #made by LEGENDX22 
                 await event.edit(f"THIS USER DETAILS CHECKING BY {LEGEND}")
                 await conv.send_message("/start")
                 await conv.get_response() #made by LEGENDX22
@@ -39,7 +42,7 @@ async def _(event):
                 await event.edit("Error: unblock @tgscanrobot and try again!")
     else:
         async with borg.conversation(PROBOY) as conv:
-            try: 
+            try: #made by LEGENDX22 🔥
                 
                 await event.edit(f"THIS USER DETAILS CHECKING BY {LEGEND}") 
                 await conv.send_message("/start")
