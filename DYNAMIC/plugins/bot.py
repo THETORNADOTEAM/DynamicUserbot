@@ -26,9 +26,7 @@ from platform import python_version as pyver
 import heroku3
 import requests
 from git import Repo
-from DYNAMIC import __version__ 
-from DYNAMIC import utils
-from search_engine_parser.core.utils import get_rand_user_agent as grua
+from DYNAMIC import util
 from telethon import __version__
 from telethon.errors.rpcerrorlist import ChatSendMediaForbiddenError
 
