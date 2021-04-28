@@ -4,7 +4,7 @@ from asyncio import sleep
 from os import execl
 import sys
 import os
-from DYNAMIC import bot as javes
+from DYNAMIC import bot as DYNAMIC
 from DYNAMIC.utils import admin_cmd
 import io
 import heroku3
