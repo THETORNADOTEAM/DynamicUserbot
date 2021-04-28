@@ -225,7 +225,3 @@ async def upstream(ups):
         execle(sys.executable, *args, environ)
         return
 '''
-from DYNAMIC.utils import admin_cmd
-@borg.on(admin_cmd(pattern="update|update now"))
-async def hehe (event):
-  await event.edit("want to update your bot ?\nnow not use update now use \n`.restart` only")
