@@ -67,7 +67,7 @@ heroku_api = "https://api.heroku.com"
 UPSTREAM_REPO_URL="https://github.com/TeamDynamic/Dynamic-Userbot"
 
 # ================= CONSTANT =================
-JAVES_NNAME = str(HEROKU_APPNAME)
+ALIVE_NAME = str(HEROKU_APPNAME)
 
 # ============================================
 
@@ -135,7 +135,7 @@ async def update_requirements():
     
 
 from telethon.events import *
-@javes.on(admin_cmd(pattern=f"update(?: |$)(.*)"))
+@borg.on(admin_cmd(pattern=f"update(?: |$)(.*)"))
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     await ups.edit("`Checking for updates, please wait....`")
