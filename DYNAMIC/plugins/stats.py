@@ -20,8 +20,8 @@ GROUPS_OWNERSTR = "**The list of groups in which you are owner are here **\n\n"
 # =========================================================== #
 
 
-@bot.on(admin_cmd(pattern="stat"))
-@bot.on(sudo_cmd(pattern="stat", allow_sudo=True))
+@borg.on(admin_cmd(pattern="stat"))
+@borg.on(sudo_cmd(pattern="stat", allow_sudo=True))
 async def stats(event):
     cat = await edit_or_reply(event, STAT_INDICATION)
     start_time = time.time()
