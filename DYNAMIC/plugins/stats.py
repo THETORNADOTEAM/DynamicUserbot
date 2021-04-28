@@ -20,8 +20,6 @@ GROUPS_OWNERSTR = "**The list of groups in which you are owner are here **\n\n"
 # =========================================================== #
 
 
-@borg.on(admin_cmd(pattern="stat ?(.*)"))
-@borg.on(sudo_cmd(pattern="stat", allow_sudo=True))
 async def stats(event):
     cat = await edit_or_reply(event, STAT_INDICATION)
     start_time = time.time()
@@ -84,8 +82,7 @@ async def stats(event):
     await cat.edit(response)
 
 
-@bot.on(admin_cmd(pattern="stat (c|ca|co)$"))
-@bot.on(sudo_cmd(pattern="stat (c|ca|co)$", allow_sudo=True))
+
 async def stats(event):
     if event.fwd_from:
         return
@@ -136,8 +133,6 @@ async def stats(event):
         )
 
 
-@bot.on(admin_cmd(pattern="stat (g|ga|go)"))
-@bot.on(sudo_cmd(pattern="stat (g|ga|go)", allow_sudo=True))
 async def stats(event):
     if event.fwd_from:
         return
@@ -195,9 +190,6 @@ async def stats(event):
             caption=caption,
         )
 
-
-@bot.on(admin_cmd(pattern="ustat ?(.*)"))
-@bot.on(sudo_cmd(pattern="ustat ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
