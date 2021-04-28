@@ -1,6 +1,5 @@
 #RESTART ALL DYNO TO UPDATE
-""Update UserBot code
-Syntax: .update"""
+
 
 import git
 from contextlib import suppress
