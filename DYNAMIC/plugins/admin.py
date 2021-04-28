@@ -1,4 +1,5 @@
 # COPYRIGHT DYNAMIC USERBOT 2021 - 2022
+# DONT KANG
 from asyncio import sleep
 from os import remove
 
