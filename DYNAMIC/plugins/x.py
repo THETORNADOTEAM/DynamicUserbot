@@ -1,3 +1,4 @@
+# COPYRIGHT Team Dynamic And @LEGENDX22
 from math import ceil
 import asyncio
 import json
