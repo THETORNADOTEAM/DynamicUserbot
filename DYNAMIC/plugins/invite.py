@@ -1,3 +1,4 @@
+# COPYRIGHT TEAM DYNAMIC
 import asyncio, time, io, math, os, logging, asyncio, shutil, re, subprocess, json
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
