@@ -7,7 +7,7 @@ from contextlib import suppress
 import os
 import sys
 import asyncio
-from userbot.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
