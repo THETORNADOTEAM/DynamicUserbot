@@ -2,7 +2,7 @@ import asyncio
 from datetime import datetime
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-
+# COPYRIGHT TEAM DYNAMIC
 
 @borg.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 async def _(event):
