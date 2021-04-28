@@ -184,3 +184,4 @@ you telling them that you are AFK(reason)\n\n__Switches off AFK when you type ba
 
 
 
+# COPYRIGHT TEAM DYNAMIC 2021 - 2022
