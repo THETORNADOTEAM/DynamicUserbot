@@ -1,3 +1,4 @@
+# Copyright Team DYNAMIC
 import html
 import os
 from telethon.tl.functions.photos import GetUserPhotosRequest
