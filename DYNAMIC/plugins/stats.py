@@ -236,17 +236,3 @@ def user_full_name(user):
     return " ".join(names)
 
 
-CMD_HELP.update(
-    {
-        "stats": "**Plugin : **`stats`\
-    \n\n  •  **Syntax : **`.stat`\
-    \n  •  **Function : **__Shows you the count of  your groups, channels, private chats...etc__\
-    \n\n  •  **Syntax : **`.stat (g|ga|go)`\
-    \n  •  **Function : **__Shows you the list of all groups  in which you are if you use g , all groups in which you are admin if you use ga and all groups created by you if you use go__\
-    \n\n  •  **Syntax : **`.stat (c|ca|co)`\
-    \n  •  **Function : **__Shows you the list of all channels in which you are if you use c , all channels in which you are admin if you use ca and all channels created by you if you use co__\
-    \n\n  •  **Syntax : **`.ustat (reply/userid/username)`\
-    \n  •  **Function : **__Shows the list of public groups of that paticular user__\
-    "
-    }
-)
