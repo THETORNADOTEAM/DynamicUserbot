@@ -8,7 +8,7 @@ import heroku3
 
 from DYNAMIC.utils import admin_cmd
 from DYNAMIC import DYNAMICConfig
-from hellbot.cmdhelp import CmdHelp
+from DYNAMIC.cmdhelp import CmdHelp
 
 # DYNAMIC USERBOT
 
