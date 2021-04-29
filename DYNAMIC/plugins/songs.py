@@ -98,7 +98,7 @@ except:
 	pass
 
 
-@borg.on(admin_cmd(pattern="song(?: |$)(/*)"))
+@borg.on(admin_cmd(pattern="song(?: |$)(.*)"))
 async def download_video(v_url):  
 
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
@@ -221,7 +221,7 @@ async def download_video(v_url):
         
         
         
-@borg.on(admin_cmd(pattern="vsong(?: |$)(/*)"))
+@borg.on(admin_cmd(pattern="vsong(?: |$)(.*)"))
 async def download_video(v_url):  
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
     if not sender.id == me.id:
@@ -483,7 +483,7 @@ async def _(event):
     
 {
         "songs":
-        "`song song name`\
+        "`.song song name`\
             \nUsage:For searching songs from youtube\
             \n\n`/getsong` Song Title\
             \nUsage:Download song from @SongsForYouBot\
