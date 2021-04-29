@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 from DYNAMIC import ALIVE_NAME, CMD_HELP
 from DYNAMIC.helpers.functions import deEmojify
+from DYNAMIC import DYNAMICConfig as Config
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC User"
 
