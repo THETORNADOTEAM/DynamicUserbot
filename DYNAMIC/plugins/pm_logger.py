@@ -24,7 +24,6 @@ BOTLOG_CHATID = Config.PM_LOGGR_BOT_API_ID
 
 @bot.on(admin_cmd(pattern=r"save(?: |$)([\s\S]*)", outgoing=True))
 async def log(log_text):
-    """ For .log command, forwards a message or the command argument to the bot logs group """
     if BOTLOG:
         if log_text.reply_to_msg_id:
             reply_msg = await log_text.get_reply_message()
