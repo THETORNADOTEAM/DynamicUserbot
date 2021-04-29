@@ -1,7 +1,7 @@
 #MADE BY @GODBOYX ONLY
 #MADE FOR DYNAMIC USERBOT ONLY
 #KANG WITH CREDITS OTHERWISE YOU WILL CALLED AS A SUPER GAY OK
-from DYNAMIC import CMD_HELP , admin_cmd
+from DYNAMIC.utils import CMD_HELP , admin_cmd
 import os
 from PIL import Image, ImageDraw, ImageFont
 
