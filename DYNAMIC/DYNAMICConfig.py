@@ -112,6 +112,8 @@ if ENV:
         # WARNING: be careful who you grant access to your bot.
         # malicious users could do ".exec rm -rf /*"
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
+        # PM DATA
+        PM_DATA = os.environ.get("PM_DATA", "ENABLE") 
         # Google Drive ()
         G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
         G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
