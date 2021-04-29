@@ -483,7 +483,7 @@ async def _(event):
     
 {
         "songs":
-        "`/song song name`\
+        "`song song name`\
             \nUsage:For searching songs from youtube\
             \n\n`/getsong` Song Title\
             \nUsage:Download song from @SongsForYouBot\
