@@ -238,11 +238,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             return
 
-        if sender.bot:
+     #   if sender.bot:
 
             # don't log bots
 
-            return
+          #  return
 
         if sender.verified:
 
