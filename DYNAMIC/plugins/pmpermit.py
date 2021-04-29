@@ -14,7 +14,7 @@ from DYNAMIC import ALIVE_NAME, DYNAMIC_ID
 from DYNAMIC import DYNAMICConfig
 from DYNAMIC.utils import admin_cmd
 from DYNAMIC.cmdhelp import CmdHelp
-from .. import CUSTOM_PMPERMIT
+from DYNAMIC.DYNAMICConfig import CUSTOM_PMPERMIT
 
 PM_TRUE_FALSE = Config.PM_DATA
 
