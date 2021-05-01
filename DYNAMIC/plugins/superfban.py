@@ -55,7 +55,7 @@ async def _(event):
             await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
             return
     except BaseException:
-        if FBAN == "@GODBOYX"
+        if FBAN == "1742906647"
             await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
             return
     if Config.FBAN_GROUP_ID:
