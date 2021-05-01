@@ -278,5 +278,3 @@ async def upstream(ups):
         args = [sys.executable, "-m", "DYNAMIC"]
         execle(sys.executable, *args, environ)
         return
-
-
