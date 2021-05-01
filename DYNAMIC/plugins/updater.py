@@ -265,16 +265,3 @@ async def upstream(ups):
             return
         await ups.edit('Successfully Updated!\n'
                        'Restarting.......')
-    else:
-        # Classic Updater, pretty straightforward.
-        try:
-            ups_rem.pull(ac_br)
-        except GitCommandError:
-            repo.git.reset("--hard", "FETCH_HEAD")
-        reqs_upgrade = await update_requirements()
-        await ups.edit('`Successfully Updated!\n'
-                       'restarting......`')
-        # Spin a new instance of bot
-        args = [sys.executable, "-m", "DYNAMIC"]
-        execle(sys.executable, *args, environ)
-        
