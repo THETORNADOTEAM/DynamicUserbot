@@ -55,8 +55,8 @@ async def _(event):
             await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
             return
 
-    if Config.FBAN_GROUP_ID:
-        chat = Config.FBAN_GROUP_ID
+    if Config. FBAN_GROUP_ID:
+        chat = Config. FBAN_GROUP_ID
     else:
         chat = await event.get_chat()
     if not len(fedList):
