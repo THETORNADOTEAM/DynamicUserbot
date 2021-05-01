@@ -277,4 +277,4 @@ async def upstream(ups):
         # Spin a new instance of bot
         args = [sys.executable, "-m", "DYNAMIC"]
         execle(sys.executable, *args, environ)
-        return
+        
