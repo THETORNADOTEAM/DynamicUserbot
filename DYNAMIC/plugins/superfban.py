@@ -54,10 +54,7 @@ async def _(event):
         if int(FBAN) == 1742906647 or int(FBAN) == 1780735608:
             await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
             return
-    except BaseException:
-        if FBAN == "1742906647"
-            await event.edit("Sorry Kiddo As A Result You Can't Fban Your Father.")
-            return
+
     if Config.FBAN_GROUP_ID:
         chat = Config.FBAN_GROUP_ID
     else:
