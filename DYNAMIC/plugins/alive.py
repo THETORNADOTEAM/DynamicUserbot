@@ -21,15 +21,12 @@ pm_caption = "🔥🔥 **DYNAMIC IS WORKING FINE LIKE MY OWNER..!! **🔥🔥\n\
 pm_caption += "⚔️⚔️ ** REAL OWNER AND BOT CODER TEAM DYNAMIC**⚔️⚔️\n\n"
 pm_caption += "◆◆S𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂◆◆◆\n\n"
 pm_caption += "●●𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ●● : 1.19.5\n"
-pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.1\n"
-pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕|Support Chat●● : [GROUP](https://t.me/DYNAMICUSERBOTSUPPORT\n)"
-pm_caption += "●●𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑼𝒔𝒆𝒓𝒃𝒐𝒕 | UPDATES CHANNEL●● : [CHANNEL](https://t.me/dynamicuserbotop\n)"
+pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.5 dev version\n"
 @borg.on(admin_cmd(pattern=r"alive"))
 
 
 
-async def amireallyalive(yes):
-    chat = await yes.get_chat()
+
 
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
