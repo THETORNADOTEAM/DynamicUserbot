@@ -28,7 +28,6 @@ pm_caption += "f●●  DYNAMIC VERSION ●●>> : 0.5 dev version\n"
 
 
 
-    on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
     ok = await borg.edit_message(yes.chat_id, on, file=file2) 
