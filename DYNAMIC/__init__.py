@@ -112,3 +112,5 @@ SUDO_LIST = {}
 from DYNAMIC.helpers import *
 from DYNAMIC.helpers import functions as legdef
 
+# CREDITS DYNAMIC
+
