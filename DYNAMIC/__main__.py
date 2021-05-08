@@ -1,9 +1,4 @@
 
-  print ("DYNAMIC  IS STARTING WITH TELETHON") 
-from DYNAMICOP import xbot
-from DYNAMIC import bot, CMD_HELP
-from sys import argv
-os.system("pip install telethon==1.19.0")
 import sys
 import os
 os.system("pip install google_trans_new")
