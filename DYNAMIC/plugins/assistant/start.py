@@ -2,13 +2,13 @@ import asyncio
 import io
 import os
 import re
-from GODBOYX import PHOTO, ID as id
+from DYNAMIC import PHOTO, ID as id
 from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
-from DYNAMIC.uniborgConfig import Config
-from GODBOYX import xbot, devs as DEVS
+from DYNAMIC.DYNAMICConfig import Config
+from DYNAMIC import xbot, devs as DEVS
 from DYNAMIC import bot
 from DYNAMIC.plugins.sql_helper.blacklist_ass import (
     add_nibba_in_db,
@@ -63,8 +63,8 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ UʟᴛʀᴀX", "http://GitHub.com/TeamDynamic/Dynamic-Userbot")],
-                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/DynamicUserbotSupport")],
+                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ UʟᴛʀᴀX", "http://GitHub.com/ULTRA-OP/ULTRA-X")],
+                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/UltraXchaT")],
             ],
         )
         if os.path.exists(mypic):
@@ -101,7 +101,7 @@ async def users(event):
 async def users(event):
     Pro = "The button is under construction...\nSorry for inconvenience, Will update soon....\nThanks..."
     await event.answer(Pro, alert=True)
-    #@LEGENDX, #@PROBOY add cmd List Here
+    #@D, #@PROBOY add cmd List Here
     # later bro
     pass
 
