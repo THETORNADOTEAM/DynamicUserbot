@@ -4,7 +4,7 @@ try:
   from telethon import TelegramClient, idle
 except:
   os.system("pip install telethon>=1.1.13")
-  from telethon import Client, idle
+  from telethon import TelegramClient, idle
 
 import asyncio
 from DYNAMIC.utils import admin_cmd as GODBOYX
