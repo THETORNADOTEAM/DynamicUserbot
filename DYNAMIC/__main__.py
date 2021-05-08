@@ -52,7 +52,7 @@ for name in files:
     with open(name) as f:
         path1 = Path(f.name)
         shortname = path1.stem
-        load_pro(shortname.replace(".py", ""))
+        load_module(shortname.replace(".py", ""))
 
 
 path = 'DYNAMIC/plugins/*.py'
