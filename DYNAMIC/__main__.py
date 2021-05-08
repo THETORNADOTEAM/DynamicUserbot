@@ -1,7 +1,5 @@
- os.system("pip install LEGENDX==0.0.21")
-  from GODBOYX import id, ID, devs
-finally:
-  print ("DYNAMIC X IS STARTING WITH TELETHON") 
+
+  print ("DYNAMIC  IS STARTING WITH TELETHON") 
 from DYNAMICOP import xbot
 from DYNAMIC import bot, CMD_HELP
 from sys import argv
