@@ -69,14 +69,6 @@ if  EXTRA_PLUGS == True:
             except:
                 pass
 
-else:
-path = 'DYNAMIC/plugins/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
 
 import DYNAMIC._core
 
