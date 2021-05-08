@@ -22,7 +22,6 @@ GODBOYX = "[GODBOYX](https://t.me/GODBOYX)"
 VERSION = "1.1.0"
 ID = 1742906647
 REPO = "[Dynamic-Userbot](https://github.com/TeamDynamic/Dynamic-Userbot)"
-PRO = bot.uid
 devs = 1742906647
 MASTER = f"[{NAME}](tg://user?id={PRO})"
 GROUP = "[SUPPORT GROUP](https://t.me/DYNAMICUSERBOTSUPPORT)"
