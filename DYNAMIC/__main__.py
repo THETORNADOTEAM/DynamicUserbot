@@ -1,13 +1,5 @@
-import os
-try:
-  from LEGENDX import id, ID, devs, rd, wt
-except:
-  os.system("pip import os
-try:
-  from LEGENDX import id, ID, devs, rd, wt
-except:
-  os.system("pip install LEGENDX==0.0.21")
-  from LEGENDX import id, ID, devs
+ os.system("pip install LEGENDX==0.0.21")
+  from GODBOY import id, ID, devs
 finally:
   print ("DYNAMIC X IS STARTING WITH TELETHON") 
 from DYNAMICOP import xbot
