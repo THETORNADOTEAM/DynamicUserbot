@@ -7,7 +7,6 @@ except:
   from pyrogram import Client, idle
 
 import asyncio
-from DYNAMIC.utils import admin_cmd as GODBOYX
 from DYNAMIC import bot as GODBOYX
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
