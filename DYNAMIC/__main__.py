@@ -8,6 +8,7 @@ from telethon import TelegramClient
 from var import Var
 from DYNAMIC.utils import load_module
 from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
+EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", False)
 from pathlib import Path
 import asyncio
 import telethon.utils
