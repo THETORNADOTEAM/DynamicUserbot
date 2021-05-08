@@ -1,7 +1,5 @@
 # COPYRIGHT (C) 2021 TEAM-DYNAMIC
-#MADE BY @LEGENDXOP 
 #MODIFIED BY @GODBOYX
-#KANG KARNA HAI TO CREDITS KE SAATH KARO OTHERWISE MAA CHOD DUNGA TUMHARI THEEKAI NA BHOSD WAALO
 import asyncio
 import os
 try:
@@ -11,7 +9,7 @@ except:
   from pyrogram import Client, idle
 
 import asyncio
-from DYNAMIC.utils import admin_cmd as godboy
+from DYNAMIC.utils import admin_cmd
 from DYNAMIC import bot as GODBOY
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
