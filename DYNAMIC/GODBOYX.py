@@ -7,8 +7,8 @@ except:
   from pyrogram import Client, idle
 
 import asyncio
-from DYNAMIC.utils import admin_cmd as godboy
-from DYNAMIC import bot as GODBOY
+from DYNAMIC.utils import admin_cmd
+from DYNAMIC import bot
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
