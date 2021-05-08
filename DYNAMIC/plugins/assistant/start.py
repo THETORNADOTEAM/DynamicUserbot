@@ -2,13 +2,13 @@ import asyncio
 import io
 import os
 import re
-from DYNAMIC import PHOTO, ID as id
+from DYNAMIC import ALIVE_PHOTO, ID as id
 from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 from DYNAMIC.DYNAMICConfig import Config
-from DYNAMIC import xbot, devs as DEVS
+from DYNAMICOP import xbot, devs as DEVS
 from DYNAMIC import bot
 from DYNAMIC.plugins.sql_helper.blacklist_ass import (
     add_nibba_in_db,
