@@ -10,7 +10,6 @@ import re
 import sys
 import time
 import traceback
-import DYNAMICConfig as uniborgConfig
 from pathlib import Path
 from time import gmtime, strftime
 
