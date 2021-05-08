@@ -46,7 +46,7 @@ import glob
 
 
 
-path = 'ULTRA/plugins/assistant/*.py'
+path = 'DYNAMIC/plugins/assistant/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
