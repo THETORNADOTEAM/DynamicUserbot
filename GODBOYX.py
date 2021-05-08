@@ -1,14 +1,14 @@
 import asyncio
 import os
 try:
-  from telethon import TelegramClient, idle
+  from pyrogram import Client, idle
 except:
-  os.system("pip install telethon>=1.1.13")
-  from telethon import TelegramClient, idle
+  os.system("pip install pyrogram>=1.1.13")
+  from pyrogram import Client, idle
 
 import asyncio
-from DYNAMIC.utils import admin_cmd as GODBOYX
-from DYNAMIC import bot as GODBOYX
+from DYNAMIC.utils import admin_cmd as GODBOY
+from DYNAMIC import bot as GODBOY
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
