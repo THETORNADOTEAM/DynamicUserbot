@@ -53,9 +53,9 @@ HEROKU_API_KEY = os.environ.get("HEROKU_APIKEY", None)
 HEROKU_APPNAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 Heroku = heroku3.from_key(HEROKU_API_KEY)
-GIT_REPO_NAME = "LEGEND-BOT"
+GIT_REPO_NAME = "Dynamic-Userbot"
 heroku_api = "https://api.heroku.com"
-UPSTREAM_REPO_URL="https://github.com/legendx22/LEGEND-BOT"
+UPSTREAM_REPO_URL="https://github.com/TeamDynamic/Dynamic-Userbot"
 # ================= CONSTANT =================
 JAVES_NNAME = str(HEROKU_APPNAME)
 # ============================================
