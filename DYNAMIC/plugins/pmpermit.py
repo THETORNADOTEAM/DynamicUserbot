@@ -7,7 +7,7 @@ import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_X
 from DYNAMIC import ALIVE_NAME, bot
 from DYNAMIC.DYNAMICConfig import Config
 from var import Var
-DYNAMIC_USER = NAME
+DYNAMIC_USER = ALIVE_NAME
 from DYNAMIC.utils import admin_cmd as DYNAMIC_cmd
 DYNAMIC_WRN = {}
 DYNAMIC_REVL_MSG = {}
