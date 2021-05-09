@@ -41,13 +41,6 @@ else:
     
 
 import glob
-path = 'DYNAMIC/plugins/assistant/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
 
 path = 'DYNAMIC/plugins/*.py'
 files = glob.glob(path)
