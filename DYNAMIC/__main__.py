@@ -69,8 +69,8 @@ for name in files:
 
 
 if  EXTRA_PLUGS == True:
-    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git ./DYNAMIC/plugins/")
-    path = "*.py"
+    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git ./main")
+    path = "main/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
