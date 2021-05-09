@@ -1,4 +1,4 @@
-from DYNAMIC import Plugs
+
 from DYNAMIC import bot
 import os
 os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
