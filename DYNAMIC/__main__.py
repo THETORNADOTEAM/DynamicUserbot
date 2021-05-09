@@ -16,8 +16,11 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
     bot.uid = telethon.utils.get_peer_id(bot.me)
-
-
+EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", False)
+async def add_bot(bot_token):
+    await bot.start(bot_token)
+    bot.me = await bot.get_me() 
+    bot.uid = telethon.utils.get_peer_id(bot.me
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
@@ -51,6 +54,20 @@ for name in files:
         shortname = path1.stem
         load_pro(shortname.replace(".py", ""))
       
+if  EXTRA_PLUGS == True:
+    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git ./DYNAMIC/plugins/")
+    path = "DYNAMIC/plugins/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as a:
+            patt = Path(a.name)
+            plugin_name = patt.stem
+            try:
+                load_module(plugin_name.replace(".py", ""))
+                if not plugin_name.startswith("__") or plugin_name.startswith("_"):
+                    print ('INSTALLING ALL MODULES', plugin_name)
+            except:
+                pass  
 
   path = 'DYNAMIC/plugins/*.py'
   files = glob.glob(path)
