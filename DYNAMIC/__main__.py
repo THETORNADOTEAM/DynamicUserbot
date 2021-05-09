@@ -10,7 +10,7 @@ from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
-
+                    
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
@@ -35,12 +35,20 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Loading Software Completed")
         print("LOADING HIDDEN FILES")
-        print ('INSTALLING ALL STABLE VERSION OF DYNAMIC USERBOT AND PLUGINS', plugin_name)
+        print ('INSTALLING ALL STABLE VERSION OF DYNAMIC USERBOT AND PLUGINS')
     else:
         bot.start()
     
 
 import glob
+path = 'DYNAMIC/plugins/assistant/*.py'
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_pro(shortname.replace(".py", ""))
+
 path = 'DYNAMIC/plugins/*.py'
 files = glob.glob(path)
 for name in files:
