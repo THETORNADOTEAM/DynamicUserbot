@@ -91,20 +91,10 @@ else:
 
 
 import DYNAMIC._core
-import os
-print("DYNAMIC is Up and Awake! ©️ TeamDynamic 2021")
-async def legend():
-  pro = await xbot.get_me()
-  legend = await bot.get_me()
-  LEGENDX = hi
 
-"""
-  if ONLINE_ALERT:
-    try:
-      PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
-      
-      await xbot.send_message(bot.me.id, LEGENDX, buttons=PROBOYX)
-    except:
-       pass
-  else:
-      print("YOUR BOT DEPLOYED SUCCESSFULLY")
+print("🇾 🇴 🇺 🇷  🇺 🇸 🇪 🇷 🇴 🇹  🇮 🇸  🇼 🇴 🇷 🇰 🇮 🇳 🇬  🇫 🇮 🇳 🇪  🇵 🇱 🇿 .🇯 🇴 🇮 🇳 🇴 🇺 🇷 🇷  🇬 🇷 🇴 🇺 🇵  🇦 🇳 🇩  🇨 🇭 🇦 🇳 🇳 🇪 🇱 ")
+
+if len(argv) not in (1, 3, 4):
+    bot.disconnect()
+else:
+    bot.run_until_disconnected()
