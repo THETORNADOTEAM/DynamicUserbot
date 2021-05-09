@@ -283,9 +283,6 @@ if Var.PRIVATE_GROUP_ID is not None:
                 return
             except:
                 return
-        r = await borg.send_file(
-            event.chat_id, caption=USER_BOT_NO_WARN, force_document=False
-        )
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
             await PREV_REPLY_MESSAGE[chat_id].delete()
