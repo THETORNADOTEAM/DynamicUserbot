@@ -73,7 +73,7 @@ if  EXTRA_PLUGS == True:
     path = "DYNAMIC/plugins/"
     files = glob.glob(path)
     for name in files:
-        with open(name) :
+        with open(name) as a :
             patt = Path(a.name)
             plugin_name = patt.stem
             try:
