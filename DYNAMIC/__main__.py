@@ -51,6 +51,7 @@ for name in files:
         shortname = path1.stem
         load_pro(shortname.replace(".py", ""))
       
+
   path = 'DYNAMIC/plugins/*.py'
   files = glob.glob(path)
   for name in files:
