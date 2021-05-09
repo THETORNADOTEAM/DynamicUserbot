@@ -1,7 +1,6 @@
-
+ #Made By Aman Pandey and @GODBOYX
 from DYNAMIC import bot
-import os
-os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
+from sys import argv
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
@@ -9,31 +8,23 @@ from telethon import TelegramClient
 from var import Var
 from DYNAMIC.utils import load_module
 from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
-from DYNAMICOP import bot, xbot
 from pathlib import Path
 import asyncio
 import telethon.utils
-import sys
-import os
-from sys import argv
-import glob
-from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-import os
-from telethon import TelegramClient, Button
-from var import Var
-from DYNAMIC.utils import load_module, load_pro
-from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID
-from pathlib import Path
-import asyncio
-TOKEN = os.environ.get("TG_BOT_TOKEN", None)
-import telethon.utils
+
+async def add_bot(bot_token):
+    await bot.start(bot_token)
+    bot.me = await bot.get_me() 
+    bot.uid = telethon.utils.get_peer_id(bot.me)
+
+
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
-        print("Initiating DYNAMIC FOR RUNNING")
+        print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
@@ -47,27 +38,16 @@ else:
         print("LOADING HIDDEN FILES")
     else:
         bot.start()
+    
 
 import glob
-
-
-
-path = 'DYNAMIC/DYNAMIC/assistant/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_pro(shortname.replace(".py", ""))
-
-path = 'DYNAMIC/DYNAMIC/*.py'
+path = 'DYNAMIC/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
-
 
 import DYNAMIC._core
 
