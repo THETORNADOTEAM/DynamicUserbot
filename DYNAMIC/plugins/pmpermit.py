@@ -5,7 +5,6 @@ import asyncio
 import io
 import os
 import time
-import sender
 
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
@@ -245,9 +244,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
           #  return
 
-        if sender.verified:
 
-            # don't log verified accounts
 
             return
 
