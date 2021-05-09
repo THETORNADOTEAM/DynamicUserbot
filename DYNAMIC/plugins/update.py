@@ -224,4 +224,3 @@ async def upstream(ups):
         args = [sys.executable, "-m", "userbot"]
         execle(sys.executable, *args, environ)
         return
-'''
