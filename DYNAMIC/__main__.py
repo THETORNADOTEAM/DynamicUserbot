@@ -1,4 +1,6 @@
 from DYNAMIC import bot
+git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git
+os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
