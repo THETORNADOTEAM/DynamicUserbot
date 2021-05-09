@@ -1,5 +1,5 @@
 from DYNAMIC import bot
-from DYNAMIC import 
+from Plugs import plugins
 os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
