@@ -1,6 +1,7 @@
 
 import sys
 import os
+from sys import argv
 os.system("pip install google_trans_new")
 import glob
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
