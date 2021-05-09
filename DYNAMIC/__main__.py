@@ -48,7 +48,7 @@ else:
 import glob
 if  EXTRA_PLUGS == True:
     os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git")
-    path = "DYNAMIC_PLUGINS*.py"
+    path = "*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
