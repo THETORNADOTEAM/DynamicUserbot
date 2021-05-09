@@ -18,7 +18,7 @@ if SPAM is None:
 else:
     HMM_LOL = SPAM
 from ..import bot
-from DYNAMIC import xbot
+from GODBOYX import xbot
 FUCK_OFF_WARN = f"**Blocked You As You Spammed {DYNAMIC_USER}'s DM\n\n **IDC**"
 async def LEGENDX(event, msg):
   global DYNAMIC_WRN
