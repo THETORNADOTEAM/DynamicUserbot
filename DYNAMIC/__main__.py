@@ -16,7 +16,6 @@ import telethon.utils
 import sys
 import os
 from sys import argv
-os.system("pip install google_trans_new")
 import glob
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
@@ -28,30 +27,24 @@ from pathlib import Path
 import asyncio
 TOKEN = os.environ.get("TG_BOT_TOKEN", None)
 import telethon.utils
-EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", True)
-async def add_bot(bot_token):
-    await bot.start(bot_token)
-    bot.me = await bot.get_me() 
-    bot.uid = telethon.utils.get_peer_id(bot.me)
-ONLINE_ALERT = os.environ.get("ONLINE_ALERT")
-os.system("pip install LEGENDX==0.0.21")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
-        print("Initiating Inline Bot")
+        print("Initiating DYNAMIC FOR RUNNING")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
-        print("Initialisation finished with no errors")
-        print("Starting Userbot")
+        print("DYNAMIC USERBOT STARED SUCESSFULLY")
+        print("LOADING SOFTWARE")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
-        print("Startup Completed")
+        print("Loading Software Completed")
+        print("LOADING HIDDEN FILES")
     else:
         bot.start()
 
@@ -78,7 +71,9 @@ for name in files:
 
 import DYNAMIC._core
 
-print("🇾 🇴 🇺 🇷  🇺 🇸 🇪 🇷 🇴 🇹  🇮 🇸  🇼 🇴 🇷 🇰 🇮 🇳 🇬  🇫 🇮 🇳 🇪  🇵 🇱 🇿 .🇯 🇴 🇮 🇳 🇴 🇺 🇷 🇷  🇬 🇷 🇴 🇺 🇵  🇦 🇳 🇩  🇨 🇭 🇦 🇳 🇳 🇪 🇱 ")
+print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE INFO @DYNAMICUSERBOTSUPPORT ")
+print("SOFTWARE VERSION 0.1 ")
+print("BUILD VERSION 6#B*WJD ")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
