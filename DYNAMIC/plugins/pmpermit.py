@@ -5,6 +5,7 @@ import asyncio
 import io
 import os
 import time
+import sender
 
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
@@ -32,7 +33,7 @@ myid = bot.uid
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC Usêr"
 USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's DYNAMIC†.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello, This is **DYNAMIC† Úl†rã Pr¡va†e Security Protocol⚠️**.\n"
+    "Hello, This is **DYNAMIC†  Pr¡va†e Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
     
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
