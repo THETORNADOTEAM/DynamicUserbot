@@ -98,17 +98,6 @@ async def legend():
   legend = await bot.get_me()
   LEGENDX = hi
 
-
-**Dɪɴɢ Dᴏɴɢ...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **UʟᴛʀᴀX Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
-
-**Pɪɴɢ Pᴏɴɢ...**
-
-**➥ Mᴀsᴛᴇʀ** `➪` **@{legend.username}**
-**➥ Assɪsᴛᴀɴᴛ** `➪` **@{pro.username}**
-**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@UltraXchaT**
-**➥ Cʜᴀɴɴᴇʟ** `➪` **@UltraX_SupporT**
-
-
 """
   if ONLINE_ALERT:
     try:
