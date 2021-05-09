@@ -1,5 +1,5 @@
 os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
-    path = "*.py"
+    path = "DYNAMIC/plugins/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
