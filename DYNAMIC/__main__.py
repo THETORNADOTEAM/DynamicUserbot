@@ -62,7 +62,7 @@ if  EXTRA_PLUGS == True:
                 pass
 
 else:
-path = 'DYNAMIC/DYNAMIC/*.py'
+path = 'DYNAMIC/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
