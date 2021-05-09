@@ -69,11 +69,11 @@ for name in files:
 
 
 if  EXTRA_PLUGS == True:
-    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git /DYNAMIC/plugins/.py")
+    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git /DYNAMIC/plugins/")
     path = "DYNAMIC/plugins/"
     files = glob.glob(path)
     for name in files:
-        with open(name) as a:
+        with open(name) :
             patt = Path(a.name)
             plugin_name = patt.stem
             try:
