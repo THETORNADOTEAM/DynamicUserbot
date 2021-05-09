@@ -11,7 +11,7 @@ from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
-EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", False)
+EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", True)
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
