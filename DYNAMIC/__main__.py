@@ -21,7 +21,7 @@ async def add_bot(bot_token):
 ONLINE_ALERT = os.environ.get("ONLINE_ALERT")
 os.system("pip install LEGENDX==0.0.21")
 
-else:
+
     bot.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
