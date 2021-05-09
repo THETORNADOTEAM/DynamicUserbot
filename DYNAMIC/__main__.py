@@ -25,7 +25,7 @@ from pathlib import Path
 import asyncio
 TOKEN = os.environ.get("TG_BOT_TOKEN", None)
 import telethon.utils
-EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", False)
+EXTRA_PLUGS = os.environ.get("EXTRA_PLUGS", True)
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
@@ -92,12 +92,12 @@ else:
 
 import DYNAMIC._core
 import os
-print("DYNAMIC is Up and Awake! ©️ TeamUltraX 2021")
+print("DYNAMIC is Up and Awake! ©️ TeamDynamic 2021")
 async def legend():
   pro = await xbot.get_me()
   legend = await bot.get_me()
-  LEGENDX = f"""
-**Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
+  LEGENDX = hi
+**Hello** 🤔 
 
 `☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
 
