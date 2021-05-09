@@ -47,8 +47,8 @@ else:
 
 import glob
 if  EXTRA_PLUGS == True:
-    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git ./DYNAMIC/plugins/")
-    path = "DYNAMIC/plugins/*.py"
+    os.system("git clone https://github.com/TeamDynamic/DYNAMIC-PLUGINS.git ./DYNAMIC_PLUGINS/")
+    path = "DYNAMIC_PLUGINS*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
@@ -57,7 +57,7 @@ if  EXTRA_PLUGS == True:
             try:
                 load_module(plugin_name.replace(".py", ""))
                 if not plugin_name.startswith("__") or plugin_name.startswith("_"):
-                    print ('INSTALLING ALL MODULES', plugin_name)
+                    print ('INSTALLING ALL APPS AND PLUGINS', plugin_name)
             except:
                 pass
 
