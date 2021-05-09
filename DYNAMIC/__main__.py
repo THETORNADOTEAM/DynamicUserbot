@@ -52,8 +52,8 @@ for name in files:
 import DYNAMIC._core
 
 print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE INFO @DYNAMICUSERBOTSUPPORT ")
-print("SOFTWARE VERSION 0.1 ")
-print("BUILD VERSION 6#B*WJD ")
+print("SOFTWARE VERSION 1.0 Stable")
+print(" TELETHON VERSION 1.21.1 ")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
