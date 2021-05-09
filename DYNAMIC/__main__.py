@@ -1,4 +1,14 @@
-
+from DYNAMIC import bot
+import sys
+from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
+import os
+from telethon import TelegramClient
+from var import Var
+from DYNAMIC.utils import load_module
+from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
+from pathlib import Path
+import asyncio
+import telethon.utils
 import sys
 import os
 from sys import argv
