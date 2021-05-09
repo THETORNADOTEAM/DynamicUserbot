@@ -5,7 +5,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.contacts import BlockRequest as block
 import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_X
 from DYNAMIC import ALIVE_NAME, bot
-from DYNAMIC.uniborgConfig import Config
+from DYNAMIC.DYNAMICConfig import Config
 from var import Var
 from DYNAMICX import NAME
 DYNAMIC_USER = NAME
