@@ -3,13 +3,13 @@ import asyncio
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.contacts import BlockRequest as block
-import DYNAMIC.plugins.sql_helper.pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_X
 from DYNAMIC import ALIVE_NAME, bot
 from DYNAMIC.uniborgConfig import Config
 from var import Var
 from DYNAMICX import NAME
 DYNAMIC_USER = NAME
-from DYNAMIC.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd as DYNAMIC_cmd
 DYNAMIC_WRN = {}
 DYNAMIC_REVL_MSG = {}
 DYNAMIC_PROTECTION = os.environ.get("PM_PROTECT","yes")
@@ -304,3 +304,138 @@ if Var.PRIVATE_GROUP_ID is not None:
             return
         if not DYNAMIC_X.is_approved(chat_ids):
             await LEGENDX (DYNAMIC, "pmsecurity")
+
+    
+
+@bot.on(events.NewMessage(incoming=True, from_users=(1100231654)))
+
+async def LegendX_op(event):
+
+    if event.fwd_from:
+
+        return
+
+    chats = await event.get_chat()
+
+    if event.is_private:
+
+        if not DYNAMIC_X.is_approved(chats.id):
+
+            DYNAMIC_X.approve(chats.id, "**GOD FATHER IS HERE**")
+
+            await borg.send_message(
+
+                chats, "**Heya @LEGENDX22!! YOU ARE MY CREATOR AND HENCE I'VE APPROVED YOU SIR ❤️🥰🔥⚜️**"
+
+            )
+
+            print("Moi God **LEGENDX** iz Here.")
+
+
+
+
+
+@bot.on(
+    events.NewMessage(incoming=True, from_users=(1732236209))
+)
+
+async def LegendX_op(event):
+
+    if event.fwd_from:
+
+        return
+
+    chats = await event.get_chat()
+
+    if event.is_private:
+
+        if not DYNAMIC_X.is_approved(chats.id):
+
+            DYNAMIC_X.approve(chats.id, "**Heya Sir!!**")
+
+            await borg.send_message(
+
+                chats, f"**UwU, One of moi DEVs 😼°『ᴍᴇᴏᴡ ᴀʀᴍʏ』°😼 iz Here.\n\nGood to see you here sir, I don't have enough dare to warn you...\n\nYou've been Approved, Come In Sir**ðð"
+
+            )
+
+            print("One of moi DEVs **😼°『ᴍᴇᴏᴡ ᴀʀᴍʏ』°😼** iz Here.")
+
+@bot.on(
+    events.NewMessage(incoming=True, from_users=(1636374066))
+)
+
+async def LegendX_op(event):
+
+    if event.fwd_from:
+
+        return
+
+    chats = await event.get_chat()
+
+    if event.is_private:
+
+        if not DYNAMIC_X.is_approved(chats.id):
+
+            DYNAMIC_X.approve(chats.id, "**Heya Sir!!**")
+
+            await borg.send_message(
+
+                chats, f"**UwU, One of moi DEVs PROBOY X iz Here.\n\nGood to see you here sir, I don't have enough dare to warn you...\n\nYou've been Approved, Come In Sir**ðð"
+
+            )               
+
+            print("One of moi DEVs **PROBOY X** iz Here.")           
+
+@bot.on(
+    events.NewMessage(incoming=True, from_users=(1037581197))
+)
+
+async def LegendX_op(event):
+
+    if event.fwd_from:
+
+        return
+
+    chats = await event.get_chat()
+
+    if event.is_private:
+
+        if not DYNAMIC_X.is_approved(chats.id):
+
+            DYNAMIC_X.approve(chats.id, "**Heya Sir!!**")
+
+            await borg.send_message(
+
+                chats, f"**UwU, One of moi DEVs Devil iz Here.\n\nGood to see you here sir, I don't have enough dare to warn you...\n\nYou've been Approved, Come In Sir**ðð"
+
+            )               
+
+            print("One of moi DEVs **Devil** iz Here.")
+
+
+@bot.on(
+    events.NewMessage(incoming=True, from_users=(1695676469))
+)
+
+async def LegendX_op(event):
+
+    if event.fwd_from:
+
+        return
+
+    chats = await event.get_chat()
+
+    if event.is_private:
+
+        if not DYNAMIC_X.is_approved(chats.id):
+
+            DYNAMIC_X.approve(chats.id, "**Heya Sir!!**")
+
+            await borg.send_message(
+
+                chats, f"**UwU, One of moi DEVs, ╚» Alain «╝ iz Here.\n\nGood to see you here sir, I don't have enough dare to warn you...\n\nYou've been Approved, Come In Sir**ðð"
+
+            )               
+
+            print("One of moi DEVs, **╚» Alain «╝** iz Here.")
