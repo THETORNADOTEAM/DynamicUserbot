@@ -6,6 +6,7 @@ from telethon import TelegramClient
 from var import Var
 from DYNAMIC.utils import load_module
 from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
+from DYNAMICOP import bot, xbot
 from pathlib import Path
 import asyncio
 import telethon.utils
