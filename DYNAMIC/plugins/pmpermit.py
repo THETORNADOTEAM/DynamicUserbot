@@ -7,7 +7,7 @@ import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_X
 from DYNAMIC import ALIVE_NAME, bot
 from DYNAMIC.DYNAMICConfig import Config
 from var import Var
-from DYNAMICX import NAME
+from DYNAMIC import NAME
 DYNAMIC_USER = NAME
 from DYNAMIC.utils import admin_cmd as DYNAMIC_cmd
 DYNAMIC_WRN = {}
@@ -19,7 +19,7 @@ if SPAM is None:
 else:
     HMM_LOL = SPAM
 from ..import bot
-from DYNAMICX import xbot
+from DYNAMIC import xbot
 FUCK_OFF_WARN = f"**Blocked You As You Spammed {DYNAMIC_USER}'s DM\n\n **IDC**"
 async def LEGENDX(event, msg):
   global DYNAMIC_WRN
