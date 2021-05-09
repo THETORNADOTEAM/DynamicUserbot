@@ -41,7 +41,7 @@ else:
     
 
 import glob
-path = 'DYNAMIC/plugins/*.py'
+path = 'DYNAMIC/DYNAMIC/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
