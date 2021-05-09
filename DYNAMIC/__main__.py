@@ -79,7 +79,7 @@ else:
 
 import DYNAMIC._core
 import os
-print("UltraX is Up and Awake! ©️ TeamUltraX 2021")
+print("DYNAMIC is Up and Awake! ©️ TeamUltraX 2021")
 async def legend():
   pro = await xbot.get_me()
   legend = await bot.get_me()
@@ -127,11 +127,7 @@ if len(argv) not in (1, 3, 4):
     
 else:
     bot.run_until_disconnected()
-    
-
- LEGENDX==0.0.21")
-  from LEGENDX import id, ID, devs
-finally:
+  
   print ("ULTRA X IS STARTING WITH TELETHON") 
 from ULTRAX import xbot
 from ULTRA import bot, CMD_HELP
@@ -192,7 +188,7 @@ for name in files:
 
 if  EXTRA_PLUGS == True:
     os.system("git clone https://github.com/ULTRA-OP/ULTRA_PLUGS.git ./ULTRA/plugins/")
-    path = "ULTRA/plugins/*.py"
+    path = "DYNAMIC/plugins/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
@@ -206,7 +202,7 @@ if  EXTRA_PLUGS == True:
                 pass
 
 else:
-  path = 'ULTRA/plugins/*.py'
+  path = 'DYNAMIC/plugins/*.py'
   files = glob.glob(path)
   for name in files:
       with open(name) as f:
@@ -215,7 +211,7 @@ else:
           load_module(shortname.replace(".py", ""))
 
 
-import ULTRA._core
+import DYNAMIC._core
 import os
 print("UltraX is Up and Awake! ©️ TeamUltraX 2021")
 async def legend():
@@ -266,4 +262,3 @@ if len(argv) not in (1, 3, 4):
 else:
     bot.run_until_disconnected()
     
-
