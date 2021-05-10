@@ -572,8 +572,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"assistant/{shortname}.py")
-        name = "assistant.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -584,11 +584,11 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"assistant/{shortname}.py")
-        name = "assistant.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["assistant" + shortname] = mod
+        sys.modules["DYNAMIC.plugins.assistant" + shortname] = mod
     # print("Assistant Has imported " + shortname)
