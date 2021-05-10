@@ -6,25 +6,12 @@ import os
 from telethon import TelegramClient
 from var import Var
 from DYNAMIC.utils import load_module
+from DYNAMIC import start_assistant
 from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
 
-
-LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
-
-import glob
-if LOAD_ASSISTANT == True:
-    path = "assistant/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            start_assistant(shortname.replace(".py", ""))
-else:
-    print("Assitant is Not Loading As U Have Disabled")
 
 
                     
@@ -55,7 +42,16 @@ else:
         print ('INSTALLING ALL STABLE VERSION OF DYNAMIC USERBOT AND PLUGINS')
     else:
         bot.start()
-    
+import glob
+    path = "assistant/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            start_assistant(shortname.replace(".py", ""))
+else:
+    print("Assitant is Not Loading As U Have Disabled")    
 
 import glob
 
