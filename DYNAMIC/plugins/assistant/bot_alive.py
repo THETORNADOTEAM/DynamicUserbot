@@ -5,7 +5,7 @@ from DYNAMIC import bot
 PM_IMG = "https://telegra.ph/file/f7a8575e7242f1eb2e3f8.jpg"
 pm_caption = "➥ **ASSISTANT IS:** `ONLINE`\n\n"
 pm_caption += "➥ **SYSTEMS STATS**\n"
-pm_caption += "➥ **Telethon Version:** `1.15.0` \n"
+pm_caption += "➥ **Telethon Version:** `1.21.5 \n"
 pm_caption += "➥ **Python:** `3.7.4` \n"
 pm_caption += "➥ **Database Status:**  `Functional`\n"
 pm_caption += "➥ **Current Branch** : `main`\n"
