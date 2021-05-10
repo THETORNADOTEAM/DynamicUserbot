@@ -104,43 +104,6 @@ def load_module(shortname):
         # for imports
         sys.modules["DYNAMIC.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
-      
-def load_module(shortname):
-    if shortname.startswith("__"):
-        pass
-    elif shortname.endswith("_"):
-        import DYNAMIC.utils
-
-        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
-        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        LOGS.info("Successfully imported " + shortname)
-    else:
-        import DYNAMIC.utils
-
-        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
-        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        mod.bot = bot
-        mod.tgbot = bot.tgbot
-        mod.Var = Var
-        mod.xbot = xbot
-        mod.command = command
-        mod.logger = logging.getLogger(shortname)
-        # support for uniborg
-        sys.modules["uniborg.util"] = DYNAMIC.utils
-        mod.Config = Config
-        mod.borg = bot
-        mod.edit_or_reply = edit_or_reply
-        # support for paperplaneextended
-        sys.modules["DYNAMIC.events"] = DYNAMIC.utils
-        spec.loader.exec_module(mod)
-        # for imports
-        sys.modules["DYNAMIC.plugins.assistant." + shortname] = mod
-        LOGS.info("Successfully imported " + shortname)
 
 def remove_plugin(shortname):
     try:
