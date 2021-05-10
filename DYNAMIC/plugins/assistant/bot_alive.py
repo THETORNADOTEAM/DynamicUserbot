@@ -9,11 +9,10 @@ pm_caption += "➥ **Python:** `3.7.4` \n"
 pm_caption += "➥ **Database Status:**  `Functional`\n"
 pm_caption += "➥ **Current Branch** : `main`\n"
 pm_caption += f"➥ **ASSISTANT VERSION** : `1.0`\n"
-pm_caption += f"➥ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/ahirearyan2/HyperUserBot-X/blob/main/LICENSE)\n"
-pm_caption += "➥ **Copyright** : By [TEAM LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)\n"
-pm_caption += "[Assistant By LEGEND BOT ]"
+pm_caption += "➥ **Copyright** : By [TEAM DYNAMIC 2021 - 2022](https://github.com/TeamDynamic/Dynamic-Userbot)\n"
+pm_caption += "[Assistant By DYNAMIC USERBOT ]"
 
 # only Owner Can Use it
 @tgbot.on(events.NewMessage(pattern="^/alive", func=lambda e: e.sender_id == bot.uid))
