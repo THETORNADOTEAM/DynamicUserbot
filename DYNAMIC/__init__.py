@@ -6,7 +6,7 @@ from telethon import TelegramClient
 from DYNAMIC.helpers import functions as simpdef
 from DYNAMIC.DYNAMICConfig import Config
 from var import Var
-DYNAMICversion = "0.0.1"
+DYNAMICVERSION = "1.0"
 StartTime = time.time()
 
 # Default .alive name
