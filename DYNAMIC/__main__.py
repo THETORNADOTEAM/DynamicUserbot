@@ -1,3 +1,4 @@
+# MADE BY AMAN PANDEY FOR DYNAMIC USERBOT DONT KANG.
 from DYNAMIC import bot
 from sys import argv
 import sys
