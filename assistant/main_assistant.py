@@ -67,10 +67,10 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy LEGEND In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy DYNAMIC In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy repo 📺", "https://github.com/legendx22/LEGEND-BOT")],
-                [Button.url("Need Help ❓", "t.me/teamishere")],
+                [Button.url("Deploy repo 📺", "https://github.com/TeamDynamic/Dynamic-Userbot")],
+                [Button.url("Need Help ❓", "t.me/DYNAMICUSERBOTSUPPORT")],
             ],
         )
 
