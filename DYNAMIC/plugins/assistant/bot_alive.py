@@ -1,6 +1,5 @@
 from telethon import events
-from DYNAMIC ALIVE_NAME
-from DYNAMIC bot, legendversion
+from DYNAMIC import ALIVE_NAME
 
 PM_IMG = "https://telegra.ph/file/f7a8575e7242f1eb2e3f8.jpg"
 pm_caption = "➥ **ASSISTANT IS:** `ONLINE`\n\n"
