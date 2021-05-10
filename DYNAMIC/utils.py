@@ -105,7 +105,7 @@ def load_module(shortname):
         sys.modules["DYNAMIC.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
       
-def load_pro(shortname):
+def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
