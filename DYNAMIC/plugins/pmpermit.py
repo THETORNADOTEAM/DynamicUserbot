@@ -6,7 +6,7 @@ from telethon import events
 from telethon import functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-import DYNA<OC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from DYNAMIC import ALIVE_NAME
 from DYNAMIC import CUSTOM_PMPERMIT
 
