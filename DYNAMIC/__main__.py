@@ -62,16 +62,6 @@ print("DYNAIMIC BRANCH: Stable")
 print(" TELETHON VERSION 1.21.1 ")
 print("DYNAMIC BETA USERBOT AND DEVELOPER VERSION COMING SOON")
 
-if LOAD_ASSISTANT == True:
-    path = "DYNAMIC/plugins/assistant/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            start_assistant(shortname.replace(".py", ""))
-else:
-    print("Assitant is Not Loading As U Have Disabled")
 
 
 if len(argv) not in (1, 3, 4):
