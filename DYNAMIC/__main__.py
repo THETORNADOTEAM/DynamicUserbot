@@ -10,6 +10,10 @@ from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
+
+
+LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
+
                     
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -57,6 +61,18 @@ print("SOFTWARE VERSION 1.0 Stable")
 print("DYNAIMIC BRANCH: Stable")
 print(" TELETHON VERSION 1.21.1 ")
 print("DYNAMIC BETA USERBOT AND DEVELOPER VERSION COMING SOON")
+
+if LOAD_ASSISTANT == True:
+    path = "DYNAMIC/plugins/assistant/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            start_assistant(shortname.replace(".py", ""))
+else:
+    print("Assitant is Not Loading As U Have Disabled")
+
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
