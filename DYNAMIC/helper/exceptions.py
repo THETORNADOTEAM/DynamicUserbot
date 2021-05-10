@@ -1,4 +1,4 @@
-# Copyright Team Dynamic 2021 - 2022
+# Copyright Team Dynamic 2021 - 2022 
 
 
 class CancelProcess(Exception):
