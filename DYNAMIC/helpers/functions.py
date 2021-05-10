@@ -39,7 +39,7 @@ MARGINS = [50, 150, 250, 350, 450]
 
 
 # For using gif , animated stickers and videos in some parts , this
-# function takes  take a screenshot and stores ported from userge
+# function takes  take a screenshot and stores ported from userge 
 
 
 async def take_screen_shot(video_file, output_directory, ttl):
@@ -74,7 +74,7 @@ async def take_screen_shot(video_file, output_directory, ttl):
         logger.info(t_response)
         return None
 
-# https://github.com/Nekmo/telegram-upload/blob/master/telegram_upload/video.py#L26
+
 
 import time
 
