@@ -43,7 +43,7 @@ else:
     else:
         bot.start()
 import glob
-    path = "assistant/*.py"
+    path = "DYNAMIC/plugins/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
