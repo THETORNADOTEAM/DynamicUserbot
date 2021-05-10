@@ -183,10 +183,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 try:
                     current_page_number = int(event.data_match.group(1).decode("UTF-8"))
                     buttons = paginate_help(current_page_number-2, CMD_HELP, "helpme")
-                    await event.edit("`>>> Hᴇʀᴇ ɪs ᴛʜᴇ Mᴀɪɴ Mᴇɴᴜ ᴏғ \n\n© υℓтяα χ υѕєявσт`", buttons=buttons)
+                    await event.edit("`>>> Hᴇʀᴇ ɪs ᴛʜᴇ Mᴀɪɴ Mᴇɴᴜ ᴏғ \n\n© DYNAMIC υѕєявσт`", buttons=buttons)
                 except:
                     buttons = paginate_help(0, CMD_HELP, "helpme")
-                    await event.edit("`>>> Hᴇʀᴇ ɪs ᴛʜᴇ Mᴀɪɴ Mᴇɴᴜ ᴏғ \n\n© υℓтяα χ υѕєявσт`", buttons=buttons)
+                    await event.edit("`>>> Hᴇʀᴇ ɪs ᴛʜᴇ Mᴀɪɴ Mᴇɴᴜ ᴏғ \n\n© DYNAMIC υѕєявσт`", buttons=buttons)
             else:
                 reply_pop_up_alert = "Pʟᴇᴀsᴇ Gᴇᴛ Yᴏᴜʀ Oᴡɴ Usᴇʀʙᴏᴛ (☞ ͡° ͜ʖ ͡°)☞ Fᴏʀ Mᴏʀᴇ ɪɴғᴏ Vɪsɪᴛ @DYNAMICX_Support !!"
                 await event.answer(reply_pop_up_alert, alert=True)
