@@ -4,6 +4,7 @@ import heroku3
 import requests
 from telethon import __version__
 from telethon.errors.rpcerrorlist import ChatSendMediaForbiddenError
+from DYNAMIC.utils import admin_cmd, sudo_cmd as ultroid_cmd
 
 from . import *
 
@@ -21,7 +22,7 @@ except BaseException:
     HEROKU_API = None
     HEROKU_APP_NAME = None
 
-@admin_cmd(
+@ultroid_cmd(
     pattern="restart$",
 )
 async def restartbt(ult):
