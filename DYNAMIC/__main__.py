@@ -6,7 +6,7 @@ import os
 from telethon import TelegramClient
 from var import Var
 from DYNAMIC.utils import load_module
-from DYNAMIC import start_assistant
+from DYNAMIC.utils import start_assistant
 from DYNAMIC import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
