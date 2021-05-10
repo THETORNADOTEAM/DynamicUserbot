@@ -6,6 +6,7 @@ from telethon import __version__
 from telethon.errors.rpcerrorlist import ChatSendMediaForbiddenError
 from DYNAMIC.utils import admin_cmd, sudo_cmd as ultroid_cmd
 
+
 from . import *
 
 HEROKU_API = None
@@ -25,7 +26,7 @@ except BaseException:
 @ultroid_cmd(
     pattern="restart$",
 )
-async def restartbt(ult):
+async def repo(event):
     if Var.HEROKU_API:
         await eor(ult, "`Restarting..`")
         try:
