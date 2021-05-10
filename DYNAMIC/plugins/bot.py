@@ -26,7 +26,6 @@ except BaseException:
 @ultroid_cmd(
     pattern="restart$",
 )
-async def repo(event):
     if Var.HEROKU_API:
         await eor(ult, "`Restarting..`")
         try:
