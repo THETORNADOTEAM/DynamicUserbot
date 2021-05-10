@@ -83,7 +83,9 @@ if bool(ENV):
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
     PATTERNS = os.environ.get("PATTERNS", ".;!,")
     COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
-
+    
+    # Custom Module
+    CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
 if not os.path.exists('bin'):
