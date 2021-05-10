@@ -20,7 +20,7 @@ from var import Var
 
 LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
-from userbot.utils import admin_cmd as lightning_cmd
+from DYNAMIC.utils import admin_cmd as lightning_cmd
 
 
 
