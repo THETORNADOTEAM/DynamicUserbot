@@ -1,4 +1,4 @@
-# CREDITS AMAN PANDEY
+# CREDITS AMAN PANDEY MADE FOR DYNAMIC USERBOT. DONT KANG
 import asyncio
 import datetime
 import importlib
