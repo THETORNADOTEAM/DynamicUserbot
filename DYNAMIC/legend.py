@@ -16,7 +16,7 @@ import time
 import os
 import datetime
 #importing finished
-from userbot import botnickname 
+from DYNAMIC import botnickname 
 BOT = str(botnickname) if botnickname else "DYNAMIC USERBOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 tim = get_readable_time((time.time() - StartTime))
