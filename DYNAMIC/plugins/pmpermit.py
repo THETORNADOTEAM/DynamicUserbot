@@ -40,7 +40,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 import DYNAMIC.plugins.sql_helper.pmpermit_sql as lightning_sql
 
-from userbot import ALIVE_NAME, bot
+from DYNAMIC import ALIVE_NAME, bot
 
 from DYNAMIC.DYNAMICConfig import Config
 
