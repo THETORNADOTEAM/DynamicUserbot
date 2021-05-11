@@ -2,7 +2,7 @@
 
 """
 from asyncio import sleep
-from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, bot
+from DYNAMIC import CMD_HELP, BOTLOG, BOTLOG_CHATID, bot
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from userbot.utils import admin_cmd
