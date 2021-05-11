@@ -162,7 +162,7 @@ if bool(ENV):
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Arcane120/ARCANE-USERBOT.git")
+    "https://github.com/TeamDynamic/Dynamic-Userbot")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
