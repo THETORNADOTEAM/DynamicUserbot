@@ -6,6 +6,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from DYNAMIC.utils import admin_cmd
+from DYNAMIC import BOT_LOG
 from telethon.tl import functions
 from telethon import events
 from telethon.errors import ImageProcessFailedError, PhotoCropSizeSmallError
