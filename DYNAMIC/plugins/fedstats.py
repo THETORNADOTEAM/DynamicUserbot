@@ -7,7 +7,6 @@ from DYNAMIC import bot
 from DYNAMIC.utils import admin_cmd
 
 bot = "@MissRose_bot"
-DEVIL = NAME
 
 
 @borg.on(admin_cmd("fstat ?(.*)"))
