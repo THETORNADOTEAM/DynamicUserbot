@@ -1,6 +1,6 @@
-#    @keinshin a.k.a KeinShin
+#    @GODBOYX
 
-#    Copyright (C) 2020 KeinShin
+#    Copyright 2020 © Team-Dynamic
 
 
 
@@ -9,8 +9,6 @@
 #    it under the terms of the GNU Affero General Public License as published by
 
 #    the Free Software Foundation, either version 3 of the License, or
-
-#    maked by LEGENDX22 🔥🔥🔥🔥 helper shivam ⚡⚡⚡
 
 #    This program is distributed in the hope that it will be useful,
 
@@ -46,7 +44,7 @@ from DYNAMIC.DYNAMICConfig import Config
 
 from var import Var
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
 from DYNAMIC.utils import admin_cmd as lightning_cmd
 
@@ -90,13 +88,13 @@ FUCK_OFF_WARN = f"**Blocked You As You Spammed {LIGHTNINGUSER}'s DM\n\n **IDC**"
 
 OVER_POWER_WARN = (
 
-    f"**Hello Sir Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me 😈😈 **\n\n"
+    f"**Hello Sir Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me  **\n\n"
 
     f"`My Master {LIGHTNINGUSER} is Busy Right Now !` \n"
 
     f"{LIGHTNINGUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
 
-    f"**Btw Dont Spam Or Get Banned** 😈 \n\n"
+    f"**Btw Dont Spam Or Get Banned**  \n\n"
 
     f"**{CUSTOM_LIGHTNING_PM_PIC}**\n"
 
@@ -112,7 +110,7 @@ LIGHTNING_STOP_EMOJI = (
 
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @bot.on(events.NewMessage(outgoing=True))
+    @borg.on(events.NewMessage(outgoing=True))
 
     async def lightning_dm_niqq(event):
 
@@ -130,7 +128,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
                     lightning_sql.approve(chat.id, "outgoing")
 
-                    bruh = "Auto-approved bcuz outgoing 😗😗👍"
+                    bruh = "Auto-approved bcuz outgoing "
 
                     rko = await borg.send_message(event.chat_id, bruh)
 
@@ -336,11 +334,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    @bot.on(events.NewMessage(incoming=True))
+    @borg.on(events.NewMessage(incoming=True))
 
     async def lightning_new_msg(lightning):
 
-        if lightning.sender_id == bot.uid:
+        if lightning.sender_id == borg.uid:
 
             return
 
@@ -368,23 +366,23 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if OVER_POWER_WARN == lightning_chats:
 
-            # lightning should not reply to other lightning
+            # Dynamic should not reply to other Dynamic
 
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
 
             return
 
-        sender = await bot.get_entity(lightning.sender_id)
+        sender = await borg.get_entity(lightning.sender_id)
 
-        if chat_ids == bot.uid:
+        if chat_ids == borg.uid:
 
             # don't log Saved Messages
 
             return
 
-        if sender.bot:
+        if sender.borg:
 
-            # don't log bots
+            # don't log borgs
 
             return
 
@@ -482,7 +480,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         )
 
-        lightning_hmm = await bot.inline_query(lightningusername, LIGHTNING_L)
+        lightning_hmm = await borg.inline_query(lightningusername, LIGHTNING_L)
 
         new_var = 0
 
@@ -502,7 +500,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1100231654)))
+@borg.on(events.NewMessage(incoming=True, from_users=(1742906647)))
 
 async def krish_op(event):
 
@@ -520,7 +518,7 @@ async def krish_op(event):
 
             await borg.send_message(
 
-                chats, "**Heya @LEGENDX22 YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
+                chats, "**Heya @GODBOYX YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
 
             )
 
@@ -528,9 +526,9 @@ async def krish_op(event):
 
 
 
-@bot.on(
+@borg.on(
 
-    events.NewMessage(incoming=True, from_users=(1100231654))
+    events.NewMessage(incoming=True, from_users=(1742906647))
 
 )
 
@@ -550,15 +548,15 @@ async def krish_op(event):
 
             await borg.send_message(
 
-                chats, f"**Good To See You @LEGENDX22 How Can I Disapprove You Come In Sir**ðð"
+                chats, f"**Good To See You @GODBOYX How Can I Disapprove You Come In Sir**ðð"
 
             )
 
             print("Dev Here")
 
-@bot.on(
+@borg.on(
 
-    events.NewMessage(incoming=True, from_users=(1100231654))
+    events.NewMessage(incoming=True, from_users=(1742906647))
 
 )
 
@@ -582,9 +580,9 @@ async def krish_op(event):
 
             )            
 
-@bot.on(
+@borg.on(
 
-    events.NewMessage(incoming=True, from_users=(1100231654))
+    events.NewMessage(incoming=True, from_users=(1742906647))
 
 )
 
@@ -614,9 +612,9 @@ async def krish_op(event):
 
             
 
-@bot.on(
+@borg.on(
 
-    events.NewMessage(incoming=True, from_users=(1100231654))
+    events.NewMessage(incoming=True, from_users=(1742906647))
 
 )
 
