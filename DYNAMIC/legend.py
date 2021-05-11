@@ -11,7 +11,7 @@ import random
 import re
 from telethon import events, errors, custom
 import io
-from userbot.helpers.functions import get_readable_time
+from DYNAMIC.helpers.functions import get_readable_time
 import time
 import os
 import datetime
