@@ -30,7 +30,7 @@ import asyncio
 
 
 
-from pyrogram import events, functions
+from DYNAMIC import events, functions
 
 from pyrogram.tl.functions.users import GetFullUserRequest
 
