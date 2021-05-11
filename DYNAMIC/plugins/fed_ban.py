@@ -1,11 +1,8 @@
-# MADE BY LEGENDX22 AND PROBOYX
-#CREDITS TELEBOT
-# KEEP CREDITS PLEASE 🥺
+
 import asyncio
-from DYNAMIC.legend import NAME
 from DYNAMIC import CMD_HELP
 from DYNAMIC.utils import admin_cmd, sudo_cmd
-# By (@proboy22), and (@LEGENDX22)
+
 from DYNAMIC import bot
 PRO = NAME
 @bot.on(admin_cmd("devilfban ?(.*)"))
