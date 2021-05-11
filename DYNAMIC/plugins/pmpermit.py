@@ -314,7 +314,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             return
 
-        sender = await bot.get_entity(chat_id)
+        sender = await event.get_chat()
 
         if chat_id == bot.uid:
 
