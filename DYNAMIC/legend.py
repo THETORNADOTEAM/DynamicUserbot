@@ -1,9 +1,9 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import ALIVE_NAME, StartTime
-from userbot.utils import admin_cmd
-from userbot import bot
+from DYNAMIC import ALIVE_NAME, StartTime
+from DYNAMIC.utils import admin_cmd
+from DYNAMIC import bot
 from telethon import version
 from math import ceil
 import json
