@@ -62,6 +62,16 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
+import glob
+
+path = 'userbot/plugins/*.py'
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_module(shortname.replace(".py", ""))
+
 import DYNAMIC._core
 
 print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE INFO @DYNAMICUSERBOTSUPPORT ")
