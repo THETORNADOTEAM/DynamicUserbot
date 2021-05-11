@@ -13,7 +13,6 @@ from DYNAMIC.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 CACHE = {}
-PMPERMIT_PIC = Config.PMPERMIT_PIC
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 USER_BOT_WARN_ZERO = "You were spamming my peru master's inbox, henceforth you are blocked by my master's . **Now GTFO, i'm playing minecraft** "
 
