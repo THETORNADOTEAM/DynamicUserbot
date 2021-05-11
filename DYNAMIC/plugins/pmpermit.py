@@ -10,7 +10,6 @@ from DYNAMIC import (
 )
 from DYNAMIC.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from DYNAMIC.DYNAMICConfig import Config
-from Config inport Config
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 CACHE = {}
