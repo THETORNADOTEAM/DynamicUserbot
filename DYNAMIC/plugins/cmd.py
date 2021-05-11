@@ -1,4 +1,4 @@
-# Made by @LEGENDX22 FOR DEVIL BOT
+# Made by AMAN PANDEY FOR DEVIL BOT
 import asyncio
 import io
 
