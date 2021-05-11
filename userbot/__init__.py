@@ -7,7 +7,7 @@ from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.uniborgConfig import Config
 from var import Var
-devilversion = "2.0"
+dynamicversion = "2.0"
 StartTime = time.time()
 
 os.system("pip install --upgrade pip")
@@ -141,7 +141,7 @@ if bool(ENV):
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/lucifeermorningstar/Devil.git")
+    "https://github.comTeamDynamic/Dynamic-Userbot.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
