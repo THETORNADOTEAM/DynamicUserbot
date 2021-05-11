@@ -1,3 +1,30 @@
+#    @GODBOYX
+
+#    Copyright ? 2021 TeamDynamic
+
+
+
+#    This program is free software: you can redistribute it and/or modify
+
+#    it under the terms of the GNU Affero General Public License as published by
+
+#    the Free Software Foundation, either version 3 of the License, or
+
+
+#    This program is distributed in the hope that it will be useful,
+
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+#    GNU Affero General Public License for more details.
+
+#
+
+#    You should have received a copy of the GNU Affero General Public License
+
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import os
 
 import asyncio
@@ -10,27 +37,27 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 
 
-import userbot.plugins.sql_helper.pmpermit_sql as lightning_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_sql
 
-from userbot import ALIVE_NAME, bot
+from DYNAMIC import ALIVE_NAME, bot
 
-from userbot.uniborgConfig import Config
+from DYNAMIC.DYNAMICConfig import Config
 
 from var import Var
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "Devil"
+DYNAMICUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
-from userbot.utils import admin_cmd as lightning_cmd
-
-
-
-LIGHTNING_WRN = {}
-
-LIGHTNING_REVL_MSG = {}
+from DYNAMIC.utils import admin_cmd as DYNAMIC_cmd
 
 
 
-LIGHTNING_PROTECTION = os.environ.get("PM_PROTECT","yes")
+DYNAMIC_WRN = {}
+
+DYNAMIC_REVL_MSG = {}
+
+
+
+DYNAMIC_PROTECTION = os.environ.get("PM_PROTECT","yes")
 
 
 
@@ -46,11 +73,11 @@ else:
 
 
 
-LIGHTNING_PM = os.environ.get("PMPERMIT_PIC", None)
+DYNAMIC_PM = os.environ.get("PMPERMIT_PIC", None)
 
-CUSTOM_LIGHTNING_PM_PIC = LIGHTNING_PM
+CUSTOM_DYNAMIC_PM_PIC = DYNAMIC_PM
 
-FUCK_OFF_WARN = f"**Blocked You As You Spammed {LIGHTNINGUSER}'s DM\n\n **IDC**"
+FUCK_OFF_WARN = f"**Blocked You As You Spammed {DYNAMICUSER}'s DM\n\n **IDC**"
 
 
 
@@ -62,21 +89,21 @@ FUCK_OFF_WARN = f"**Blocked You As You Spammed {LIGHTNINGUSER}'s DM\n\n **IDC**"
 
 OVER_POWER_WARN = (
 
-    f"**Hello Sir Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me 😈😈 **\n\n"
+    f"**Hello Sir Im Here To Protect {DYNAMICUSER} Dont Under Estimate Me 😈😈 **\n\n"
 
-    f"`My Master {LIGHTNINGUSER} is Busy Right Now !` \n"
+    f"`My Master {DYNAMICUSER} is Busy Right Now !` \n"
 
-    f"{LIGHTNINGUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
+    f"{DYNAMICUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
 
     f"**Btw Dont Spam Or Get Banned** 😈 \n\n"
 
-    f"**{CUSTOM_LIGHTNING_PM_PIC}**\n"
+    f"**{CUSTOM_DYNAMIC_PM_PIC}**\n"
 
 )
 
 
 
-LIGHTNING_STOP_EMOJI = (
+DYNAMIC_STOP_EMOJI = (
 
     "â"
 
@@ -84,9 +111,9 @@ LIGHTNING_STOP_EMOJI = (
 
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @bot.on(events.NewMessage(outgoing=True))
+    @borg.on(events.NewMessage(outgoing=True))
 
-    async def lightning_dm_niqq(event):
+    async def DYNAMIC_dm_niqq(event):
 
         if event.fwd_from:
 
@@ -96,11 +123,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if not lightning_sql.is_approved(chat.id):
+            if not DYNAMIC_sql.is_approved(chat.id):
 
-                if not chat.id in LIGHTNING_WRN:
+                if not chat.id in DYNAMIC_WRN:
 
-                    lightning_sql.approve(chat.id, "outgoing")
+                    DYNAMIC_sql.approve(chat.id, "outgoing")
 
                     bruh = "Auto-approved bcuz outgoing 😗😗👍"
 
@@ -112,7 +139,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    @borg.on(lightning_cmd(pattern="(a|approve)"))
+    @borg.on(DYNAMIC_cmd(pattern="(a|approve)"))
 
     async def block(event):
 
@@ -128,19 +155,19 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if not lightning_sql.is_approved(chats.id):
+            if not DYNAMIC_sql.is_approved(chats.id):
 
-                if chats.id in LIGHTNING_WRN:
+                if chats.id in DYNAMIC_WRN:
 
-                    del LIGHTNING_WRN[chats.id]
+                    del DYNAMIC_WRN[chats.id]
 
-                if chats.id in LIGHTNING_REVL_MSG:
+                if chats.id in DYNAMIC_REVL_MSG:
 
-                    await LIGHTNING_REVL_MSG[chats.id].delete()
+                    await DYNAMIC_REVL_MSG[chats.id].delete()
 
-                    del LIGHTNING_REVL_MSG[chats.id]
+                    del DYNAMIC_REVL_MSG[chats.id]
 
-                lightning_sql.approve(chats.id, f"Wow lucky You {LIGHTNINGUSER} Approved You")
+                DYNAMIC_sql.approve(chats.id, f"Wow lucky You {DYNAMICUSER} Approved You")
 
                 await event.edit(
 
@@ -154,9 +181,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    @borg.on(lightning_cmd(pattern="block$"))
+    @borg.on(DYNAMIC_cmd(pattern="block$"))
 
-    async def lightning_approved_pm(event):
+    async def DYNAMIC_approved_pm(event):
 
         if event.fwd_from:
 
@@ -170,9 +197,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if lightning_sql.is_approved(chat.id):
+            if DYNAMIC_sql.is_approved(chat.id):
 
-                lightning_sql.disapprove(chat.id)
+                DYNAMIC_sql.disapprove(chat.id)
 
             await event.edit("Blocked [{}](tg://user?id={})".format(firstname, chat.id))
 
@@ -194,11 +221,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-            
 
-    @borg.on(lightning_cmd(pattern="(da|disapprove)"))
 
-    async def lightning_approved_pm(event):
+    @borg.on(DYNAMIC_cmd(pattern="(da|disapprove)"))
+
+    async def DYNAMIC_approved_pm(event):
 
         if event.fwd_from:
 
@@ -212,9 +239,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if lightning_sql.is_approved(chat.id):
+            if DYNAMIC_sql.is_approved(chat.id):
 
-                lightning_sql.disapprove(chat.id)
+                DYNAMIC_sql.disapprove(chat.id)
 
             await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
 
@@ -242,21 +269,21 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    
 
 
 
-    @borg.on(lightning_cmd(pattern="listapproved$"))
 
-    async def lightning_approved_pm(event):
+    @borg.on(DYNAMIC_cmd(pattern="listapproved$"))
+
+    async def DYNAMIC_approved_pm(event):
 
         if event.fwd_from:
 
             return
 
-        approved_users = lightning_sql.get_all_approved()
+        approved_users = DYNAMIC_sql.get_all_approved()
 
-        PM_VIA_LIGHT = f"â¥â¿â¥ {LIGHTNINGUSER} Approved PMs\n"
+        PM_VIA_LIGHT = f"â¥â¿â¥ {DYNAMICUSER} Approved PMs\n"
 
         if len(approved_users) > 0:
 
@@ -308,11 +335,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    @bot.on(events.NewMessage(incoming=True))
+    @borg.on(events.NewMessage(incoming=True))
 
-    async def lightning_new_msg(lightning):
+    async def DYNAMIC_new_msg(DYNAMIC):
 
-        if lightning.sender_id == bot.uid:
+        if DYNAMIC.sender_id == bot.uid:
 
             return
 
@@ -324,29 +351,29 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-        if not lightning.is_private:
+        if not DYNAMIC.is_private:
 
             return
 
 
 
-        lightning_chats = lightning.message.message
+        DYNAMIC_chats = DYNAMIC.message.message
 
-        chat_ids = lightning.sender_id
+        chat_ids = DYNAMIC.sender_id
 
 
 
-        lightning_chats.lower()
+        DYNAMIC_chats.lower()
 
-        if OVER_POWER_WARN == lightning_chats:
+        if OVER_POWER_WARN == DYNAMIC_chats:
 
-            # lightning should not reply to other lightning
+            # DYNAMIC should not reply to other DYNAMIC
 
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
 
             return
 
-        sender = await bot.get_entity(lightning.sender_id)
+        sender = await bot.get_entity(DYNAMIC.sender_id)
 
         if chat_ids == bot.uid:
 
@@ -366,41 +393,41 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             return
 
-        if LIGHTNING_PROTECTION == "NO":
+        if DYNAMIC_PROTECTION == "NO":
 
             return
 
-        if lightning_sql.is_approved(chat_ids):
+        if DYNAMIC_sql.is_approved(chat_ids):
 
             return
 
-        if not lightning_sql.is_approved(chat_ids):
+        if not DYNAMIC_sql.is_approved(chat_ids):
 
             # pm permit
 
-            await lightning_goin_to_attack(chat_ids, lightning)
+            await DYNAMIC_goin_to_attack(chat_ids, DYNAMIC)
 
 
 
-    async def lightning_goin_to_attack(chat_ids, lightning):
+    async def DYNAMIC_goin_to_attack(chat_ids, DYNAMIC):
 
-        if chat_ids not in LIGHTNING_WRN:
+        if chat_ids not in DYNAMIC_WRN:
 
-            LIGHTNING_WRN.update({chat_ids: 0})
+            DYNAMIC_WRN.update({chat_ids: 0})
 
-        if LIGHTNING_WRN[chat_ids] == 3:
+        if DYNAMIC_WRN[chat_ids] == 3:
 
-            lemme = await lightning.reply(FUCK_OFF_WARN)
+            lemme = await DYNAMIC.reply(FUCK_OFF_WARN)
 
             await asyncio.sleep(3)
 
-            await lightning.client(functions.contacts.BlockRequest(chat_ids))
+            await DYNAMIC.client(functions.contacts.BlockRequest(chat_ids))
 
-            if chat_ids in LIGHTNING_REVL_MSG:
+            if chat_ids in DYNAMIC_REVL_MSG:
 
-                await LIGHTNING_REVL_MSG[chat_ids].delete()
+                await DYNAMIC_REVL_MSG[chat_ids].delete()
 
-            LIGHTNING_REVL_MSG[chat_ids] = lemme
+            DYNAMIC_REVL_MSG[chat_ids] = lemme
 
             lightn_msg = ""
 
@@ -408,13 +435,13 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             lightn_msg += f"[User](tg://user?id={chat_ids}): {chat_ids}\n"
 
-            lightn_msg += f"Message Counts: {LIGHTNING_WRN[chat_ids]}\n"
+            lightn_msg += f"Message Counts: {DYNAMIC_WRN[chat_ids]}\n"
 
             # lightn_msg += f"Media: {message_media}"
 
             try:
 
-                await lightning.client.send_message(
+                await DYNAMIC.client.send_message(
 
                     entity=Var.PRIVATE_GROUP_ID,
 
@@ -436,7 +463,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             except BaseException:
 
-                  await  lightning.edit("Something Went Wrong")
+                  await  DYNAMIC.edit("Something Went Wrong")
 
                   await asyncio.sleep(2) 
 
@@ -446,35 +473,35 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         # Inline
 
-        lightningusername = Var.TG_BOT_USER_NAME_BF_HER
+        DYNAMICusername = Var.TG_BOT_USER_NAME_BF_HER
 
-        LIGHTNING_L = OVER_POWER_WARN.format(
+        DYNAMIC_L = OVER_POWER_WARN.format(
 
-        LIGHTNINGUSER, LIGHTNING_STOP_EMOJI, LIGHTNING_WRN[chat_ids] + 1, HMM_LOL
+        DYNAMICUSER, DYNAMIC_STOP_EMOJI, DYNAMIC_WRN[chat_ids] + 1, HMM_LOL
 
         )
 
-        lightning_hmm = await bot.inline_query(lightningusername, LIGHTNING_L)
+        DYNAMIC_hmm = await bot.inline_query(DYNAMICusername, DYNAMIC_L)
 
         new_var = 0
 
-        yas_ser = await lightning_hmm[new_var].click(lightning.chat_id)
+        yas_ser = await DYNAMIC_hmm[new_var].click(DYNAMIC.chat_id)
 
-        LIGHTNING_WRN[chat_ids] += 1
+        DYNAMIC_WRN[chat_ids] += 1
 
-        if chat_ids in LIGHTNING_REVL_MSG:
+        if chat_ids in DYNAMIC_REVL_MSG:
 
-           await LIGHTNING_REVL_MSG[chat_ids].delete()
+           await DYNAMIC_REVL_MSG[chat_ids].delete()
 
-        LIGHTNING_REVL_MSG[chat_ids] = yas_ser
-
-
+        DYNAMIC_REVL_MSG[chat_ids] = yas_ser
 
 
 
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1037581197)))
+
+
+@borg.on(events.NewMessage(incoming=True, from_users=(1100231654)))
 
 async def krish_op(event):
 
@@ -486,13 +513,13 @@ async def krish_op(event):
 
     if event.is_private:
 
-        if not lightning_sql.is_approved(chats.id):
+        if not DYNAMIC_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**GOD FATHER(DEVIL) IS HERE**")
+            DYNAMIC_sql.approve(chats.id, "**GOD FATHER IS HERE**")
 
             await borg.send_message(
 
-                chats, "**Heya @lucifermorningstarbackup YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
+                chats, "**Heya @LEGENDX22 YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
 
             )
 
@@ -500,10 +527,8 @@ async def krish_op(event):
 
 
 
-@bot.on(
-
+@borg.on(
     events.NewMessage(incoming=True, from_users=(1100231654))
-
 )
 
 async def krish_op(event):
@@ -516,22 +541,20 @@ async def krish_op(event):
 
     if event.is_private:
 
-        if not lightning_sql.is_approved(chats.id):
+        if not DYNAMIC_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**Heya Sir**")
+            DYNAMIC_sql.approve(chats.id, "**Heya Sir**")
 
             await borg.send_message(
 
-                chats, f"**Good To See You @Lucifermorningstarbackup How Can I Disapprove You Come In Sir**ðð"
+                chats, f"**Good To See You @LEGENDX22 How Can I Disapprove You Come In Sir**ðð"
 
             )
 
             print("Dev Here")
 
-@bot.on(
-
+@borg.on(
     events.NewMessage(incoming=True, from_users=(1100231654))
-
 )
 
 async def krish_op(event):
@@ -544,9 +567,9 @@ async def krish_op(event):
 
     if event.is_private:
 
-        if not lightning_sql.is_approved(chats.id):
+        if not DYNAMIC_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**Heya Sir**")
+            DYNAMIC_sql.approve(chats.id, "**Heya Sir**")
 
             await borg.send_message(
 
@@ -554,10 +577,8 @@ async def krish_op(event):
 
             )            
 
-@bot.on(
-
+@borg.on(
     events.NewMessage(incoming=True, from_users=(1100231654))
-
 )
 
 async def krish_op(event):
@@ -570,9 +591,9 @@ async def krish_op(event):
 
     if event.is_private:
 
-        if not lightning_sql.is_approved(chats.id):
+        if not DYNAMIC_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**Heya Sir**")
+            DYNAMIC_sql.approve(chats.id, "**Heya Sir**")
 
             await borg.send_message(
 
@@ -582,14 +603,12 @@ async def krish_op(event):
 
             print("Dev Here")
 
-            
 
-            
 
-@bot.on(
 
+
+@borg.on(
     events.NewMessage(incoming=True, from_users=(1100231654))
-
 )
 
 async def krish_op(event):
@@ -602,9 +621,9 @@ async def krish_op(event):
 
     if event.is_private:
 
-        if not lightning_sql.is_approved(chats.id):
+        if not DYNAMIC_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**Heya Sir**")
+            DYNAMIC_sql.approve(chats.id, "**Heya Sir**")
 
             await borg.send_message(
 
@@ -613,4 +632,3 @@ async def krish_op(event):
             )               
 
             print("Dev Here")
-
