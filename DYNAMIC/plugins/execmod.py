@@ -1,6 +1,5 @@
 """COMMAND : .cpu, .uptime, .suicide, .env, .pip, .neofetch, .coffeehouse, .date, .stdplugins, .fast, .iwantsex, .telegram, .listpip, .pyfiglet, .kowsay, .name, .faast, .daddyjoke, .fortune, .qquote, .fakeid, .vpn, .kwot, .qpro, .covid"""
 # This Source Code Form is subject to the terms of the Mozilla Public
-# COPYRIGHT TEAM DYNAMIC
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 from telethon import events
@@ -85,7 +84,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[LEGEND BOT](tg://need_update_for_some_feature/) SUICIDE BOMB:**\n{o}"
+    OUTPUT = f"**[DEVIL BOT](tg://need_update_for_some_feature/) SUICIDE BOMB:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
@@ -121,7 +120,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[LEGEND BOT](tg://need_update_for_some_feature/) PLUGINS:**\n{o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All plugins might not work directly. Visit__ @DYNAMIC_USERBOT_SUPPORT __for assistance.__"
+    OUTPUT = f"**[DEVIL BOT](tg://need_update_for_some_feature/) PLUGINS:**\n{o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All plugins might not work directly. Visit__ @LEGEND_DYNAMIC_SUPPORT __for assistance.__"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
@@ -230,7 +229,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[LEGEND BOT](tg://need_update_for_some_feature/) , Server Speed Calculated:**\n{o}"
+    OUTPUT = f"**[DEVIL BOT](tg://need_update_for_some_feature/) , Server Speed Calculated:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"

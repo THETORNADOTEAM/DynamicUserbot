@@ -1,6 +1,9 @@
+
+
+
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd, sudo_cmd
 import html
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
@@ -50,16 +53,17 @@ async def get_user_sender_id(user, event):
     return user_obj
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
+@borg.on(sudo_cmd("gban ?(.*)", allow_sudo=True))
 async def gspider(DYNAMIC):
     lol = DYNAMIC
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("Gbanning This GUY")
+        friday = await lol.reply("Gbanning This Retard DumbAss😁😁")
     else:
         friday = await lol.edit("Wait Processing.....")
     me = await DYNAMIC.client.get_me()
-    await friday.edit(f"Global Ban Is Coming See What DYNAMIC BOT Can Do")
+    await friday.edit(f"Global Ban Is Coming ! Wait And Watch You bitch😎🔥")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await DYNAMIC.get_chat()
@@ -79,7 +83,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1737497310:
+        if user.id == 1037581197:
             return await friday.edit(
                 f"**Didn't , Your Father Teach You ? That You Cant Gban your creator😑😑🖕**"
             )
@@ -145,7 +149,7 @@ async def gspider(DYNAMIC):
     except:
         return await friday.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 1737497310:
+        if user.id == 1100231654:
             return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
