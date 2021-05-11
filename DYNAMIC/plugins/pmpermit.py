@@ -32,7 +32,7 @@ import asyncio
 
 from DYNAMIC import events, functions
 
-from pyrogram.tl.functions.users import GetFullUserRequest
+from telethon.tl.functions.users import GetFullUserRequest
 
 
 
