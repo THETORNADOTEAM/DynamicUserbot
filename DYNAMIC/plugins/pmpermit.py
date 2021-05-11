@@ -37,17 +37,17 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 
 
-import DYNAMIC.plugins.sql_helper.pmpermit_sql as DYNAMIC_sql
+import userbot.plugins.sql_helper.pmpermit_sql as DYNAMIC_sql
 
 from DYNAMIC import ALIVE_NAME, bot
 
-from DYNAMIC.DYNAMICConfig import Config
+from userbot.uniborgConfig import Config
 
 from var import Var
 
 DYNAMICUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
-from DYNAMIC.utils import admin_cmd as DYNAMIC_cmd
+from userbot.utils import admin_cmd as DYNAMIC_cmd
 
 
 
