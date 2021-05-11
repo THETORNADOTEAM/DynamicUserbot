@@ -30,9 +30,9 @@ import asyncio
 
 
 
-from telethon import events, functions
+from pyrogram import events, functions
 
-from telethon.tl.functions.users import GetFullUserRequest
+from pyrogram.tl.functions.users import GetFullUserRequest
 
 
 
