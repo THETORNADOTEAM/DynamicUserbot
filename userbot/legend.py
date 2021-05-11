@@ -33,18 +33,18 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-𝗗𝗘𝗩𝗜𝗟 = "[𝗗𝗲𝘃𝗶𝗹](https://t.me/luciifeermorningstar)"
+DYNAMIC = "[DYNAMIC](https://t.me/DYNAMICUSERBOTSUPPORT)"
 #my bots repo 👇
-REPO = "[𝗗𝗘𝗩𝗜𝗟 𝗕𝗢𝗧](https://github.com/luciifeermorningstar/Devil)"
+REPO = "[𝗗YNAMIC 𝗕𝗢𝗧](https://github.com/TeamDynamic/Dynamic-Userbot)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 global ghanti
 X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
-GROUP = "[SUPPORT GROUP](https://t.me/deviluserbot)"
+GROUP = "[SUPPORT GROUP](https://t.me/DYNAMICUSERBOT)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
-ALIVE = "∂єνιℓ υѕєяησт ιѕ ση🔥 ƒιяє 🔥" #make by ∂єνιℓ
+ALIVE = "DYNAMIC υѕєяησт ιѕ ση🔥 ƒιяє 🔥" #make by DYNAMIC
 OP = "𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸 𝙰𝙼 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃💝"
 EMOJI = "🔥"
