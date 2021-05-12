@@ -150,7 +150,7 @@ async def _(event):
 
     logger.info(result)  # pylint:disable=E0602
 
-    await event.edit("Telethon UserBot powered 𝙳ARKLON_𝚋𝚘𝚝")
+    await event.edit("Telethon UserBot powered 𝙳ynamic Userbot")
 
 
 
