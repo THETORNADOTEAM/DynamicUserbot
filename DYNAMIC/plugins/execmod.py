@@ -84,7 +84,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[DEVIL BOT](tg://need_update_for_some_feature/) SUICIDE BOMB:**\n{o}"
+    OUTPUT = f"**[SUPER POWERFUL DYNAMIC USERBOT](tg://need_update_for_some_feature/) SUICIDE BOMB:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
