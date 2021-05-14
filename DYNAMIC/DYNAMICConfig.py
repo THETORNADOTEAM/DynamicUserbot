@@ -152,13 +152,6 @@ if ENV:
         # Send .get_id in any group to fill this value.
         SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\.")
         PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
-        if PRIVATE_GROUP_ID is not None:
-        try:
-            PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
-        except ValueError:
-            raise ValueError(
-                "Invalid Private Group ID. Make sure your ID is starts with -100 and make sure that it is only numbers.")
-        
         # This is required for the plugins involving the file system.
         TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./download/")
         # This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html
