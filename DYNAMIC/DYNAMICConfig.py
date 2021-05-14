@@ -11,6 +11,9 @@ class Var(object):
     PMSECURITY = os.environ.get("PMSECURITY", "ON")
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
+    TG_BOT_USER_NAME_BF_HER = os.environ.get(
+            "TG_BOT_USER_NAME_BF_HER", None)
+
     
     
     PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
@@ -72,6 +75,9 @@ if ENV:
         UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
         # maximum number of messages for antiflood
         MAX_ANTI_FLOOD_MESSAGES = 10
+        TG_BOT_USER_NAME_BF_HER = os.environ.get(
+            "TG_BOT_USER_NAME_BF_HER", None)
+
         # warn mode for anti flood
         ANTI_FLOOD_WARN_MODE = ChatBannedRights(
             until_date=None,
