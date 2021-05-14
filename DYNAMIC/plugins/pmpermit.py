@@ -5,7 +5,7 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-import DYNAMIC.modules.sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from DYNAMIC import ALIVE_NAME, CMD_HELP, CUSTOM_PMPERMIT, bot
 from DYNAMIC.utils import admin_cmd
 from DYNAMIC.DYNAMICConfig import Var, Config
@@ -24,7 +24,7 @@ MESAG = (
     if CUSTOM_PMPERMIT
     else "DYNAMIC USERBOT PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ᴅᴀɪsʏ x"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 USER_BOT_NO_WARN = (
     "**PM Security ~ DaisyX Bot**\n\nNice to see you here, but  "
