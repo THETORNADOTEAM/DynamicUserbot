@@ -95,12 +95,14 @@ if ENV:
         # send .get_id in any channel to forward all your NEW PMs to this group
         PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", None)
         if PM_LOGGR_BOT_API_ID:
-            PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
+        PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
         # For Databases
         # can be None in which case plugins requiring
         # DataBase would not work
         DB_URI = os.environ.get("DATABASE_URL", None)
         # number of rows of buttons to be displayed in .helpme command
+        # PMSECURITY
+        MAX_SPAM = int(os.environ.get("MAX_SPAM", 3))
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5))
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
