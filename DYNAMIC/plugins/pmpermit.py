@@ -8,7 +8,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from DYNAMIC import ALIVE_NAME, CMD_HELP, CUSTOM_PMPERMIT, bot
 from DYNAMIC.utils import admin_cmd
-from DYNAMIC.DYNAMICConfig import Var, Config
+from DYNAMIC.DYNAMICConfig import var as Var
+from DYNAMIC.DYNAMICConfig import Config
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
