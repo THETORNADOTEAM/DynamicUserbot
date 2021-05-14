@@ -8,6 +8,7 @@ class Var(object):
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     LOGGER = True
+    PMSECURITY = os.environ.get("PMSECURITY", "ON")
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     
@@ -83,6 +84,7 @@ if ENV:
         # Get your own API key from https://www.remove.bg/ or
         # feel free to use http://telegram.dog/Remove_BGBot
         REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+        PMSECURITY = os.environ.get("PMSECURITY", "ON")
         # Set to True if you want to block users that are spamming your PMs.
         SLAP_USERNAME = os.environ.get("SLAP_USERNAME", None)
         GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
