@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String
-from DaisyX.modules.sql_helper import SESSION, BASE
+from DYNAMIC.modules.sql_helper import SESSION, BASE
 
 
 class PMPermit(BASE):
