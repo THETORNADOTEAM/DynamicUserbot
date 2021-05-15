@@ -338,13 +338,13 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             # pm permit
 
-            await do_pm_permit_action(chat_id, event)
+            await do_pm_permit_action(event.get_chat)
 
-    async def do_pm_permit_action(chat_id, event):
+    async def do_pm_permit_action(event.get_chat):
 
         if chat_id not in PM_WARNS:
 
-            PM_WARNS.update({chat_id: 0})
+            PM_WARNS.update({event.get_chat: 0})
 
         if PM_WARNS[chat_id] == 5:
 
@@ -353,7 +353,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             await asyncio.sleep(3)
 
             await event.client(functions.contacts.BlockRequest(chat_id))
-
+chat_id
             if chat_id in PREV_REPLY_MESSAGE:
 
                 await PREV_REPLY_MESSAGE[chat_id].delete()
