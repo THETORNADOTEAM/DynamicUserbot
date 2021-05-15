@@ -344,7 +344,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if chat_id not in PM_WARNS:
 
-            PM_WARNS.update({event.get_chat: 0})
+            PM_WARNS.update({chat_id, event: 0})
 
         if PM_WARNS[chat_id] == 5:
 
