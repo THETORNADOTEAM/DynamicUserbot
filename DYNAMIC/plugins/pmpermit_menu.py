@@ -110,4 +110,3 @@ async def _(event):
                         await event.client(functions.contacts.BlockRequest(chat_id))
 # © DYNAMIC-UserBot 
 # Don't Edit Anything
-# If You Edit This {Not For My Contributors} You Will Be Gay
