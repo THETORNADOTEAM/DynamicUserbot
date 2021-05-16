@@ -19,23 +19,3 @@ pm_caption += "[Assistant By DYNAMIC USERBOT ]"
 @tgbot.on(events.NewMessage(pattern="^/alive", func=lambda e: e.sender_id == bot.uid))
 async def jarvis(event):
     await tgbot.send_file(event.chat_id, PM_IMG, caption=pm_caption)
-
-# PING
-@tgbot.on(events.NewMessage(pattern=None))
-async def ok(event):
-    msg = str(event.text)
-    if not msg == "/ping":
-     return
-
-    start_time = datetime.datetime.now()
-    message = await event.reply("_.._.._Pinging_.._.._")
-    end_time = datetime.datetime.now()
-    pingtime = end_time - start_time
-    telegram_ping = str(round(pingtime.total_seconds(), 2)) + "s"
-    uptime = get_readable_time((time.time() - StartTime))
-    await message.edit(
-        "<b><i>☞ Pᴏɴɢ !!</i></b>\n"
-        "<b>➥ Tɪᴍᴇ Tᴀᴋᴇɴ:</b> <code>{}</code>\n"
-        "<b>➥ Sᴇʀᴠɪᴄᴇ Uᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
-        parse_mode="html",
-    )
