@@ -1,4 +1,4 @@
-
+# COPYRIGHT TEAM DYNAMIC
 from telethon import events
 from DYNAMIC import ALIVE_NAME
 from DYNAMIC import bot
