@@ -11,8 +11,9 @@ import datetime
 from . import *
 from telethon import events, Button, custom
 import re, os
-from DYNAMIC.GODBOYX import PHOTO, xbot, BOT, VERSION
+from DYNAMIC.GODBOYX import PHOTO, xbot, VERSION
 from DYNAMIC import bot
+from DYNAMIC import bot as BOT
 @tgbot.on(events.NewMessage(pattern=("/alive")))
 async def awake(event):
   LEGENDX = f"Hᴇʟʟᴏ !! Tʜɪs ɪs **{BOT}**\n\n"
