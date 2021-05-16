@@ -3,7 +3,7 @@ import io
 import re
 
 from datetime import datetime
-from ..utils import admin_cmd, edit_or_reply, sudo_cmd
+from ...utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from telethon import Button, custom, events
 from telethon.tl.functions.users import GetFullUserRequest
