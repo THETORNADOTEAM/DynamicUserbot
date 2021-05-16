@@ -2,7 +2,7 @@
 # make by @GODBOYX
 
 from DYNAMIC import bot
-from GODBOYX import xbot, ID
+from DYNAMIC.GODBOYX import xbot, ID
 import heroku3
 from telethon import events
 from DYNAMIC import StartTime
