@@ -52,6 +52,16 @@ for name in files:
         shortname = path1.stem
         start_assistant(shortname.replace(".py", ""))   
 
+#import glob
+
+#path = 'DYNAMIC/plugins/*.py'
+#files = glob.glob(path)
+#for name in files:
+#    with open(name) as f:
+#        path1 = Path(f.name)
+#        shortname = path1.stem
+#        load_module(shortname.replace(".py", ""))
+
 import glob
 
 path = 'DYNAMIC/plugins/*.py'
@@ -61,8 +71,6 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
-
-
 
 import DYNAMIC._core
 
