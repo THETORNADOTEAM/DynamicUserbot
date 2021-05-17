@@ -1,24 +1,15 @@
-#MADE BY "I DON'T KNOW😂😂
+#MADE BY "AMAN PANDEY"
 #FIXED BY @MADBOY482
 #MODIFIED BY @GODBOYX
 import asyncio
 import os
 import random
 from urllib.parse import quote_plus
-# fixed by madboy482
-# MODIFIED BY @GODBOYX
-# SAY NO TO KANGS, ELSE GEND FAD DI JAYEGI
 from selenium import webdriver
-# fixed by madboy482
-# MODIFIED BY @GODBOYX
-# SAY NO TO KANGS, ELSE GEND FAD DI JAYEGI
 from selenium.webdriver.chrome.options import Options
 from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 from DYNAMIC import ALIVE_NAME, CMD_HELP
 from DYNAMIC.helpers.functions import deEmojify
-# fixed by madboy482
-# MODIFIED BY @GODBOYX
-# SAY NO TO KANGS, ELSE GEND FAD DI JAYEGI
 
 # Google Drive ()
 CHROME_BIN = os.environ.get("CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
@@ -83,7 +74,7 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Here we go with ur Karbon.\nCarbonised by υℓтяα χ",
+        caption="Here we go with ur Karbon.\nCarbonised by DYNAMIC USERBOT",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
