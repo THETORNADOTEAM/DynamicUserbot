@@ -8,12 +8,12 @@ import asyncio
 from DYNAMIC.utils import admin_cmd
 import glob
 import os  
-from DYNAMIC import CMD_HELP, ALIVE_NAME, catdef
+from DYNAMIC import CMD_HELP, ALIVE_NAME
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@Sur_vivor"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
 @borg.on(admin_cmd(pattern="song(?: |$)(.*)"))
 async def _(event):
@@ -34,7 +34,7 @@ async def _(event):
     catdef.catmusic(str(query),"320k")
     l = glob.glob("*.mp3")
     if l:
-        await event.edit("yeah..! i found something wi8..🥰")
+        await event.edit("I GOT SONG")
     else:
         await event.edit(f"Sorry..! i can't find anything with `{query}`")
     loa = l[0]    
@@ -68,7 +68,7 @@ async def _(event):
     catdef.catmusicvideo(query)
     l = glob.glob(("*.mp4")) + glob.glob(("*.mkv")) + glob.glob(("*.webm")) 
     if l:
-        await event.edit("yeah..! i found something wi8..🥰")
+        await event.edit("I Got My Song")
     else:
         await event.edit(f"Sorry..! i can't find anything with `{query}`")
     loa = l[0]  
