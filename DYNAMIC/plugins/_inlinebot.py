@@ -36,7 +36,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Check Pinned Message in\n@Godhackerzuserbot And\nGet Your Own Userbot"
+            reply_pop_up_alert = "Check Pinned Message in\n@DYNAMICUSERBOTSUPPORT And\nGet Your Own Userbot"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -55,7 +55,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Check Pinned Message in\n@Godhackerzuserbot And\nGet Your Own Userbot"
+            reply_pop_up_alert = "Check Pinned Message in\n@DYNAMICUSERBOTSUPPORT And\nGet Your Own Userbot"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
         data=re.compile(b"us_plugin_(.*)")
@@ -74,7 +74,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             reply_pop_up_alert = help_string
         reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-            ©GodHackerz-UserbotBot".format(plugin_name)
+            © DYNAMIC-UserbotBot".format(plugin_name)
         try:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         except:
@@ -98,7 +98,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
             helpable_plugins.append(p)
     helpable_plugins = sorted(helpable_plugins)
     modules = [custom.Button.inline(
-        "{} {}".format("🔥", x),
+        "{} {}".format(" ", x),
         data="us_plugin_{}".format(x))
         for x in helpable_plugins]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
