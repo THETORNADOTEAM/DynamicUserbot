@@ -1,4 +1,4 @@
-# This is a troll indeed ffs *facepalm*
+#This is a troll indeed ffs *facepalm*
 import asyncio
 
 from telethon.tl.functions.users import GetFullUserRequest
