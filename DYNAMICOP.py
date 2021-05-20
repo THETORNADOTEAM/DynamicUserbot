@@ -26,8 +26,8 @@ else:
   MSG = MESSAGE
 botnickname = os.environ.get("BOT_NICK_NAME")
 ALIVE_NAME = os.environ.get("ALIVE_NAME")
-BOT = str(botnickname) if botnickname else "υℓтяα χ"
-NAME = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
+BOT = str(botnickname) if botnickname else "DYNAMIC"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USERBOT"
 PHOTO = os.environ.get("ALIVE_PHOTTO", None)
 ULTRAX = "[DYNAMIC](https://t.me/DYNAMICUSERBOTSUPPORT)"
 VERSION = "1.0"
