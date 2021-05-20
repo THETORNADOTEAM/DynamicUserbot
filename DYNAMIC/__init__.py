@@ -12,6 +12,7 @@ StartTime = time.time()
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+ALIVE_PHOTO = os.envoiron.get("ALIVE_PHOTO", None)
 botnickname = os.environ.get("botnickname", None)
 
 os.system("pip install --upgrade pip")
