@@ -57,7 +57,7 @@ async def wisper(event):
 
 from telethon import events, Button, custom
 import os,re
-from DYNAMIC import ID
+from DYNAMICOP import ID
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
 @tgbot.on(events.InlineQuery(pattern=r"restart"))
