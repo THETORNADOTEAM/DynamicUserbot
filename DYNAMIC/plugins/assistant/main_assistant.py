@@ -9,7 +9,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 from DYNAMIC.DYNAMICConfig import Config
 from DYNAMICOP import xbot, devs as DEVS
-from DYNAMIC.DYNAMICConfig import ALIVE_PHOTTO as PHOTO
+from DYNAMIC import ALIVE_PHOTO as PHOTO
 from DYNAMICOP import ID as id
 from DYNAMIC import bot
 from DYNAMIC.plugins.sql_helper.blacklist_ass import (
