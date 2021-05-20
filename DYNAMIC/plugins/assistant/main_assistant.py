@@ -114,7 +114,7 @@ async def all_messages_catcher(event):
         return
     if event.raw_text.startswith("/"):
         pass
-    elif event.sender_id == bot.uid:
+    elif event.sender_id == bot.uid or event.sender_id = (await tgbot.get_me()).id: # don't forward bot messages
         return
     else:
         await event.get_sender()
@@ -129,7 +129,7 @@ async def all_messages_catcher(event):
 async def sed(event):
     msg.id
     msg_s = event.raw_text
-    if event.sender_id == bot.uid:
+    if event.sender_id == bot.uid or event.sender_id == (await tgbot.get_me()).id: # do not forward bot msgs it's spam
         if event.raw_text.startswith("/"):
             pass
         else:
