@@ -10,9 +10,11 @@ DYNAMICVERSION = "1.0"
 botnickname = "DYNAMIC USERBOT"
 ALIVE_PHOTO = "https://telegra.ph/file/b9587ab5e03dae1c1e258.mp4"
 StartTime = time.time()
+NAME = "DYNAMIC USER"
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+NAME = os.environ.get("NAME", None)
 ALIVE_PHOTO = os.environ.get("ALIVE_PHOTO", None)
 botnickname = os.environ.get("botnickname", None)
 
