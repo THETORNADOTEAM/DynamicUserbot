@@ -8,6 +8,7 @@ from DYNAMIC.DYNAMICConfig import Config
 from var import Var
 DYNAMICVERSION = "1.0"
 botnickname = "DYNAMIC USERBOT"
+ALIVE_PHOTO = "https://telegra.ph/file/b9587ab5e03dae1c1e258.mp4"
 StartTime = time.time()
 
 # Default .alive name
