@@ -1,6 +1,6 @@
 import asyncio
 import os
-from ULTRAX import BOT, PHOTO, VERSION, MSG
+from DYNAMICOP import BOT, VERSION, MSG
 import requests
 import time
 from PIL import Image
