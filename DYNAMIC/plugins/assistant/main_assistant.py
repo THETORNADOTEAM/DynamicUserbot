@@ -24,6 +24,7 @@ from DYNAMIC.plugins.sql_helper.idadder_sql import (
     get_all_users,
 )
 # await function async def ke baad lagega
+DEFAULTUSER = str(ALIVE_PHOTO) if ALIVE_PHOTO else "https://telegra.ph/file/b9587ab5e03dae1c1e258.mp4"
 
 @xbot.on(events.NewMessage(pattern="/start$"))
 async def start(event):
