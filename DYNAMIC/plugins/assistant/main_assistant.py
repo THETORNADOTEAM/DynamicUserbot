@@ -1,47 +1,53 @@
 import asyncio
 import io
+import os
 import re
-
-from datetime import datetime
-from ...utils import admin_cmd, edit_or_reply, sudo_cmd
-
-from telethon import Button, custom, events
+from DYNAMIC import ALIVE_PHOTO, ID as id
+from telethon import Button, custom, events, functions
+import telethon
 from telethon.tl.functions.users import GetFullUserRequest
-
+from telethon.utils import pack_bot_file_id
+from DYNAMIC.DYNAMICConfig import Config
+from DYNAMICOP import xbot, devs as DEVS
 from DYNAMIC import bot
-from DYNAMIC.plugins.sql_helper.blacklist_assistant import (
+from DYNAMIC.plugins.sql_helper.blacklist_ass import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
-from DYNAMIC.plugins.sql_helper.botusers_sql import add_me_in_db, his_userid
+
+from DYNAMIC.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
 from DYNAMIC.plugins.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,
 )
+# await function async def ke baad lagega
 
-
-@tgbot.on(events.NewMessage(pattern="^/start"))
+@xbot.on(events.NewMessage(pattern="/start$"))
 async def start(event):
-    starkbot = await tgbot.get_me()
-    bot_id = starkbot.first_name
-    bot_username = starkbot.username
-    replied_user = await event.client(GetFullUserRequest(event.sender_id))
+    pro = await bot.get_me()
+    boy = pro.id
+    iam = await xbot.get_me()
+    bot_id = iam.first_name
+    bot_username = iam.username
+    replied_user = await xbot(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
+    devlop = await bot.get_me()
+    hmmwow = devlop.first_name
     vent = event.chat_id
-    PM_IMG = "https://telegra.ph/file/f7a8575e7242f1eb2e3f8.jpg"
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [DYNAMIC Userbot](t.me/DYNAMICUSERBOTSUPPORT)"
-    if event.sender_id == bot.uid:
-        await tgbot.send_message(
-            vent,
-            message=f"Hi Master, It's Me {bot_id}, Your DYNAMIC USERBOT Assistant ! \nWhat You Wanna Do today ?",
+    mypic = PHOTO
+    starttext = f"Hello, **{firstname}**!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell I'm **{bot_id}**.\n\n**A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ Oғ** [{hmmwow}](tg://user?id={boy})\n\n                           **Pᴏᴡᴇʀᴇᴅ Bʏ** [UʟᴛʀᴀX](t.me/UltraXOT)\n\n**Yᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.**\n**Iғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ.**"
+    if event.sender_id == boy:
+        await xbot.send_message(
+            event.chat_id,
+            message=f"Hi Master, It's Me {bot_id}, Your Assistant !! \nWhat You Wanna Do today ?",
             buttons=[
-                [custom.Button.inline("Show Users LIST", data="users")],
-                [custom.Button.inline("Commands For Assistant", data="gibcmd")],
+                [custom.Button.inline("Bᴏᴛ Usᴇʀs 🔥", data="users")],
+                [custom.Button.inline("Hᴇʀᴏᴋᴜ Mᴇɴᴜ ⚙️", data="ass_back")],
                 [
                     Button.url(
-                        "Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true"
+                        "Iɴᴠɪᴛᴇ Mᴇ Tᴏ A Gʀᴏᴜᴘ 👥", f"t.me/{bot_username}?startgroup=true"
                     )
                 ],
             ],
@@ -51,167 +57,190 @@ async def start(event):
             pass
         elif not already_added(event.sender_id):
             add_usersid_in_db(event.sender_id)
-        await tgbot.send_message(
+        await xbot.send_file(
             event.chat_id,
-            message=starttext,
+            file=mypic,
+            caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your DYNAMIC USERBOT 🇮🇳", data="deploy")],
-                [Button.url("Help Me ❓", "t.me/DYNAMIC USERBOT")],
+                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ DYNAMIC", "http://GitHub.com/TEAMDYNAMIC/Dynamic-Userbot")],
+                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/DYNAMICUSERBOTSUPPORT")],
             ],
         )
+        if os.path.exists(mypic):
+            os.remove(mypic)
 
 
-# Data's
-
-
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
-async def help(event):
-    await event.delete()
-    if event.query.user_id is not bot.uid:
-        await tgbot.send_message(
-            event.chat_id,
-            message="You Can Deploy DYNAMIC In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
-            buttons=[
-                [Button.url("Deploy repo 📺", "https://github.com/TeamDynamic/Dynamic-Userbot")],
-                [Button.url("Need Help ❓", "t.me/DYNAMICUSERBOTSUPPORT")],
-            ],
-        )
-
-
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
+@xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
 async def users(event):
-    if event.query.user_id == bot.uid:
+    pro = await bot.get_me()
+    boy = pro.id
+    wrong = "sorry you cant access this"
+    if not event.sender_id == boy:
+       return await event.answer(wrong, alert=False)
+    if event.is_group or event.is_private:
         await event.delete()
         total_users = get_all_users()
-        users_list = "List Of Total Users In Bot. \n\n"
-        for starked in total_users:
-            users_list += ("==> {} \n").format(int(starked.chat_id))
+        users_list = "Lɪsᴛ Oғ Tᴏᴛᴀʟ Usᴇʀs Iɴ Bᴏᴛ. \n\n"
+        for ultrappl in total_users:
+            users_list += ("=> {} \n").format(int(ultrappl.chat_id))
         with io.BytesIO(str.encode(users_list)) as tedt_file:
             tedt_file.name = "userlist.txt"
-            await tgbot.send_file(
+            await xbot.send_file(
                 event.chat_id,
                 tedt_file,
                 force_document=True,
-                caption="Total Users In Your Bot.",
+                caption="**Tᴏᴛᴀʟ Usᴇʀs Iɴ Yᴏᴜʀ Bᴏᴛ.**",
                 allow_cache=False,
             )
     else:
         pass
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
+@xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"cmds")))
 async def users(event):
-    await event.delete()
-    grabon = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot \n➤ /purge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \n➤ /del - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
-    await tgbot.send_message(event.chat_id, grabon)
+    Pro = "The button is under construction...\nSorry for inconvenience, Will update soon....\nThanks..."
+    await event.answer(Pro, alert=True)
+    #@D, #@PROBOY add cmd List Here
+    # later bro
+    pass
 
-
-# Bot Permit.
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@xbot.on(events.NewMessage(func=lambda e: e.is_private))
 async def all_messages_catcher(event):
     if is_he_added(event.sender_id):
         return
-    if event.raw_text.startswith("/"):
-        pass
-    elif event.sender_id == bot.uid:
+    if event.is_group or event.sender_id == bot.me.id or event.sender_id == id:
         return
-    else:
-        await event.get_sender()
-        event.chat_id
-        sed = await event.forward_to(bot.uid)
-        # Add User To Database ,Later For Broadcast Purpose
-        # (C) @SpecHide
-        add_me_in_db(sed.id, event.sender_id, event.id)
+    if event.raw_text.startswith("/"):
+        return
+    if os.environ.get("SUB_TO_MSG_ASSISTANT", False):
+        try:
+            result = await xbot(
+                functions.channels.GetParticipantRequest(
+                    channel=Config.JTM_CHANNEL_ID, user_id=event.sender_id
+                )
+            )
+        except telethon.errors.rpcerrorlist.UserNotParticipantError:
+            await event.reply(f"**Opps, I Couldn't Forward That Message To Owner. Please Join My Channel First And Then Try Again!**",
+                             buttons = [Button.url("Join Channel", Config.JTM_CHANNEL_USERNAME)])
+            return
+    await event.get_sender()
+    sed = await event.forward_to(bot.uid)
+    add_me_in_db(sed.id, event.sender_id, event.id)
 
 
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@xbot.on(events.NewMessage(func=lambda e: e.is_private))
 async def sed(event):
+    msg = await event.get_reply_message()
+    if msg is None:
+        return
     msg.id
     msg_s = event.raw_text
-    if event.sender_id == bot.uid:
-        if event.raw_text.startswith("/"):
-            pass
-        else:
-            await tgbot.send_message(user_id, msg_s)
+    user_id, reply_message_id = his_userid(msg.id)
+    if event.sender_id != bot.uid:
+        return
+    elif event.raw_text.startswith("/") or event.sender_id == bot.me.id or event.sender_id == id:
+        return
+    elif event.text is not None and event.media:
+        bot_api_file_id = pack_bot_file_id(event.media)
+        await xbot.send_file(
+            user_id,
+            file=bot_api_file_id,
+            caption=event.text,
+            reply_to=reply_message_id,
+        )
+    else:
+        msg_s = event.raw_text
+        info = event.sender_id
+        msg_s = f"{msg_s}\n user id = `{info}`"
+        await xbot.send_message(
+            user_id,
+            msg_s,
+            reply_to=reply_message_id,
+        )
 
 
-# broadcast
-@tgbot.on(
-    events.NewMessage(
-        pattern="^/broadcast ?(.*)", func=lambda e: e.sender_id == bot.uid
-    )
-)
+
+
+@xbot.on(events.NewMessage(pattern="/broadcast ?(.*)"))
 async def sedlyfsir(event):
-    msgtobroadcast = event.pattern_match.group(1)
+    pro = await bot.get_me()
+    boy = pro.id
+    if not event.sender_id in DEVS:
+       if not event.sender_id == boy:
+            return
+    msgtobroadcast = event.text.split(" ", maxsplit=1)[1]
     userstobc = get_all_users()
     error_count = 0
     sent_count = 0
-    for starkcast in userstobc:
+    hmmok = ""
+    if msgtobroadcast == None:
+        await event.reply("`Wait. What? Broadcast None?`")
+        return
+    elif msgtobroadcast == "":
+        await event.reply("`Give Something to Broadcast ☺️`")
+        return
+    for uzers in userstobc:
         try:
             sent_count += 1
-            await tgbot.send_message(int(starkcast.chat_id), msgtobroadcast)
+            await xbot.send_message(int(uzers.chat_id), msgtobroadcast)
             await asyncio.sleep(0.2)
-        except Exception as e:
-            try:
-                logger.info(f"Error : {error_count}\nError : {e} \nUsers : {chat_id}")
-            except:
-                pass
-    await tgbot.send_message(
+        except:
+            error_count += 1
+    await xbot.send_message(
         event.chat_id,
-        f"Broadcast Done in {sent_count} Group/Users and I got {error_count} Error and Total Number Was {len(userstobc)}",
+        f"**Broadcast Completed in {sent_count} Group/Users..**\n__➥ Error :__ {error_count}\n__➥ Total Number Was :__ {len(userstobc)}",
     )
 
 
-@tgbot.on(
-    events.NewMessage(pattern="^/stats ?(.*)", func=lambda e: e.sender_id == bot.uid)
-)
-async def starkisnoob(event):
-    starkisnoob = get_all_users()
+@xbot.on(events.NewMessage(pattern="/stats"))
+async def _(event):
+    pro = await bot.get_me()
+    boy = pro.id
+    if not event.sender_id == boy:
+       return await event.reply("you cant access this")
+    all = get_all_users()
     await event.reply(
-        f"**Stats Of Your Bot** \nTotal Users In Bot => {len(starkisnoob)}"
+        f"**Stats Of Your Bot**\nTotal Users In Bot => {len(all)}"
     )
 
 
-@tgbot.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
-async def starkislub(event):
-    grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
-    await event.reply(grabonx)
 
-
-@tgbot.on(
-    events.NewMessage(pattern="^/block ?(.*)", func=lambda e: e.sender_id == bot.uid)
-)
-async def starkisnoob(event):
-    if event.sender_id == bot.uid:
+@xbot.on(events.NewMessage(pattern="/block ?(.*)"))
+async def ok(event):
+    pro = await bot.get_me()
+    boy = pro.id
+    if not event.sender_id == boy:
+         return
+    if event.sender_id == boy:
         msg = await event.get_reply_message()
-        msg.id
-        event.raw_text
         user_id, reply_message_id = his_userid(msg.id)
     if is_he_added(user_id):
         await event.reply("Already Blacklisted")
     elif not is_he_added(user_id):
         add_nibba_in_db(user_id)
         await event.reply("Blacklisted This Dumb Person")
-        await tgbot.send_message(
+        await xbot.send_message(
             user_id, "You Have Been Blacklisted And You Can't Message My Master Now."
         )
 
 
-@tgbot.on(
-    events.NewMessage(pattern="^/unblock ?(.*)", func=lambda e: e.sender_id == bot.uid)
-)
-async def starkisnoob(event):
-    if event.sender_id == bot.uid:
+@xbot.on(events.NewMessage(pattern="/unblock ?(.*)"))
+async def gey(event):
+    pro = await bot.get_me()
+    boy = pro.id
+    if not event.sender_id == boy:
+        return
+    if event.sender_id == boy:
         msg = await event.get_reply_message()
         msg.id
         event.raw_text
         user_id, reply_message_id = his_userid(msg.id)
     if not is_he_added(user_id):
-        await event.reply("Not Even. Blacklisted 🤦🚶")
+        await event.reply("Not Even. Blacklisted🚶")
     elif is_he_added(user_id):
         removenibba(user_id)
         await event.reply("DisBlacklisted This Dumb Person")
-        await tgbot.send_message(
+        await xbot.send_message(
             user_id, "Congo! You Have Been Unblacklisted By My Master."
         )
