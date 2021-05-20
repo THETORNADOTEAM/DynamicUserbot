@@ -20,7 +20,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-from ULTRA.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 @bot.on(admin_cmd(pattern=None))
 async def repo(event):
     if not event.text.startswith(".help"):
