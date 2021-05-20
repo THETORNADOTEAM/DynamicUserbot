@@ -17,7 +17,7 @@ import time
 MESSAGE = os.environ.get("ALIVE_MSG", None)
 if MESSAGE is None:
    MSG = '''
-🔥🔥 THE ULTRA X IS ONLINE 🔥🔥
+🔥🔥 THE DYNAMIC IS ONLINE 🔥🔥
 I AM HERE FOR MY MASTER PROTECTION
 I AM NON HACKEBLE + BEST USERBOT
 THANKS MASTER TO DEPLOY ME
