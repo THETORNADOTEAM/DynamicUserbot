@@ -4,7 +4,7 @@ import io
 import os
 import sys
 import traceback
-from DYNAMICOP import id
+from DYNAMICOP import *
 from telethon import events
 
 
@@ -61,7 +61,7 @@ async def aexec(code, smessatatus):
 
 
 
-@xbot.on(events.NewMessage(pattern="/exec ?(.*)"))
+@tgbot.on(events.NewMessage(pattern="/exec ?(.*)"))
 async def _(event):
     pro = await bot.get_me()
     boy = pro.id
