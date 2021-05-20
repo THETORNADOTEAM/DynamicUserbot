@@ -28,7 +28,7 @@ if len(argv) not in (1, 3, 4):
 else:
     bot.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
-        print("DYNAMIC USERBOT STABLE VERSION STARTING DEV AND BETA COMING SOON")
+        print("DYNAMIC USERBOT STABLE VERSION STARTING")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
@@ -78,7 +78,6 @@ print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE I
 print("SOFTWARE VERSION 1.0 Stable")
 print("DYNAIMIC BRANCH: Stable")
 print(" TELETHON VERSION 1.21.1 ")
-print("DYNAMIC BETA USERBOT AND DEVELOPER VERSION COMING SOON")
 
 
 
