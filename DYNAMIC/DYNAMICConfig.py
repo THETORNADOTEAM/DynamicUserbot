@@ -73,8 +73,7 @@ if ENV:
         MAX_MESSAGE_SIZE_LIMIT = 4095
         # set blacklist_chats where you do not want DYNAMIC's features
         UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split
-        # maximum number of messages for antiflood
-        MAX_ANTI_FLOOD_MESSAGES = 10
+ 
         TG_BOT_USER_NAME_BF_HER = os.environ.get(
             "TG_BOT_USER_NAME_BF_HER", None)
 
