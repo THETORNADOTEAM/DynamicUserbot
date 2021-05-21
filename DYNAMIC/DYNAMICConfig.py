@@ -72,7 +72,7 @@ if ENV:
         # TG API limit. A message can have maximum 4096 characters!
         MAX_MESSAGE_SIZE_LIMIT = 4095
         # set blacklist_chats where you do not want DYNAMIC's features
-        UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
+        UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split
         # maximum number of messages for antiflood
         MAX_ANTI_FLOOD_MESSAGES = 10
         TG_BOT_USER_NAME_BF_HER = os.environ.get(
@@ -293,6 +293,7 @@ if ENV:
         MONGO_URI = os.environ.get("MONGO_URI", None)
         #alive
         ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
+        CMD_HNDLR = os.environ.get("CMD_HNDLR", "\.")
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
         #auto bio
         BIO_MSG = os.environ.get("BIO_MSG", None)
