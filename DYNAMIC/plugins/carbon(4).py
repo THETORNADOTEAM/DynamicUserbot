@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 from DYNAMIC import ALIVE_NAME, CMD_HELP
-from DYNAMIC.helpers.functions import deEmojify
+
 
 # Google Drive ()
 CHROME_BIN = os.environ.get("CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
