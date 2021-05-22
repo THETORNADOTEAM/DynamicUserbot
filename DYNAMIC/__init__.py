@@ -3,7 +3,6 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from DYNAMIC.helpers import functions as simpdef
 from DYNAMIC.DYNAMICConfig import Config
 from var import Var
 DYNAMICVERSION = "1.0"
