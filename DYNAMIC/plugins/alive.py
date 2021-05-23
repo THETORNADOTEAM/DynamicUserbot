@@ -4,7 +4,7 @@
 import asyncio
 import random
 from telethon import events
-from AmanPandeyOP.utils import admin_cmd
+from . import admin_cmd
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 
