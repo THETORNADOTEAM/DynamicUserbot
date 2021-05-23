@@ -1,2 +1,3 @@
+pip install AmanPandeyOP
 from AmanPandeyOP import *
-from AmanPandeyOP import admin_cmd
+from AmanPandeyOP.utils import admin_cmd
