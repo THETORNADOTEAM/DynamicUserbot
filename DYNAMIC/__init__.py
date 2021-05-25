@@ -18,7 +18,7 @@ ALIVE_PHOTO = os.environ.get("ALIVE_PHOTO", None)
 botnickname = os.environ.get("botnickname", None)
 
 os.system("pip install --upgrade pip")
-os.system("python --version")
+os.system("pip install --upgrade Extre")
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
