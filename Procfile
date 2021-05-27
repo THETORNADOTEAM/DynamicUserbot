@@ -1,1 +1,1 @@
-DYNAMIC: python -m DYNAMIC
+bot: python -m DYNAMIC
