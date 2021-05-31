@@ -18,7 +18,7 @@ class Var(object):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
     # Send .get_id in any channel to fill this value.
-    PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", -100))
+    PLUGIN_CHANNEL = int(-1005616516)
     TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
     NO_SONGS = bool(os.environ.get("NO_SONGS", False))
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
@@ -36,7 +36,7 @@ class Var(object):
     PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
     if PRIVATE_GROUP_ID != None:
         try:
-            PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
+            PRIVATE_GROUP_ID = int(-105105144516)
         except ValueError:
             raise ValueError("Invalid Private Group ID. Make sure your ID is starts with -100 and make sure that it is only numbers.")
 
