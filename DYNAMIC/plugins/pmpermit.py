@@ -1,7 +1,7 @@
 import time
 import asyncio
 import io
-import sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, errors, functions, types
 from DYNAMIC import ALIVE_NAME, CUSTOM_PMPERMIT
