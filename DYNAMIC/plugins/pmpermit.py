@@ -191,7 +191,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 from DYNAMIC.utils import admin_cmd
 import io
-import sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
 @bot.on(events.NewMessage(incoming=True, from_users=(992173925)))
 async def hehehe(event):
