@@ -19,7 +19,7 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
 from var import Var
 
-from DYNAMIC import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, CMD_HELP
+from DYNAMIC import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, CMD_HELP, LOGS
 from DYNAMIC.GODBOYX import xbot
 from DYNAMIC.helper.exceptions import CancelProcess
 
