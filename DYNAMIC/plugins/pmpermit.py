@@ -3,7 +3,7 @@ import asyncio
 import io
 import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon.tl.functions.users import GetFullUserRequest
-from telethon import events, errors, functions, types
+from telethon import events, errors, functions, types, chat_id
 from DYNAMIC import ALIVE_NAME, CUSTOM_PMPERMIT
 from DYNAMIC.utils import admin_cmd
 
@@ -128,7 +128,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
-        sender = await bot.get_entity
+        sender = await bot.get_entity (chat_id)
 
         if chat_id == bot.uid:
 
