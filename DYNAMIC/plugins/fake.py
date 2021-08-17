@@ -14,8 +14,8 @@ document
 cancel"""
 
 import asyncio
-from DYNAMIC.utils import admin_cmd
-from DYNAMIC import CMD_HELP
+from Speedo.utils import admin_cmd
+from Speedo import CMD_HELP
 
  
 @borg.on(admin_cmd(pattern="fake ?(.*)"))

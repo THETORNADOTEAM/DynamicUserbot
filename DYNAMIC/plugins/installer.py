@@ -1,16 +1,16 @@
 # MADE BY @GODBOX AND @legendx22
-from DYNAMIC import bot, CMD_HELP, CMD_LIST
+from Speedo import bot, CMD_HELP, CMD_LIST
 from telethon import events
-from DYNAMIC.utils import remove_plugin, load_module, register
+from Speedo.utils import remove_plugin, load_module, register
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from pathlib import Path
-from DYNAMIC import LOAD_PLUG
+from Speedo import LOAD_PLUG
 from datetime import datetime
 DELETE_TIMEOUT = 5
 import sys, asyncio, traceback, os, importlib
-import DYNAMIC.utils
-from DYNAMIC import CMD_HELP
+import Speedo.utils
+from Speedo import CMD_HELP
 
 
 
@@ -25,7 +25,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "./DYNAMIC/plugins/"  # pylint:disable=E0602
+                "./Speedo/plugins/"  # pylint:disable=E0602
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)

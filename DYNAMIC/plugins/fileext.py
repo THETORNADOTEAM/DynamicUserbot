@@ -3,7 +3,7 @@ Syntax: .filext EXTENSION"""
 from telethon import events
 import requests
 from bs4 import BeautifulSoup
-from DYNAMIC import CMD_HELP
+from Speedo import CMD_HELP
 from uniborg.util import admin_cmd
 
 

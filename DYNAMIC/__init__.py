@@ -3,13 +3,13 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from DYNAMIC.config import Config
+from Speedo.config import Config
 from var import Var
-DYNAMICVERSION = "1.0"
-botnickname = "DYNAMIC USERBOT"
+SpeedoVERSION = "1.0"
+botnickname = "Speedo USERBOT"
 ALIVE_PHOTO = "https://telegra.ph/file/b9587ab5e03dae1c1e258.mp4"
 StartTime = time.time()
-NAME = "DYNAMIC USER"
+NAME = "Speedo USER"
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -38,7 +38,7 @@ LOAD_PLUG = {}
 ENV = os.environ.get("ENV", False)
 
 
-DYNAMIC_ID = ["1756809533","882370987"]
+Speedo_ID = ["1756809533","882370987"]
 
 """ PPE initialization. """
 
@@ -224,8 +224,8 @@ AFKREASON = None
 SUDO_LIST = {}
 
 
-#from DYNAMIC.helpers import *
-#from DYNAMIC.helpers import functions as legdef
+#from Speedo.helpers import *
+#from Speedo.helpers import functions as legdef
 
-# CREDITS DYNAMIC
+# CREDITS Speedo
 

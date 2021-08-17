@@ -16,7 +16,7 @@ import sys
 
 import random
 
-from DYNAMIC.utils import admin_cmd
+from Speedo.utils import admin_cmd
 
 @borg.on(admin_cmd(pattern=r"engsongs", outgoing=True))
 

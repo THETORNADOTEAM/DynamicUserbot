@@ -8,7 +8,7 @@ import logging
 
 
 
-from DYNAMIC.utils import admin_cmd
+from Speedo.utils import admin_cmd
 
 
 

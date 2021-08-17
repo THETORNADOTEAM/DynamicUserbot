@@ -3,8 +3,8 @@ import time
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
-from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
-from DYNAMIC import CMD_HELP
+from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Speedo import CMD_HELP
 
 
 @bot.on(admin_cmd(pattern="stats$"))
@@ -76,7 +76,7 @@ async def stats(
     response += f'🔱 **Unread:** {unread} \n'
     response += f'🔱 **Unread Mentions:** {unread_mentions} \n\n'
     response += f'☣️   __It Took:__ {stop_time:.02f}s \n'
-    response += f'📌 **From The DataBase Of** :- [SUPER POWERFUL DYNAMIC USERBOT](https://github.com/TeamDynamic/Dynamic-Userbot)'
+    response += f'📌 **From The DataBase Of** :- [SUPER POWERFUL Speedo USERBOT](https://github.com/TeamDynamic/Dynamic-Userbot)'
     await hell.edit(response)
 
 

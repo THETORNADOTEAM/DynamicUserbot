@@ -1,10 +1,10 @@
 import asyncio
 # made by telebot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from DYNAMIC import ALIVE_NAME
-from DYNAMIC import CMD_HELP
-from DYNAMIC import bot
-from DYNAMIC.utils import admin_cmd
+from Speedo import ALIVE_NAME
+from Speedo import CMD_HELP
+from Speedo import bot
+from Speedo.utils import admin_cmd
 
 bot = "@MissRose_bot"
 
@@ -40,7 +40,7 @@ async def _(event):
                     await borg.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY DYNAMIC USERBOT 🔥\n\nCollected by DYNAMIC.",
+                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY Speedo USERBOT 🔥\n\nCollected by Speedo.",
                     )
                 else:
                     await borg.send_message(event.chat_id, audio.text)

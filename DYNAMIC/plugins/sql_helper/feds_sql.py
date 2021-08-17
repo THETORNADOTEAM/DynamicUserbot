@@ -1,7 +1,7 @@
-# COPYRIGHT (C) 2021-22 BY @GODBOYX AND TEAM-DYNAMIC
+# COPYRIGHT (C) 2021-22 BY @GODBOYX AND TEAM-Speedo
 # YOU CAN COPY BUT DONT DARE TO REMOVE THESE LINES
 import threading
-from DYNAMIC.plugins.sql_helper import BASE, SESSION
+from Speedo.plugins.sql_helper import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 

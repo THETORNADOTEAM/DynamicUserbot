@@ -9,8 +9,8 @@ import time
 import math
 from datetime import datetime
 from telethon import events
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd, progress
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd, progress
 #
 from googleapiclient.discovery import build
 from apiclient.http import MediaFileUpload
@@ -278,7 +278,7 @@ async def upload_file(http, file_path, file_name, mime_type, event, parent_id):
     media_body = MediaFileUpload(file_path, mimetype=mime_type, resumable=True)
     body = {
         "title": file_name,
-        "description": "Uploaded using DYNAMIC gDrive v1",
+        "description": "Uploaded using Speedo gDrive v1",
         "mimeType": mime_type,
     }
     if parent_id is not None:

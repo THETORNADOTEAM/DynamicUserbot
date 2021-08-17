@@ -1,15 +1,15 @@
-from DYNAMIC import bot
-from DYNAMICOP import xbot, ID
+from Speedo import bot
+from SpeedoOP import xbot, ID
 import heroku3
 from telethon import events
-from DYNAMIC import StartTime
+from Speedo import StartTime
 import time
 import datetime
 from . import *
 from telethon import events, Button, custom
 import re, os
-from DYNAMICOP import PHOTO, xbot, BOT, VERSION
-from DYNAMIC import bot
+from SpeedoOP import PHOTO, xbot, BOT, VERSION
+from Speedo import bot
 @xbot.on(events.NewMessage(pattern=("/alive")))
 async def awake(event):
   LEGENDX = f"Hᴇʟʟᴏ !! Tʜɪs ɪs **{BOT}**\n\n"
@@ -29,11 +29,11 @@ async def awake(event):
 @xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"LEGENDX")))
 async def callback_query_handler(event):
 # inline by LEGENDX22 and PROBOY22 🔥
-  PROBOYX = [[Button.url("Rᴇᴘᴏ DYNAMIC USERBOT", "https://github.com/TeamDynamic/Dynamic-Userbot/")]]
-  PROBOYX +=[[Button.url("Dᴇᴘʟᴏʏ DYNAMIC USERBOT", "https://dashboard.heroku.com/new?button-url=https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")]]
+  PROBOYX = [[Button.url("Rᴇᴘᴏ Speedo USERBOT", "https://github.com/TeamDynamic/Dynamic-Userbot/")]]
+  PROBOYX +=[[Button.url("Dᴇᴘʟᴏʏ Speedo USERBOT", "https://dashboard.heroku.com/new?button-url=https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")]]
   PROBOYX +=[[Button.url("Tᴜᴛᴏʀɪᴀʟ", "COMING SOON"), Button.url("Sᴛʀɪɴɢ Sᴇssɪᴏɴ", "https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")]]
   PROBOYX +=[[Button.url("Aᴘɪ Iᴅ & Aᴘɪ Hᴀsʜ", "https://t.me/usetgxbot"), Button.url("Rᴇᴅɪs", "https://redislabs.com")]]
-  PROBOYX +=[[Button.url("Sᴜᴘᴘᴏʀᴛ Cʜᴀɴɴᴇʟ", "https://t.me/TeamDynamico"), Button.url("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", "https://t.me/DYNAMICUSERBOTSUPPORT")]]
+  PROBOYX +=[[Button.url("Sᴜᴘᴘᴏʀᴛ Cʜᴀɴɴᴇʟ", "https://t.me/TeamDynamico"), Button.url("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", "https://t.me/SpeedoUSERBOTSUPPORT")]]
   PROBOYX +=[[custom.Button.inline("«« Aʟɪᴠᴇ", data="PROBOY")]]
   await event.edit(text=f"Aʟʟ Dᴇᴛᴀɪʟs Oғ Rᴇᴘᴏs", buttons=PROBOYX)
 
@@ -55,7 +55,7 @@ async def callback_query_handler(event):
 
 @xbot.on(events.NewMessage(pattern=("/repo")))
 async def repo(event):
-  await xbot.send_message(event.chat, "**Hᴇʀᴇ Is Tʜᴇ Rᴇᴘᴏ Fᴏʀ DYNAMIC Usᴇʀʙᴏᴛ** \n\nFᴏʀ Aɴʏ Hᴇʟᴘ :- @DYNAMICUSERBOTSUPPORT", buttons=[[Button.url("⚜️ Rᴇᴘᴏ ⚜️", "https://github.com/TeamDynamic/Dynamic-Userbot/"), Button.url("🔰 Dᴇᴘʟᴏʏ 🔰", "https://dashboard.heroku.com/new?button-url=https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")]])
+  await xbot.send_message(event.chat, "**Hᴇʀᴇ Is Tʜᴇ Rᴇᴘᴏ Fᴏʀ Speedo Usᴇʀʙᴏᴛ** \n\nFᴏʀ Aɴʏ Hᴇʟᴘ :- @SpeedoUSERBOTSUPPORT", buttons=[[Button.url("⚜️ Rᴇᴘᴏ ⚜️", "https://github.com/TeamDynamic/Dynamic-Userbot/"), Button.url("🔰 Dᴇᴘʟᴏʏ 🔰", "https://dashboard.heroku.com/new?button-url=https://heroku.com/deploy?template=https://github.com/TeamDynamic/HEROKU-PACK")]])
 
 
 def get_readable_time(seconds: int) -> str:

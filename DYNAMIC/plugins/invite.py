@@ -1,10 +1,10 @@
-# COPYRIGHT TEAM DYNAMIC
+# COPYRIGHT TEAM Speedo
 import asyncio, time, io, math, os, logging, asyncio, shutil, re, subprocess, json
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from base64 import b64decode
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User

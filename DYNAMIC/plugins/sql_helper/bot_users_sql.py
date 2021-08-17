@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from DYNAMIC.plugins.sql_helper import BASE, SESSION
+from Speedo.plugins.sql_helper import BASE, SESSION
 
 
 class Users(BASE):

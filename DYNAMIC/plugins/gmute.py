@@ -1,7 +1,7 @@
-from DYNAMIC.plugins.sql_helper.mute_sql import is_muted, mute, unmute
+from Speedo.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 import asyncio
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd
 
 #@command(outgoing=True, pattern=r"^.gmute ?(\d+)?")
 @borg.on(admin_cmd(pattern=r"gmute ?(\d+)?"))

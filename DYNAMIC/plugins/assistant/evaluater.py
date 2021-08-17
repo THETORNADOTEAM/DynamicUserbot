@@ -1,10 +1,10 @@
-# COPYRIGHT © BY ULTRA X && TEAM DYNAMIC
+# COPYRIGHT © BY ULTRA X && TEAM Speedo
 import asyncio
 import io
 import os
 import sys
 import traceback
-from DYNAMICOP import *
+from SpeedoOP import *
 from telethon import events
 
 

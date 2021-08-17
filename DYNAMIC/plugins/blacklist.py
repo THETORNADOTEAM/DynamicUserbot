@@ -9,10 +9,10 @@ Available Commands:
 
 import re
 from telethon import events
-import DYNAMIC.plugins.sql_helper.blacklist_sql as sql
+import Speedo.plugins.sql_helper.blacklist_sql as sql
 
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(events.NewMessage(incoming=True))

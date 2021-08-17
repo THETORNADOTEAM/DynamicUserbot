@@ -2,8 +2,8 @@ import datetime
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from DYNAMIC.utils import admin_cmd
-from DYNAMIC import bot, CMD_HELP
+from Speedo.utils import admin_cmd
+from Speedo import bot, CMD_HELP
 
 @borg.on(admin_cmd(pattern="sg ?(.*)"))
 async def _(event):

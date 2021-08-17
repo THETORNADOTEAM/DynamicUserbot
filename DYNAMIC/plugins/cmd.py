@@ -2,8 +2,8 @@
 import asyncio
 import io
 
-from DYNAMIC.utils import admin_cmd
-from DYNAMIC import CMD_HELP
+from Speedo.utils import admin_cmd
+from Speedo import CMD_HELP
 
 
 # @command(pattern="^.cmds", outgoing=True)
@@ -14,7 +14,7 @@ async def install(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
-    cmd = "ls DYNAMIC/plugins"
+    cmd = "ls Speedo/plugins"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
@@ -22,7 +22,7 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"**List of Plugins:**\n - {o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All modules might not work directly. Visit__ @devilDYNAMIC __for assistance.__"
+    OUTPUT = f"**List of Plugins:**\n - {o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All modules might not work directly. Visit__ @devilSpeedo __for assistance.__"
     if len(OUTPUT) > 69:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "cmd_list.text"
@@ -39,5 +39,5 @@ async def install(event):
 
 
 CMD_HELP.update(
-    {"command_list": ".cmds\nUsage - Extracts all the plugins of this DYNAMIC in a link.."}
+    {"command_list": ".cmds\nUsage - Extracts all the plugins of this Speedo in a link.."}
 )

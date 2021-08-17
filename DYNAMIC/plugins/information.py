@@ -6,8 +6,8 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd
 
 
 @borg.on(admin_cmd("info ?(.*)"))
@@ -45,7 +45,7 @@ async def _(event):
     except Exception as e:
         dc_id = "`Need a Profile Picture to check **this**`"
         location = str(e)
-    caption = """<b>Extracted User info From Telegram By SUPER POWERED DYNAMIC USERBOT<b>
+    caption = """<b>Extracted User info From Telegram By SUPER POWERED Speedo USERBOT<b>
 <b>🆔️User ID</b>: <code>{}</code>
 <b>📎Link To Profile</b>: <a href='tg://user?id={}'>Click Here🚪</a>
 <b>🗣️First Name</b>: <code>{}</code>

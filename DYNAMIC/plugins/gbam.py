@@ -3,8 +3,8 @@ import asyncio
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd
 
 
 @borg.on(admin_cmd("gbam"))
@@ -57,6 +57,6 @@ CMD_HELP.update(
     {
         "gbam": "**Plugin : **`gbam`\
     \n\n**Syntax : **`.gbam`\
-    \n**Function : **fake gban for DYNAMIC"
+    \n**Function : **fake gban for Speedo"
     }
 )

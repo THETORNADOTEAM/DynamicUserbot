@@ -3,7 +3,7 @@
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
 """
-   Heroku manager for your DYNAMIC
+   Heroku manager for your Speedo
 """
 
 import heroku3
@@ -11,9 +11,9 @@ import asyncio
 import os
 import requests
 import math
-from DYNAMIC.utils import admin_cmd
-from DYNAMIC import CMD_HELP
-from DYNAMIC.config import Config
+from Speedo.utils import admin_cmd
+from Speedo import CMD_HELP
+from Speedo.config import Config
 
 # ================= 
 
@@ -176,7 +176,7 @@ async def _(dyno):
             dyno.chat_id,
             "logs.txt",
             reply_to=dyno.id,
-            caption="DYNAMIC X 𝙻𝙾𝙶𝚂 𝚘𝙵 100+ lines",
+            caption="Speedo X 𝙻𝙾𝙶𝚂 𝚘𝙵 100+ lines",
         )
         
         await asyncio.sleep(5)

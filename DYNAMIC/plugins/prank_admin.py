@@ -7,13 +7,13 @@ Available Commands:
 from telethon import events
 
 import asyncio
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd
 
-from DYNAMIC import ALIVE_NAME
-from DYNAMIC.utils import admin_cmd
+from Speedo import ALIVE_NAME
+from Speedo.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Speedo USER"
 
 
 @borg.on(admin_cmd(pattern=f"padmin", outgoing=True))

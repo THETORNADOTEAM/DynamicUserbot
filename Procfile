@@ -1,1 +1,1 @@
-bot: python -m DYNAMIC
+bot: python -m Speedo

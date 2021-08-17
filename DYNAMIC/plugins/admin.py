@@ -1,4 +1,4 @@
-# COPYRIGHT DYNAMIC USERBOT 2021 - 2022
+# COPYRIGHT Speedo USERBOT 2021 - 2022
 # DONT KANG
 from asyncio import sleep
 from os import remove
@@ -17,8 +17,8 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
                                MessageMediaPhoto)
 
 
-from DYNAMIC.utils import register, errors_handler
-from DYNAMIC.utils import admin_cmd
+from Speedo.utils import register, errors_handler
+from Speedo.utils import admin_cmd
 
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
@@ -137,7 +137,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit(f"𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝚒𝚜 𝙿𝚛𝚘𝚖𝚘𝚝𝚎𝚍 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚋𝚢 DYNAMIC USERBOT")
+        await promt.edit(f"𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝚒𝚜 𝙿𝚛𝚘𝚖𝚘𝚝𝚎𝚍 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚋𝚢 Speedo USERBOT")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -194,7 +194,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit(f" Success Demoted By DYNAMIC USERBOT ")
+    await dmod.edit(f" Success Demoted By Speedo USERBOT ")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -247,7 +247,7 @@ async def ban(bon):
     # is done gracefully
     # Shout out the ID, so that fedadmins can fban later
     if reason:
-        await bon.edit(f"𝙱𝚊𝚗𝚗𝚎𝚍 `{str(user.id)}` This Guy DYNAMIC BOT  !!\n\nReason: {reason}")
+        await bon.edit(f"𝙱𝚊𝚗𝚗𝚎𝚍 `{str(user.id)}` This Guy Speedo BOT  !!\n\nReason: {reason}")
     else:
         await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
     # Announce to the logging group if we have banned the person
@@ -307,7 +307,7 @@ async def spider(spdr):
     """
     # Check if the function running under SQL mode
     try:
-        from DYNAMIC.modules.sql_helper.spam_mute_sql import mute
+        from Speedo.modules.sql_helper.spam_mute_sql import mute
     except AttributeError:
         await spdr.edit(NO_SQL)
         return
@@ -377,7 +377,7 @@ async def unmoot(unmot):
 
     # Check if the function running under SQL mode
     try:
-        from DYNAMIC.modules.sql_helper.spam_mute_sql import unmute
+        from Speedo.modules.sql_helper.spam_mute_sql import unmute
     except AttributeError:
         await unmot.edit(NO_SQL)
         return
@@ -415,8 +415,8 @@ async def unmoot(unmot):
 async def muter(moot):
     """ Used for deleting the messages of muted people """
     try:
-        from DYNAMIC.modules.sql_helper.spam_mute_sql import is_muted
-        from DYNAMIC.modules.sql_helper.gmute_sql import is_gmuted
+        from Speedo.modules.sql_helper.spam_mute_sql import is_muted
+        from Speedo.modules.sql_helper.gmute_sql import is_gmuted
     except AttributeError:
         return
     muted = is_muted(moot.chat_id)
@@ -446,7 +446,7 @@ async def muter(moot):
 @borg.on(admin_cmd(pattern=r"ungmute(?: |$)(.*)"))
 @errors_handler
 async def ungmoot(un_gmute):
-    """ For .ungmute command, ungmutes the target in the DYNAMIC """
+    """ For .ungmute command, ungmutes the target in the Speedo """
     # Admin or creator check
     chat = await un_gmute.get_chat()
     admin = chat.admin_rights
@@ -459,7 +459,7 @@ async def ungmoot(un_gmute):
 
     # Check if the function running under SQL mode
     try:
-        from DYNAMIC.modules.sql_helper.gmute_sql import ungmute
+        from Speedo.modules.sql_helper.gmute_sql import ungmute
     except AttributeError:
         await un_gmute.edit(NO_SQL)
         return
@@ -504,7 +504,7 @@ async def gspider(gspdr):
 
     # Check if the function running under SQL mode
     try:
-        from DYNAMIC.modules.sql_helper.gmute_sql import gmute
+        from Speedo.modules.sql_helper.gmute_sql import gmute
     except AttributeError:
         await gspdr.edit(NO_SQL)
         return

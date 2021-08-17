@@ -1,15 +1,15 @@
-from DYNAMIC import bot
+from Speedo import bot
 from telethon import events
-from DYNAMIC.utils import command, remove_plugin, load_module
+from Speedo.utils import command, remove_plugin, load_module
 from var import Var
 import importlib
 from pathlib import Path
-from DYNAMIC import LOAD_PLUG
+from Speedo import LOAD_PLUG
 import sys
 import asyncio
 import traceback
 import os
-import DYNAMIC.utils
+import Speedo.utils
 from datetime import datetime
 
 DELETE_TIMEOUT = 10
@@ -22,7 +22,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "DYNAMIC/plugins/"  # pylint:disable=E0602
+                "Speedo/plugins/"  # pylint:disable=E0602
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
@@ -44,7 +44,7 @@ async def send(event):
         return
     message_id = event.message.id
     input_str = event.pattern_match["shortname"]
-    the_plugin_file = "./DYNAMIC/plugins/{}.py".format(input_str)
+    the_plugin_file = "./Speedo/plugins/{}.py".format(input_str)
     start = datetime.now()
     await event.client.send_file(  
         event.chat_id,

@@ -1,4 +1,4 @@
-"""Fetch App Details from Playstore. @LEGEND_DYNAMIC_SUPPORT 🚶
+"""Fetch App Details from Playstore. @LEGEND_Speedo_SUPPORT 🚶
 .app <app_name> to fetch app details.
 .appr <app_name>  to fetch app details with Xpl0iter request link.
 .mods <app_name> to get the premier app from telegram if available.."""
@@ -6,8 +6,8 @@
 import bs4
 import requests
 
-from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
-from DYNAMIC import ALIVE_NAME, CMD_HELP
+from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Speedo import ALIVE_NAME, CMD_HELP
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
 

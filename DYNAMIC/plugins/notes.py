@@ -1,9 +1,9 @@
 from telethon import events, utils
 from telethon.tl import types
 
-from DYNAMIC import bot
-from DYNAMIC.config import Config
-from DYNAMIC.plugins.sql_helper.snips_sql import (
+from Speedo import bot
+from Speedo.config import Config
+from Speedo.plugins.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
     get_snips,

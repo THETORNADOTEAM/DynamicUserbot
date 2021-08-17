@@ -1,4 +1,4 @@
-# Copyright (C) 2021 - 2022 DYNAMIC USERBOT  
+# Copyright (C) 2021 - 2022 Speedo USERBOT  
 """ Userbot module for kanging stickers or making new ones. Thanks @rupansh"""
 
 import io
@@ -8,8 +8,8 @@ from os import remove
 from PIL import Image
 import random
 from telethon.tl.types import DocumentAttributeFilename, MessageMediaPhoto
-from DYNAMIC import bot, CMD_HELP
-from DYNAMIC.utils import register
+from Speedo import bot, CMD_HELP
+from Speedo.utils import register
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker

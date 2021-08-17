@@ -2,7 +2,7 @@
 Syntax: .cpin [LOUD]"""
 from telethon import events
 from telethon.tl import functions, types
-from DYNAMIC.utils import admin_cmd
+from Speedo.utils import admin_cmd
 
 
 @borg.on(admin_cmd("cpin ?(.*)"))

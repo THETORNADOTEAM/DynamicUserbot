@@ -2,9 +2,9 @@ from asyncio import sleep
 
 from telethon.errors import rpcbaseerrors
 
-from DYNAMIC import BOTLOG, BOTLOG_CHATID, CMD_HELP
-from DYNAMIC.utils import register, errors_handler
-from DYNAMIC.utils import admin_cmd
+from Speedo import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from Speedo.utils import register, errors_handler
+from Speedo.utils import admin_cmd
 
 
 #@register(outgoing=True, pattern="^.purge$")

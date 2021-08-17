@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" DYNAMIC module containing commands related to android"""
+""" Speedo module containing commands related to android"""
 
 import json
 import re
@@ -11,8 +11,8 @@ import re
 from bs4 import BeautifulSoup
 from requests import get
 
-from DYNAMIC import CMD_HELP
-from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Speedo import CMD_HELP
+from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 GITHUB = "https://github.com"
 DEVICES_DATA = (

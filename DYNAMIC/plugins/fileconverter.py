@@ -11,8 +11,8 @@ import asyncio
 import time
 from datetime import datetime
 
-from DYNAMIC.utils import admin_cmd, sudo_cmd , edit_or_reply
-from DYNAMIC import CMD_HELP, bot
+from Speedo.utils import admin_cmd, sudo_cmd , edit_or_reply
+from Speedo import CMD_HELP, bot
 
 @borg.on(admin_cmd(pattern=r"open", outgoing=True))
 async def _(event):
