@@ -7,7 +7,7 @@ from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
-from DYNAMIC.DYNAMICConfig import Config
+from DYNAMIC.config import Config
 from DYNAMICOP import xbot, devs as DEVS
 from DYNAMIC import ALIVE_PHOTO as PHOTO
 from DYNAMICOP import ID as id

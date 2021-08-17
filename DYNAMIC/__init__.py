@@ -3,7 +3,7 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from DYNAMIC.DYNAMICConfig import Config
+from DYNAMIC.config import Config
 from var import Var
 DYNAMICVERSION = "1.0"
 botnickname = "DYNAMIC USERBOT"
