@@ -43,7 +43,7 @@ else:
         print ('INSTALLING ALL STABLE VERSION OF DYNAMIC USERBOT AND PLUGINS')
     else:
         bot.start()
-async def op:
+async def op():
   import glob
   path = 'DYNAMIC/plugins/*.py'
   files = glob.glob(path)
