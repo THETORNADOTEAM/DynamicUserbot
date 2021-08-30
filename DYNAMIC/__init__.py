@@ -63,18 +63,18 @@ if bool(ENV):
                     level=INFO)
     LOGS = getLogger(__name__)
 
-    # Check if the DYNAMICConfig was edited by using the already used variable.
-    # Basically, its the 'virginity check' for the DYNAMICConfig file ;)
+    # Check if the config was edited by using the already used variable.
+    # Basically, its the 'virginity check' for the config file ;)
     CONFIG_CHECK = os.environ.get(
         "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
 
     if CONFIG_CHECK:
         LOGS.info(
-            "Please remove the line mentioned in the first hashtag from the DYNAMICConfig.env file"
+            "Please remove the line mentioned in the first hashtag from the config.env file"
         )
         quit(1)
 
-    # Logging channel/group DYNAMICConfiguration.
+    # Logging channel/group configuration.
     BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
     try:
         BOTLOG_CHATID = int(BOTLOG_CHATID)
@@ -90,7 +90,7 @@ if bool(ENV):
     # Custom Module
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
 
-    # Logging channel/group DYNAMICConfiguration.
+    # Logging channel/group configuration.
     BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
     try:
         BOTLOG_CHATID = int(BOTLOG_CHATID)
@@ -228,4 +228,3 @@ SUDO_LIST = {}
 #from DYNAMIC.helpers import functions as legdef
 
 # CREDITS DYNAMIC
-
