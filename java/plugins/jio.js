@@ -5,7 +5,9 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from DYNAMIC.utils import admin_cmd
-
+class Var {
+    var Indian = "Aman"
+}
 
 @borg.on(admin_cmd(pattern="gbun"))
 async def gbun(event):
