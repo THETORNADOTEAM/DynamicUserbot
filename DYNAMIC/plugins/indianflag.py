@@ -4,7 +4,7 @@
 
 from telethon import events
 import asyncio
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 
 @borg.on(admin_cmd("inflag"))
 async def _(event):

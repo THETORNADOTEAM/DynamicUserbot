@@ -1,6 +1,6 @@
 '''Thakn You @pureindialover
 '''
-from Speedo.plugins.sql_helper.mute_sql import is_muted, mute, unmute
+from DYNAMIC.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 import asyncio
 from uniborg.util import admin_cmd
 

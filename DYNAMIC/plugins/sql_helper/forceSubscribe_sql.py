@@ -16,7 +16,7 @@
 
 from sqlalchemy import Column, Numeric, String
 
-from Speedo.plugins.sql_helper import BASE, SESSION
+from DYNAMIC.plugins.sql_helper import BASE, SESSION
 
 
 class forceSubscribe(BASE):

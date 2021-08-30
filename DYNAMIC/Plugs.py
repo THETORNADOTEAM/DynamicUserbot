@@ -1,4 +1,4 @@
-os.system("git clone https://github.com/Speedo-OP/Speedo_PLUGS.git ./")
+os.system("git clone https://github.com/DYNAMIC-OP/DYNAMIC_PLUGS.git ./")
     path = "*.py"
     files = glob.glob(path)
     for name in files:

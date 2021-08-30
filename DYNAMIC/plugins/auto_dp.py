@@ -16,8 +16,8 @@ import re
 import urllib
 import requests
 from telethon.tl import functions
-from Speedo.utils import admin_cmd
-from Speedo import CMD_HELP
+from DYNAMIC.utils import admin_cmd
+from DYNAMIC import CMD_HELP
 
 COLLECTION_STRING1 = [
     "awesome-batman-wallpapers",

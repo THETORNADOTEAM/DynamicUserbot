@@ -1,4 +1,4 @@
-# CREDITS AMAN PANDEY MADE FOR Speedo USERBOT. DONT KANG
+# CREDITS AMAN PANDEY MADE FOR DYNAMIC USERBOT. DONT KANG
 import asyncio
 import datetime
 import importlib
@@ -19,13 +19,13 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
 from var import Var
 
-from Speedo import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, CMD_HELP, LOGS
-from Speedo.GODBOYX import xbot
-from Speedo.helper.exceptions import CancelProcess
+from DYNAMIC import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, CMD_HELP, LOGS
+from DYNAMIC.GODBOYX import xbot
+from DYNAMIC.helper.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from Speedo.DYNAMICConfig import Config
+    from DYNAMIC.DYNAMICConfig import Config
 else:
     if os.path.exists("DYNAMICConfig.py"):
         from DYNAMICConfig import Development as Config
@@ -34,19 +34,19 @@ def load_extra(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import Speedo.utils
+        import DYNAMIC.utils
 
-        path = Path(f"Speedo_PLUGINS/{shortname}.py")
-        name = "Speedo_PLUGINS.{}".format(shortname)
+        path = Path(f"DYNAMIC_PLUGINS/{shortname}.py")
+        name = "DYNAMIC_PLUGINS.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import Speedo.utils
+        import DYNAMIC.utils
 
-        path = Path(f"Speedo_PLUGINS/{shortname}.py")
-        name = "Speedo_PLUGINS.{}".format(shortname)
+        path = Path(f"DYNAMIC_PLUGINS/{shortname}.py")
+        name = "DYNAMIC_PLUGINS.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -56,15 +56,15 @@ def load_extra(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = Speedo.utils
+        sys.modules["uniborg.util"] = DYNAMIC.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["Speedo.events"] = Speedo.utils
+        sys.modules["DYNAMIC.events"] = DYNAMIC.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["Speedo.plugins." + shortname] = mod
+        sys.modules["DYNAMIC.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -72,19 +72,19 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import Speedo.utils
+        import DYNAMIC.utils
 
-        path = Path(f"Speedo/plugins/{shortname}.py")
-        name = "Speedo.plugins.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/{shortname}.py")
+        name = "DYNAMIC.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import Speedo.utils
+        import DYNAMIC.utils
 
-        path = Path(f"Speedo/plugins/{shortname}.py")
-        name = "Speedo.plugins.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/{shortname}.py")
+        name = "DYNAMIC.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -94,15 +94,15 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = Speedo.utils
+        sys.modules["uniborg.util"] = DYNAMIC.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["Speedo.events"] = Speedo.utils
+        sys.modules["DYNAMIC.events"] = DYNAMIC.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["Speedo.plugins." + shortname] = mod
+        sys.modules["DYNAMIC.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 def remove_plugin(shortname):
@@ -113,7 +113,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except BaseException:
-            name = f"Speedo.plugins.{shortname}"
+            name = f"DYNAMIC.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -294,7 +294,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/devilSpeedo)"
+            link = "[here](https://t.me/devilDYNAMIC)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -572,8 +572,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"Speedo/plugins/assistant/{shortname}.py")
-        name = "Speedo.plugins.assistant.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -584,11 +584,11 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"Speedo/plugins/assistant/{shortname}.py")
-        name = "Speedo.plugins.assistant.{}".format(shortname)
+        path = Path(f"DYNAMIC/plugins/assistant/{shortname}.py")
+        name = "DYNAMIC.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["Speedo.plugins.assistant" + shortname] = mod
+        sys.modules["DYNAMIC.plugins.assistant" + shortname] = mod
     # print("Assistant Has imported " + shortname)

@@ -7,9 +7,9 @@ import base64
 import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from Speedo import CMD_HELP
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
-from Speedo.plugins.sql_helper.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from DYNAMIC import CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DYNAMIC.plugins.sql_helper.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 
 
 @bot.on(admin_cmd(pattern="echo$"))

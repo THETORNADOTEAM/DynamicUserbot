@@ -12,5 +12,5 @@ async def inline_id_handler(event: events.InlineQuery.Event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"obhai")))
 async def callback_query_handler(event): 
 
-# inline by SpeedoX22 and PROBOYX 🔥
-  await event.edit(text=f"Speedo REPO AND GROUP LINK",buttons=[[Button.url(f"🔥Speedo REPO🔥", url="https://github.com/DynamicUserbot/Dynamic-Userbot"), Button.url(f"⚡Speedo SUPPORT⚡", url="https://t.me/Speedo_USERBOT_SUPPORT")]])
+# inline by DYNAMICX22 and PROBOYX 🔥
+  await event.edit(text=f"DYNAMIC REPO AND GROUP LINK",buttons=[[Button.url(f"🔥DYNAMIC REPO🔥", url="https://github.com/DynamicUserbot/Dynamic-Userbot"), Button.url(f"⚡DYNAMIC SUPPORT⚡", url="https://t.me/DYNAMIC_USERBOT_SUPPORT")]])

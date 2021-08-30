@@ -2,8 +2,8 @@ from re import findall
 
 from search_engine_parser import GoogleSearch
 
-from Speedo import CMD_HELP
-from Speedo.utils import admin_cmd
+from DYNAMIC import CMD_HELP
+from DYNAMIC.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern=r"gs (.*)"))

@@ -1,7 +1,7 @@
 
 from telethon import events
 from uniborg.util import admin_cmd
-from Speedo import CMD_HELP
+from DYNAMIC import CMD_HELP
 
 @borg.on(admin_cmd(pattern="copy"))
 async def _(event):

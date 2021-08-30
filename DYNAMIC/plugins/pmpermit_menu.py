@@ -5,14 +5,14 @@
 Support chatbox for pmpermit.
 Used by incoming messages with trigger as /start
 Will not work for already approved people.
-© Speedo-UserBot
+© DYNAMIC-UserBot
 """
 import asyncio
 
 from telethon import functions
 
-import Speedo.plugins.sql_helper.pmpermit_sql as pmpermit_sql
-from Speedo import ALIVE_NAME
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
+from DYNAMIC import ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in heroku vars"
 PREV_REPLY_MESSAGE = {}
@@ -108,5 +108,5 @@ async def _(event):
                         await borg.send_message(chat, TWO)
                         await asyncio.sleep(3)
                         await event.client(functions.contacts.BlockRequest(chat_id))
-# © Speedo-UserBot 
+# © DYNAMIC-UserBot 
 # Don't Edit Anything

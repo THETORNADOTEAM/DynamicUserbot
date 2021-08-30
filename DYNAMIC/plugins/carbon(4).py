@@ -7,15 +7,15 @@ import random
 from urllib.parse import quote_plus
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
-from Speedo import ALIVE_NAME, CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DYNAMIC import ALIVE_NAME, CMD_HELP
 
 
 # Google Drive ()
 CHROME_BIN = os.environ.get("CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/app/.chromedriver/bin/chromedriver")
     
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Speedo USER"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USER"
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -74,7 +74,7 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Here we go with ur Karbon.\nCarbonised by Speedo USERBOT",
+        caption="Here we go with ur Karbon.\nCarbonised by DYNAMIC USERBOT",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -619,4 +619,4 @@ CMD_HELP.update(
 # chalo ab acche bache ki trah pura plugin copy kro with credits
 # ek bhi credit mat htana
 
-# Speedo
+# DYNAMIC

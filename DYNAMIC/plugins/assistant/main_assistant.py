@@ -2,24 +2,24 @@ import asyncio
 import io
 import os
 import re
-from Speedo import ALIVE_PHOTO
+from DYNAMIC import ALIVE_PHOTO
 from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
-from Speedo.DYNAMICConfig import Config
-from SpeedoOP import xbot, devs as DEVS
-from Speedo import ALIVE_PHOTO as PHOTO
-from SpeedoOP import ID as id
-from Speedo import bot
-from Speedo.plugins.sql_helper.blacklist_ass import (
+from DYNAMIC.DYNAMICConfig import Config
+from DYNAMICOP import xbot, devs as DEVS
+from DYNAMIC import ALIVE_PHOTO as PHOTO
+from DYNAMICOP import ID as id
+from DYNAMIC import bot
+from DYNAMIC.plugins.sql_helper.blacklist_ass import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
 
-from Speedo.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
-from Speedo.plugins.sql_helper.idadder_sql import (
+from DYNAMIC.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
+from DYNAMIC.plugins.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,
@@ -40,7 +40,7 @@ async def start(event):
     hmmwow = devlop.first_name
     vent = event.chat_id
     mypic = PHOTO
-    starttext = f"Hello, **{firstname}**!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell I'm **{bot_id}**.\n\n**A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ Oғ** [{hmmwow}](tg://user?id={boy})\n\n                           **Pᴏᴡᴇʀᴇᴅ Bʏ** [Speedo USERBOT](t.me/SpeedoUSERBOTSUPPORT)\n\n**Yᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.**\n**Iғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ.**"
+    starttext = f"Hello, **{firstname}**!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell I'm **{bot_id}**.\n\n**A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ Oғ** [{hmmwow}](tg://user?id={boy})\n\n                           **Pᴏᴡᴇʀᴇᴅ Bʏ** [DYNAMIC USERBOT](t.me/DYNAMICUSERBOTSUPPORT)\n\n**Yᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.**\n**Iғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ.**"
     if event.sender_id == boy:
         await xbot.send_message(
             event.chat_id,
@@ -66,8 +66,8 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ Speedo", "http://GitHub.com/TEAMSpeedo/Dynamic-Userbot")],
-                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/SpeedoUSERBOTSUPPORT")],
+                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ DYNAMIC", "http://GitHub.com/TEAMDYNAMIC/Dynamic-Userbot")],
+                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/DYNAMICUSERBOTSUPPORT")],
             ],
         )
         if os.path.exists(mypic):

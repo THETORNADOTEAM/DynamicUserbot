@@ -2,7 +2,7 @@ import asyncio
 from datetime import datetime
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-# COPYRIGHT TEAM Speedo
+# COPYRIGHT TEAM DYNAMIC
 
 @borg.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 async def _(event):
@@ -57,11 +57,11 @@ async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    event = await edit_or_reply(event, "__**(❛ Pong BY Speedo BOT ❜!__**")
+    event = await edit_or_reply(event, "__**(❛ Pong BY DYNAMIC BOT ❜!__**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"__**꧁ Pong! ꧂__**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**USERBOT**__ Speedo BOT\n\n\n "
+        f"__**꧁ Pong! ꧂__**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**USERBOT**__ DYNAMIC BOT\n\n\n "
     )
 
 

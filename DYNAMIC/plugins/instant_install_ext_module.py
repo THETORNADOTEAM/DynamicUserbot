@@ -12,19 +12,19 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-from Speedo import bot
+from DYNAMIC import bot
 from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from Speedo.utils import command, remove_plugin, load_module
+from DYNAMIC.utils import command, remove_plugin, load_module
 from var import Var
 from pathlib import Path
-from Speedo import LOAD_PLUG
+from DYNAMIC import LOAD_PLUG
 import sys
 import asyncio
 import traceback
 import os
-import Speedo.utils
+import DYNAMIC.utils
 
 @command(pattern="^.extdl", outgoing=True)
 async def install(event):
@@ -37,7 +37,7 @@ async def install(event):
     await event.delete()
     for ixo in total_doxx:
         mxo = documentss[ixo].id
-        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "Speedo/plugins/")
+        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "DYNAMIC/plugins/")
         if "(" not in downloaded_file_name:
             path1 = Path(downloaded_file_name)
             shortname = path1.stem

@@ -1,7 +1,7 @@
 from telethon.utils import pack_bot_file_id
-from SpeedoOP import xbot, devs as DEVS
+from DYNAMICOP import xbot, devs as DEVS
 from telethon import events
-from Speedo import bot
+from DYNAMIC import bot
 
 @xbot.on(events.NewMessage(pattern="/id ?(.*)"))
 async def _(event):

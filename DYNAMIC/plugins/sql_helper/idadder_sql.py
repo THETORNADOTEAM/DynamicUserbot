@@ -14,7 +14,7 @@
 
 from sqlalchemy import Column, String
 
-from Speedo.plugins.sql_helper import BASE, SESSION
+from DYNAMIC.plugins.sql_helper import BASE, SESSION
 
 
 class Moidata(BASE):

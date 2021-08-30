@@ -1,5 +1,5 @@
 """
-G-Drive File Downloader Plugin For Speedo. 
+G-Drive File Downloader Plugin For DYNAMIC. 
 usage: .gdl File-Link
 By: @Zero_cool7870
 

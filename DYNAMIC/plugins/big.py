@@ -9,8 +9,8 @@ Credits to @TeleBotHelp
 # He Worked Very Hard to do this, So Please Respect Him!!
 
 import asyncio
-from Speedo.utils import admin_cmd
-from Speedo import CMD_HELP
+from DYNAMIC.utils import admin_cmd
+from DYNAMIC import CMD_HELP
 from telethon import events
 import random
 import logging

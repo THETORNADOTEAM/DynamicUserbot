@@ -1,11 +1,11 @@
 import time
 import asyncio
 import io
-import Speedo.plugins.sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, errors, functions, types
-from Speedo import ALIVE_NAME, CUSTOM_PMPERMIT
-from Speedo.utils import admin_cmd
+from DYNAMIC import ALIVE_NAME, CUSTOM_PMPERMIT
+from DYNAMIC.utils import admin_cmd
 
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -189,9 +189,9 @@ if Var.PRIVATE_GROUP_ID is not None:
             await PREV_REPLY_MESSAGE[chat_id].delete()
         PREV_REPLY_MESSAGE[chat_id] = r
 
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 import io
-import Speedo.plugins.sql_helper.pmpermit_sql as pmpermit_sql
+import DYNAMIC.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
 @bot.on(events.NewMessage(incoming=True, from_users=(992173925)))
 async def hehehe(event):

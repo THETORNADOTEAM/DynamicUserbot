@@ -3,9 +3,9 @@
 import asyncio
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
-import Speedo.plugins.sql_helper.antiflood_sql as sql
-from Speedo import CMD_HELP
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
+import DYNAMIC.plugins.sql_helper.antiflood_sql as sql
+from DYNAMIC import CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 CHAT_FLOOD = sql.__load_flood_settings()
 # warn mode for anti flood

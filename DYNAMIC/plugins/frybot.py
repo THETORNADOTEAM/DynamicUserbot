@@ -3,7 +3,7 @@ import datetime
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 
 @borg.on(admin_cmd("frybot ?(.*)"))
 async def _(event):

@@ -6,13 +6,13 @@ import time
 from datetime import datetime
 from io import BytesIO
 from pathlib import Path
-from Speedo import bot as borg
+from DYNAMIC import bot as borg
 from telethon import functions, types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from Speedo.utils import admin_cmd, progress
+from DYNAMIC.utils import admin_cmd, progress
 
 
 if not os.path.isdir("./temp"):

@@ -1,7 +1,7 @@
 #MADE BY @GODBOYX AND @AmanPandeyDeveloperIN
-#MADE FOR Speedo USERBOT ONLY
+#MADE FOR DYNAMIC USERBOT ONLY
 #KANG WITH CREDITS OTHERWISE YOU WILL See What We can Do 
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 from .. import CMD_HELP
 import os
 from PIL import Image, ImageDraw, ImageFont
@@ -11,13 +11,13 @@ async def logo(event):
  await event.reply('Drawing Text On Pic.Wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Speedo/resources/photo_2021-03-18_10-37-51.jpg')
+    img = Image.open('./DYNAMIC/resources/photo_2021-03-18_10-37-51.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "red"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Speedo/resources/Vampire_Wars.otf", 160)
+    font = ImageFont.truetype("./DYNAMIC/resources/Vampire_Wars.otf", 160)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -27,11 +27,11 @@ async def logo(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="yellow")
     fname2 = "LogoByDynamic.png"
     img.save(fname2, "png")
-    await bot.send_file(event.chat_id, fname2, caption="Made By Speedo")
+    await bot.send_file(event.chat_id, fname2, caption="Made By DYNAMIC")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @SpeedoUSERBOTSUPPORT {e}')
+   await event.reply(f'Error Report @DYNAMICUSERBOTSUPPORT {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")

@@ -2,7 +2,7 @@
 Syntax: .json"""
 from telethon import events
 import io
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 
 
 @borg.on(admin_cmd("json"))

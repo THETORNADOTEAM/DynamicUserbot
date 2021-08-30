@@ -1,13 +1,13 @@
-FROM TeamDynamic/Speedo-USERBOT:latest
+FROM TeamDynamic/DYNAMIC-USERBOT:latest
 
 #clonning repo 
-RUN git clone https://github.com/TeamDynamic/Dynamic-Userbot.git /root/Speedo
+RUN git clone https://github.com/TeamDynamic/Dynamic-Userbot.git /root/DYNAMIC
 #working directory 
-WORKDIR /root/Speedo
+WORKDIR /root/DYNAMIC
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/Speedo/bin:$PATH"
+ENV PATH="/home/DYNAMIC/bin:$PATH"
 
-CMD ["python3","-m","Speedo"]
+CMD ["python3","-m","DYNAMIC"]

@@ -5,7 +5,7 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 os.system("pip install LEGENDX==0.0.21")
 try:
-  from Speedo import bot 
+  from DYNAMIC import bot 
 except:
   pass
 from LEGENDX import devs, id, ID
@@ -17,7 +17,7 @@ import time
 MESSAGE = os.environ.get("ALIVE_MSG", None)
 if MESSAGE is None:
    MSG = '''
-🔥🔥 THE Speedo IS ONLINE 🔥🔥
+🔥🔥 THE DYNAMIC IS ONLINE 🔥🔥
 I AM HERE FOR MY MASTER PROTECTION
 I AM NON HACKEBLE + BEST USERBOT
 THANKS MASTER TO DEPLOY ME
@@ -26,17 +26,17 @@ else:
   MSG = MESSAGE
 botnickname = os.environ.get("BOT_NICK_NAME")
 ALIVE_NAME = os.environ.get("ALIVE_NAME")
-BOT = str(botnickname) if botnickname else "Speedo"
-NAME = str(ALIVE_NAME) if ALIVE_NAME else "Speedo USERBOT"
+BOT = str(botnickname) if botnickname else "DYNAMIC"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "DYNAMIC USERBOT"
 PHOTO = os.environ.get("ALIVE_PHOTTO", None)
-ULTRAX = "[Speedo](https://t.me/SpeedoUSERBOTSUPPORT)"
+ULTRAX = "[DYNAMIC](https://t.me/DYNAMICUSERBOTSUPPORT)"
 VERSION = "1.0"
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 ALIVE_BOT_USERNAME = os.environ.get("ALIVE_BOT_USERNAME", None)
 devs = devs
 ID = ID
 id = id
-REPO = "[Speedo](https://github.com/TeamDynamic/Dynamic-Userbot/)"
+REPO = "[DYNAMIC](https://github.com/TeamDynamic/Dynamic-Userbot/)"
 
 kangers = [1163444049, 719195224, 1663120531, 1629929584, 1674693245, 1393895701,1383730820, 1083049180, 1412086585, 1585809209, 1326701194, 1198820588, 1174361857, 1555340229, 1322549723, 803243487, 1444249738, 1222113933, 1152902819, 1176159510, 611816596, 1318486004, 573738900, 1601105531, 1263617196, 1252974808, 1315076555, 1176159510, 21894734, 536157487, 1347610095, 1754449534, 1649853060, 1650981437, 1678331806, 1383009042, 1053880985, 817088672, 1047091391, 1221693726, 929138153, 1091139479]
 
@@ -70,7 +70,7 @@ def wt(obj, file):
     return False
 
 MASTER = NAME
-GROUP = "[SUPPORT GROUP](https://t.me/SpeedoUSERBOTSUPPORT)"
+GROUP = "[SUPPORT GROUP](https://t.me/DYNAMICUSERBOTSUPPORT)"
 if __name__=="__main__":
   bot.start()
   bot.run_until_disconnected()

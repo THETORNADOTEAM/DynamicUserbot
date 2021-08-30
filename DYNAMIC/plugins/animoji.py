@@ -1,8 +1,8 @@
 import asyncio
 from collections import deque
 
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
-from Speedo import CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DYNAMIC import CMD_HELP
 
 
 @bot.on(admin_cmd(pattern="think$", outgoing=True))

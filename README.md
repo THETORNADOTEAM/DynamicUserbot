@@ -1,18 +1,18 @@
-## Speedo USERBOT BASED ON TELETHON 
+## DYNAMIC USERBOT BASED ON TELETHON 
 
 
 ## BE ALERT WITH THIS LEJHAND SCAMMER @LEGENDX22
 
 
 
-## MAIN Credits Speedo USERBOT
+## MAIN Credits DYNAMIC USERBOT
 
 ## MADE WITH LOVE JUST IN 1 WEEK ONLY 2 CONTRIBUTERS GODBOY AND AMAN PANDEY
 
 <details>
 
   <summary> • FOR ANY QUERY • </summary>
-<h2 align="center"> <a href="https://t.me/SpeedoUSERBOTSUPPORT">JOIN OUR SUPPORT GROUP</a></h2>
+<h2 align="center"> <a href="https://t.me/DYNAMICUSERBOTSUPPORT">JOIN OUR SUPPORT GROUP</a></h2>
 
 </details>
 

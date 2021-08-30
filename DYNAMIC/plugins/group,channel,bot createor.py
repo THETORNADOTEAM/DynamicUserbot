@@ -2,8 +2,8 @@
 Available Commands:
 .create (b|g) GroupName"""
 from telethon.tl import functions
-from Speedo import CMD_HELP
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DYNAMIC import CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="create (b|g|c) (.*)"))  # pylint:disable=E0602
@@ -47,7 +47,7 @@ async def _(event):
             r = await event.client(
                 functions.channels.CreateChannelRequest(
                     title=group_name,
-                    about="Created By Speedo BOT",
+                    about="Created By DYNAMIC BOT",
                     megagroup=type_of_group != "c",
                 )
             )

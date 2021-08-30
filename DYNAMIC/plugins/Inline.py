@@ -1,6 +1,6 @@
 import asyncio
 import os
-from SpeedoOP import BOT, VERSION, MSG
+from DYNAMICOP import BOT, VERSION, MSG
 import requests
 import time
 from PIL import Image
@@ -8,19 +8,19 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, Button, custom
-from Speedo.utils import admin_cmd
-from Speedo import ALIVE_NAME
-from Speedo import bot as ultra
+from DYNAMIC.utils import admin_cmd
+from DYNAMIC import ALIVE_NAME
+from DYNAMIC import bot as ultra
 from telethon import Button, custom
 from telethon.tl.types import ChannelParticipantsAdmins
 global ok
 ok = ultra.uid
-from Speedo.utils import admin_cmd, sudo_cmd
+from DYNAMIC.utils import admin_cmd, sudo_cmd
 from PIL import Image
 import requests
 from io import BytesIO
 
-from Speedo.utils import admin_cmd
+from DYNAMIC.utils import admin_cmd
 @bot.on(admin_cmd(pattern=None))
 async def repo(event):
     if not event.text.startswith(".help"):
@@ -57,7 +57,7 @@ async def wisper(event):
 
 from telethon import events, Button, custom
 import os,re
-from SpeedoOP import ID
+from DYNAMICOP import ID
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
 @tgbot.on(events.InlineQuery(pattern=r"restart"))

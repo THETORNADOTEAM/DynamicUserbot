@@ -1,5 +1,5 @@
 """	
-	Anilist Search Plugin for Speedo	
+	Anilist Search Plugin for DYNAMIC	
 	Usage : .anilist animeName	
 	By :- @Zero_cool7870	
 """
@@ -8,8 +8,8 @@ import requests
 import re
 import json
 import asyncio
-from Speedo import CMD_HELP
-from Speedo.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DYNAMIC import CMD_HELP
+from DYNAMIC.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 async def callAPI(search_str):
     query = '''

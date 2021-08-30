@@ -1,6 +1,6 @@
 import asyncio, subprocess
 import time, re, io
-from Speedo import bot, BOTLOG, BOTLOG_CHATID, CMD_HELP
+from DYNAMIC import bot, BOTLOG, BOTLOG_CHATID, CMD_HELP
 from telethon import events, functions, types
 from telethon.events import StopPropagation
 from telethon.tl.functions.messages import ExportChatInviteRequest
@@ -8,8 +8,8 @@ from telethon.tl.functions.contacts import BlockRequest
 from telethon.tl.functions.channels import LeaveChannelRequest, CreateChannelRequest, DeleteMessagesRequest
 from collections import deque
 from telethon.tl.functions.users import GetFullUserRequest
-from Speedo.events import register
-from Speedo.utils import admin_cmd
+from DYNAMIC.events import register
+from DYNAMIC.utils import admin_cmd
 
 
 @borg.on(admin_cmd(";__;$"))
@@ -137,7 +137,7 @@ CMD_HELP.update({
     "readme": "Reedme."
 })
 CMD_HELP.update({
-    "source": "Gives the source of your Speedo"
+    "source": "Gives the source of your DYNAMIC"
 })
 CMD_HELP.update({
     "myusernames": "List of Usernames owned by you."

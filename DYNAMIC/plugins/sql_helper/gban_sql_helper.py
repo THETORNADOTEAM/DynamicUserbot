@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String
-from Speedo.plugins.sql_helper import SESSION, BASE
+from DYNAMIC.plugins.sql_helper import SESSION, BASE
 
 
 class GBan(BASE):
