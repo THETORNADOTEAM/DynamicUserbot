@@ -25,10 +25,10 @@ from Speedo.helper.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from Speedo.config import Config
+    from Speedo.DYNAMIC import Config
 else:
-    if os.path.exists("config.py"):
-        from config import Development as Config
+    if os.path.exists("DYNAMIC.py"):
+        from DYNAMIC import Development as Config
 
 def load_extra(shortname):
     if shortname.startswith("__"):

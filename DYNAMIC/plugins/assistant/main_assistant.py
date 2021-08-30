@@ -7,7 +7,7 @@ from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
-from Speedo.config import Config
+from Speedo.DYNAMIC import Config
 from SpeedoOP import xbot, devs as DEVS
 from Speedo import ALIVE_PHOTO as PHOTO
 from SpeedoOP import ID as id

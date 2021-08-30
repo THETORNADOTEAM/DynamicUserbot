@@ -46,14 +46,14 @@ args_list = ["keywords", "keywords_from_file", "prefix_keywords", "suffix_keywor
 
 
 def user_input():
-    config = argparse.ArgumentParser()
-    config.add_argument('-cf', '--config_file', help='config file name', default='', type=str, required=False)
-    config_file_check = config.parse_known_args()
-    object_check = vars(config_file_check[0])
+    DYNAMIC = argparse.ArgumentParser()
+    DYNAMIC.add_argument('-cf', '--DYNAMIC_file', help='DYNAMIC file name', default='', type=str, required=False)
+    DYNAMIC_file_check = DYNAMIC.parse_known_args()
+    object_check = vars(DYNAMIC_file_check[0])
 
-    if object_check['config_file'] != '':
+    if object_check['DYNAMIC_file'] != '':
         records = []
-        json_file = json.load(open(config_file_check[0].config_file))
+        json_file = json.load(open(DYNAMIC_file_check[0].DYNAMIC_file))
         for record in range(0,len(json_file['Records'])):
             arguments = {}
             for i in args_list:
@@ -143,7 +143,7 @@ class googleimagesdownload:
                 return respData
             except Exception as e:
                 print("Could not open URL. Please check your internet connection and/or ssl settings \n"
-                      "If you are using proxy, make sure your proxy settings is configured correctly")
+                      "If you are using proxy, make sure your proxy settings is DYNAMICured correctly")
                 sys.exit()
         else:  # If the Current Version of Python is 2.x
             try:
@@ -159,7 +159,7 @@ class googleimagesdownload:
                 return page
             except:
                 print("Could not open URL. Please check your internet connection and/or ssl settings \n"
-                      "If you are using proxy, make sure your proxy settings is configured correctly")
+                      "If you are using proxy, make sure your proxy settings is DYNAMICured correctly")
                 sys.exit()
                 return "Page Not found"
 
@@ -807,10 +807,10 @@ class googleimagesdownload:
         paths_agg = {}
         # for input coming from other python files
         if __name__ != "__main__":
-            # if the calling file contains config_file param
-            if 'config_file' in arguments:
+            # if the calling file contains DYNAMIC_file param
+            if 'DYNAMIC_file' in arguments:
                 records = []
-                json_file = json.load(open(arguments['config_file']))
+                json_file = json.load(open(arguments['DYNAMIC_file']))
                 for record in range(0, len(json_file['Records'])):
                     arguments = {}
                     for i in args_list:
