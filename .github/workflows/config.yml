@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "DYNAMIC"
+          find: "config"
 
-          replace: "Speedo"
+          replace: "DYNAMIC"
 
       - name: Create Pull Request
 
