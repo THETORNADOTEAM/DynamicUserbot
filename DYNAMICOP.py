@@ -69,7 +69,6 @@ def wt(obj, file):
     return True
   except:
     return False
-xbot = TelegramClient("Aman", Var.APP_ID, Var.API_HASH).start(bot_token=token)
 MASTER = NAME
 GROUP = "[SUPPORT GROUP](https://t.me/DYNAMICUSERBOTSUPPORT)"
 if __name__=="__main__":
