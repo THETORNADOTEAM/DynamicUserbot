@@ -43,19 +43,19 @@ else:
         print ('INSTALLING ALL STABLE VERSION OF DYNAMIC USERBOT AND PLUGINS')
     else:
         bot.start()
-
-import glob
-
-path = 'DYNAMIC/plugins/*.py'
-files = glob.glob(path)
-for name in files:
+async def op:
+  import glob
+  path = 'DYNAMIC/plugins/*.py'
+  files = glob.glob(path)
+  for name in files:
     with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
+      path1 = Path(f.name)
+      shortname = path1.stem
+      load_module(shortname.replace(".py", ""))
 
 import DYNAMIC._core
 
+bot.loop.run_until_complete(op())
 print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE INFO @DYNAMICUSERBOTSUPPORT ")
 print("SOFTWARE VERSION 1.0 Stable")
 print("DYNAIMIC BRANCH: Stable")
