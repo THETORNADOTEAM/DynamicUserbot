@@ -3,7 +3,7 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from Speedo.DYNAMIC import Config
+from Speedo.DYNAMICConfig import Config
 from var import Var
 SpeedoVERSION = "1.0"
 botnickname = "Speedo USERBOT"
@@ -63,18 +63,18 @@ if bool(ENV):
                     level=INFO)
     LOGS = getLogger(__name__)
 
-    # Check if the DYNAMIC was edited by using the already used variable.
-    # Basically, its the 'virginity check' for the DYNAMIC file ;)
+    # Check if the DYNAMICConfig was edited by using the already used variable.
+    # Basically, its the 'virginity check' for the DYNAMICConfig file ;)
     CONFIG_CHECK = os.environ.get(
         "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
 
     if CONFIG_CHECK:
         LOGS.info(
-            "Please remove the line mentioned in the first hashtag from the DYNAMIC.env file"
+            "Please remove the line mentioned in the first hashtag from the DYNAMICConfig.env file"
         )
         quit(1)
 
-    # Logging channel/group DYNAMICuration.
+    # Logging channel/group DYNAMICConfiguration.
     BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
     try:
         BOTLOG_CHATID = int(BOTLOG_CHATID)
@@ -90,7 +90,7 @@ if bool(ENV):
     # Custom Module
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
 
-    # Logging channel/group DYNAMICuration.
+    # Logging channel/group DYNAMICConfiguration.
     BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
     try:
         BOTLOG_CHATID = int(BOTLOG_CHATID)

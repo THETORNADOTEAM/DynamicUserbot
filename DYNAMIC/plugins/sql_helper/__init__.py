@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 
-# the secret DYNAMICuration specific things
+# the secret DYNAMICConfiguration specific things
 from var import Var
 
 
@@ -20,5 +20,5 @@ try:
     SESSION = start()
 except AttributeError as e:
     # this is a dirty way for the work-around required for #23
-    print("DB_URI is not DYNAMICured. Features depending on the database might have issues.")
+    print("DB_URI is not DYNAMICConfigured. Features depending on the database might have issues.")
     print(str(e))

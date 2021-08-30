@@ -13,7 +13,7 @@ import requests
 import math
 from Speedo.utils import admin_cmd
 from Speedo import CMD_HELP
-from Speedo.DYNAMIC import Config
+from Speedo.DYNAMICConfig import Config
 
 # ================= 
 
@@ -39,7 +39,7 @@ async def variable(var):
         return await var.edit("`[HEROKU]:"
                               "\nPlease setup your` **HEROKU_APP_NAME**")
     exe = var.pattern_match.group(1)
-    heroku_var = app.DYNAMIC()
+    heroku_var = app.DYNAMICConfig()
     if exe == "get":
         await var.edit("`Getting information...`")
         await asyncio.sleep(1.5)
@@ -52,15 +52,15 @@ async def variable(var):
                 return await var.edit("**ConfigVars**:"
                                       f"\n\n`Error:\n-> {variable} don't exists`")
         except IndexError:
-            DYNAMICs = prettyjson(heroku_var.to_dict(), indent=2)
-            with open("DYNAMICs.json", "w") as fp:
-                fp.write(DYNAMICs)
-            with open("DYNAMICs.json", "r") as fp:
+            DYNAMICConfigs = prettyjson(heroku_var.to_dict(), indent=2)
+            with open("DYNAMICConfigs.json", "w") as fp:
+                fp.write(DYNAMICConfigs)
+            with open("DYNAMICConfigs.json", "r") as fp:
                 result = fp.read()
                 if len(result) >= 4096:
                     await var.client.send_file(
                         var.chat_id,
-                        "DYNAMICs.json",
+                        "DYNAMICConfigs.json",
                         reply_to=var.id,
                         caption="`Output too large, sending it as a file`",
                     )
@@ -70,7 +70,7 @@ async def variable(var):
                                    f"\n```{result}```\n"
                                    "================================"
                                    )
-            os.remove("DYNAMICs.json")
+            os.remove("DYNAMICConfigs.json")
             return
     elif exe == "set":
         await var.edit("`Setting information...weit ser`")
@@ -167,7 +167,7 @@ async def _(dyno):
              Heroku = heroku3.from_key(HEROKU_API_KEY)                         
              app = Heroku.app(HEROKU_APP_NAME)
         except:
-  	       return await dyno.reply(" Please make sure your Heroku API Key, Your App name are DYNAMICured correctly in the heroku")
+  	       return await dyno.reply(" Please make sure your Heroku API Key, Your App name are DYNAMICConfigured correctly in the heroku")
         await dyno.edit("Getting Logs....")
         with open('logs.txt', 'w') as log:
             log.write(app.get_log())

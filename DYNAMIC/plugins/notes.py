@@ -2,7 +2,7 @@ from telethon import events, utils
 from telethon.tl import types
 
 from Speedo import bot
-from Speedo.DYNAMIC import Config
+from Speedo.DYNAMICConfig import Config
 from Speedo.plugins.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,

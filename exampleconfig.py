@@ -1,4 +1,4 @@
-from sample_DYNAMIC import Config
+from sample_DYNAMICConfig import Config
 
 
 class Development(Config):
