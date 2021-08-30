@@ -57,11 +57,6 @@ import DYNAMIC._core
 
 bot.loop.run_until_complete(op())
 print("DYNAMIC LOADED HIDDEN FILES, SOFTWARE WITH SUCESS JOIN SUPPORT FOR MORE INFO @DYNAMICUSERBOTSUPPORT ")
-print("SOFTWARE VERSION 1.0 Stable")
-print("DYNAIMIC BRANCH: Stable")
-print(" TELETHON VERSION 1.21.1 ")
-
-
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
