@@ -1,10 +1,6 @@
 #WARNING DONT KANG THIS USERBOT.. 
 ## DYNAMIC USERBOT BASED ON TELETHON 
 
-## MAIN Credits DYNAMIC USERBOT
-
-## MADE WITH LOVE JUST IN 1 WEEK ONLY 2 CONTRIBUTERS SIDDHARTH AND AMAN PANDEY
-
 <details>
 
   <summary> • FOR ANY QUERY • </summary>
@@ -13,10 +9,10 @@
 </details>
 
 
-
-
+# Contributers
+[![contributers](https://img.shields.io/badge/contributers-contributers-brightgreen)](https://github.com/SRIDHAR2021SIDDHARTH/DynamicUserbot/graphs/contributors)
 ## CREDITS 
- OWNER & DEV ONLY SIDDHARTH
+ OWNER & DEV SIDDHARTH, Aman Pandey, Noob-Stranger And GODBOYX
 ## Deploy
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/SRIDHAR2021SIDDHARTH/DYNAMIC-PACK/HEROKU-PACK"> [<img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png" />]
 
