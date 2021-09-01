@@ -14,7 +14,7 @@
 ## CREDITS 
  OWNER & DEV SIDDHARTH, Aman Pandey, Noob-Stranger And GODBOYX
 ## Deploy
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/SRIDHAR2021SIDDHARTH/DYNAMIC-PACK/HEROKU-PACK"> [<img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png" />]
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/InternetAmethyst/HEROKU-PACK-1"> [<img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png" />]
 
 
 ## STRING
