@@ -4,7 +4,7 @@
 <details>
 
   <summary> • FOR ANY QUERY • </summary>
-<h2 align="center"> <a href="https://t.me/DYNAMICUSERBOTSUPPORT">JOIN OUR SUPPORT GROUP</a></h2>
+<h2 align="center"> <a href="https://t.me/DYNAMIC_USERBOT_OFFICIAL">JOIN OUR SUPPORT GROUP</a></h2>
 
 </details>
 
